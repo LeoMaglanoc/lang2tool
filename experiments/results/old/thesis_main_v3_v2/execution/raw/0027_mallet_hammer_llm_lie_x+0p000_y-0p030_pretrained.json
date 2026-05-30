@@ -1,0 +1,60 @@
+{
+  "trial_id": "0027_mallet_hammer_llm_lie_x+0p000_y-0p030_pretrained",
+  "geometry_trial_id": "0027_mallet_hammer_llm_lie_x+0p000_y-0p030",
+  "object_name": "mallet_hammer",
+  "task_name": "swing_down",
+  "mode": "llm_lie",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_lie + pretrained",
+  "seed": 0,
+  "execution_success": true,
+  "goal_completion_pct": 100.0,
+  "peak_success_count": 100,
+  "failure_stage": null,
+  "failure_category": null,
+  "resolved_baseline_object": "mallet_hammer",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_v3_v2/execution/artifacts/0027_mallet_hammer_llm_lie_x+0p000_y-0p030_pretrained/trace.json",
+  "tracking_success_rate": 0.009380863039399626,
+  "translation_rmse_m": 0.2018875123057965,
+  "rotation_rmse_deg": 90.51779886786088,
+  "mean_translation_error_m": 0.1660301150820201,
+  "mean_rotation_error_deg": 77.19874137031977,
+  "final_translation_error_m": 0.0731045687351418,
+  "final_rotation_error_deg": 50.61410560822842,
+  "geometry_goal_count": 11,
+  "execution_goal_count": 36,
+  "reference_goal_count": 36,
+  "execution_goal_transform": "cycle_to_predefined_length",
+  "execution_goal_cycle_style": "mirrored",
+  "metrics": {
+    "avg_goal_pct": 100.0,
+    "avg_time_sec": 26.633333333333333,
+    "episode_goal_pcts": [
+      100.0
+    ],
+    "episode_lengths": [
+      1598
+    ],
+    "episode_trial_stops": [
+      {
+        "should_stop": true,
+        "reason": "success_complete",
+        "is_failure": false,
+        "details": {
+          "dropped": false,
+          "object_z_low": false,
+          "success_count": 36,
+          "success_target": 36,
+          "sim_time_sec": 26.633333333333333,
+          "timeout_sec": 180.0
+        }
+      }
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v2/execution/artifacts/0027_mallet_hammer_llm_lie_x+0p000_y-0p030_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_v3_v2/execution/artifacts/0027_mallet_hammer_llm_lie_x+0p000_y-0p030_pretrained",
+  "replay_artifact_path": "execution/replay/trials/0027_mallet_hammer_llm_lie_x+0p000_y-0p030_pretrained.json"
+}

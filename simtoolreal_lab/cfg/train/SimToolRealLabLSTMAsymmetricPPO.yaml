@@ -1,0 +1,58 @@
+defaults:
+  - SimToolRealLabPPO
+  - _self_
+
+params:
+  network:
+    space:
+      continuous:
+        fixed_sigma: coef_cond
+
+    mlp:
+      units: [1024, 1024, 512, 512]
+      activation: elu
+      d2rl: False
+      initializer:
+        name: default
+      regularizer:
+        name: None
+
+    rnn:
+      name: lstm
+      units: 1024
+      layers: 1
+      before_mlp: True
+      layer_norm: True
+
+  config:
+    name: ${resolve_default:SimToolRealLabLSTMAsymmetricPPO,${....experiment}}
+    minibatch_size: 98304
+    mini_epochs: 2
+    use_others_experience: lf
+    off_policy_ratio: 1.0
+    expl_type: mixed_expl_learn_param
+    expl_reward_coef_scale: 0.005
+    expl_reward_type: entropy
+    expl_coef_block_size: 4096
+
+    central_value_config:
+      minibatch_size: 98304
+      mini_epochs: 2
+      learning_rate: 1e-4
+      kl_threshold: 0.016
+      clip_value: True
+      normalize_input: True
+      truncate_grads: True
+
+      network:
+        name: actor_critic
+        central_value: True
+
+        mlp:
+          units: [1024, 1024, 512, 512]
+          activation: elu
+          d2rl: False
+          initializer:
+            name: default
+          regularizer:
+            name: None

@@ -1,0 +1,11 @@
+trial_id,object_name,task_name,mode,seed,target_x,target_y,compile_success,validation_success,num_waypoints,num_clamped_waypoints,error
+0000_claw_hammer_predefined,claw_hammer,swing_down,predefined,0,-0.22269390561861938,0.04258896007442232,True,True,37,0,
+0001_claw_hammer_llm_lie_x-0p350_y-0p200,claw_hammer,swing_down,llm_lie,0,-0.35,-0.2,False,False,0,0,compile_llm_lie_trajectory() missing 1 required keyword-only argument: 'pivot_point'
+0002_claw_hammer_llm_lie_x+0p350_y-0p200,claw_hammer,swing_down,llm_lie,0,0.35,-0.2,False,False,0,0,compile_llm_lie_trajectory() missing 1 required keyword-only argument: 'pivot_point'
+0003_claw_hammer_llm_lie_x-0p350_y+0p200,claw_hammer,swing_down,llm_lie,0,-0.35,0.2,False,False,0,0,compile_llm_lie_trajectory() missing 1 required keyword-only argument: 'pivot_point'
+0004_claw_hammer_llm_lie_x+0p350_y+0p200,claw_hammer,swing_down,llm_lie,0,0.35,0.2,False,False,0,0,compile_llm_lie_trajectory() missing 1 required keyword-only argument: 'pivot_point'
+0005_cylinder_screwdriver_v3009_predefined,cylinder_screwdriver_v3009,spin_vertical,predefined,0,-0.0593696929539107,-0.04574792165983691,True,True,100,0,
+0006_cylinder_screwdriver_v3009_llm_lie_x-0p350_y-0p200,cylinder_screwdriver_v3009,spin_vertical,llm_lie,0,-0.35,-0.2,False,False,0,0,compile_llm_lie_trajectory() missing 1 required keyword-only argument: 'pivot_point'
+0007_cylinder_screwdriver_v3009_llm_lie_x+0p350_y-0p200,cylinder_screwdriver_v3009,spin_vertical,llm_lie,0,0.35,-0.2,False,False,0,0,compile_llm_lie_trajectory() missing 1 required keyword-only argument: 'pivot_point'
+0008_cylinder_screwdriver_v3009_llm_lie_x-0p350_y+0p200,cylinder_screwdriver_v3009,spin_vertical,llm_lie,0,-0.35,0.2,False,False,0,0,compile_llm_lie_trajectory() missing 1 required keyword-only argument: 'pivot_point'
+0009_cylinder_screwdriver_v3009_llm_lie_x+0p350_y+0p200,cylinder_screwdriver_v3009,spin_vertical,llm_lie,0,0.35,0.2,False,False,0,0,compile_llm_lie_trajectory() missing 1 required keyword-only argument: 'pivot_point'

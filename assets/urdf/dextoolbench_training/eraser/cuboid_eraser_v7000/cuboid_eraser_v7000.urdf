@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot name="cuboid_eraser_v7000">
+
+  <link name="cuboid_eraser_v7000">
+    <!-- Handle -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.07036000999517274 0.04573146710581749 0.05386436996821986"/>
+      </geometry>
+      <material name="material">
+        <color rgba="0.639 0.847 0.882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.07036000999517274 0.04573146710581749 0.05386436996821986"/>
+      </geometry>
+    </collision>
+
+    <!-- Head -->
+    <visual>
+      <origin xyz="0.03568000499758637 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="material">
+        <color rgba="0.639 0.847 0.882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.03568000499758637 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <density value="400.0"/>
+    </inertial>
+  </link>
+
+</robot>

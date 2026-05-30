@@ -1,0 +1,78 @@
+{
+  "trial_id": "0019_mallet_hammer_predefined_pretrained",
+  "geometry_trial_id": "0019_mallet_hammer_predefined",
+  "object_name": "mallet_hammer",
+  "task_name": "swing_down",
+  "mode": "predefined",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "predefined + pretrained",
+  "seed": 0,
+  "execution_success": true,
+  "goal_completion_pct": 100.0,
+  "peak_success_count": 100,
+  "failure_stage": null,
+  "failure_category": null,
+  "resolved_baseline_object": "mallet_hammer",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_v3_v3/execution/artifacts/0019_mallet_hammer_predefined_pretrained/trace.json",
+  "tracking_success_rate": 0.007320644216691069,
+  "translation_rmse_m": 0.057318260749248624,
+  "rotation_rmse_deg": 19.682892102721045,
+  "mean_translation_error_m": 0.0531901491655666,
+  "mean_rotation_error_deg": 15.657036020841963,
+  "final_translation_error_m": 0.14193243183777207,
+  "final_rotation_error_deg": 100.10914858425612,
+  "dropped_count": 0,
+  "dropped_first_step": null,
+  "object_z_low_count": 0,
+  "object_z_low_first_step": null,
+  "geometry_goal_count": 36,
+  "execution_goal_count": 36,
+  "reference_goal_count": 36,
+  "execution_goal_transform": "identity",
+  "execution_goal_cycle_style": null,
+  "metrics": {
+    "avg_goal_pct": 100.0,
+    "avg_time_sec": 11.366666666666667,
+    "episode_goal_pcts": [
+      100.0
+    ],
+    "episode_lengths": [
+      682
+    ],
+    "episode_trial_stops": [
+      {
+        "should_stop": true,
+        "reason": "success_complete",
+        "is_failure": false,
+        "details": {
+          "dropped": false,
+          "object_z_low": false,
+          "success_count": 36,
+          "success_target": 36,
+          "sim_time_sec": 11.366666666666667,
+          "timeout_sec": 180.0,
+          "object_z": 0.6479559540748596,
+          "object_init_z": 0.5798402428627014,
+          "lifted_object": true,
+          "env_debug_dropped": false,
+          "env_debug_object_z_low": false,
+          "step": 682
+        }
+      }
+    ],
+    "episode_reset_signal_summaries": [
+      {
+        "dropped_count": 0,
+        "dropped_first_step": null,
+        "object_z_low_count": 0,
+        "object_z_low_first_step": null
+      }
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v3/execution/artifacts/0019_mallet_hammer_predefined_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_v3_v3/execution/artifacts/0019_mallet_hammer_predefined_pretrained",
+  "replay_artifact_path": "execution/replay/trials/0019_mallet_hammer_predefined_pretrained.json"
+}

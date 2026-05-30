@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot name="cylinder_screwdriver_v3000">
+
+  <link name="cylinder_screwdriver_v3000">
+    <!-- Handle -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 1.5707963267948966 0"/>
+      <geometry>
+        <cylinder length="0.07508359514518581" radius="0.0375018783068284"/>
+      </geometry>
+      <material name="material">
+        <color rgba="0.639 0.847 0.882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963267948966 0"/>
+      <geometry>
+        <cylinder length="0.07508359514518581" radius="0.0375018783068284"/>
+      </geometry>
+    </collision>
+
+    <!-- Head -->
+    <visual>
+      <origin xyz="0.07462027223119708 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.07415694931720834 0.01462420934509031 0.010495565707899378"/>
+      </geometry>
+      <material name="material">
+        <color rgba="0.639 0.847 0.882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.07462027223119708 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.07415694931720834 0.01462420934509031 0.010495565707899378"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <density value="400.0"/>
+    </inertial>
+  </link>
+
+</robot>

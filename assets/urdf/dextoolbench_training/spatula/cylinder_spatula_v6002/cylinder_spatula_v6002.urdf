@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot name="cylinder_spatula_v6002">
+
+  <link name="cylinder_spatula_v6002">
+    <!-- Handle -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 1.5707963267948966 0"/>
+      <geometry>
+        <cylinder length="0.18444788732871867" radius="0.018532156357341175"/>
+      </geometry>
+      <material name="material">
+        <color rgba="0.639 0.847 0.882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963267948966 0"/>
+      <geometry>
+        <cylinder length="0.18444788732871867" radius="0.018532156357341175"/>
+      </geometry>
+    </collision>
+
+    <!-- Head -->
+    <visual>
+      <origin xyz="0.15565532313732827 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.1268627589459379 0.06408062067524677 0.020095829658069962"/>
+      </geometry>
+      <material name="material">
+        <color rgba="0.639 0.847 0.882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.15565532313732827 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.1268627589459379 0.06408062067524677 0.020095829658069962"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <density value="400.0"/>
+    </inertial>
+  </link>
+
+</robot>

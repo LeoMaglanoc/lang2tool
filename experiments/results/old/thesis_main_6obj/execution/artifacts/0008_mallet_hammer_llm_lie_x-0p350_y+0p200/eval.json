@@ -1,0 +1,10 @@
+{
+    "avg_goal_pct": 78.94736842105263,
+    "avg_time_sec": 5.116666666666666,
+    "episode_goal_pcts": [
+        78.94736842105263
+    ],
+    "episode_lengths": [
+        307
+    ]
+}

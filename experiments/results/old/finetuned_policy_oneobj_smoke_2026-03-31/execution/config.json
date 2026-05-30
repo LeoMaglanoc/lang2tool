@@ -1,0 +1,14 @@
+{
+  "experiment_dir": "experiments/results/finetuned_policy_oneobj_smoke_2026-03-31",
+  "config_path": "pretrained_policy/config.yaml",
+  "checkpoint_path": "pretrained_policy/model.pth",
+  "finetuned_config_path": "pretrained_policy/config.yaml",
+  "finetuned_checkpoint_path": "train_dir/simtoolreal/2026-03-30/lie_finetune_overnight_2026-03-30_12-43-25/runs/00_lie_finetune_overnight_2026-03-30_12-43-25/last/model.pth",
+  "num_episodes": 1,
+  "max_trials": null,
+  "overwrite": false,
+  "timeout_sec": 600.0,
+  "success_goal_pct_threshold": 50.0,
+  "tracking_translation_tolerance_m": 0.03,
+  "tracking_rotation_tolerance_deg": 15.0
+}

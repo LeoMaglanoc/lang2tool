@@ -1,0 +1,36 @@
+{
+  "trial_id": "0046_unsupported_out_of_scope_explanation",
+  "prompt_id": "unsupported_out_of_scope_explanation",
+  "prompt_family": "unsupported_or_out_of_scope",
+  "prompt_variant": "explain_training_history",
+  "prompt_text": "explain how this policy was trained in detail",
+  "backend": "openai",
+  "active_object_context": "claw_hammer",
+  "expected_outcome_type": "text",
+  "expected_intent": null,
+  "expected_object_name": null,
+  "expected_target_label": null,
+  "expected_clarification": false,
+  "predicted_outcome_type": "text",
+  "predicted_intent": null,
+  "predicted_object_name": null,
+  "predicted_target_label": null,
+  "predicted_clarification": false,
+  "assistant_text": "I don\u2019t have access to the exact private training recipe for this deployed robot policy, but I can explain how policies like this are typically trained.\n\nA robot manipulation policy usually has several layers:\n\n1. **Language-command interpretation**\n   - The system first parses the user\u2019s instruction.\n   - It decides whether the request is about grasping, releasing, moving a goal, switching tools, swinging, twisting, or generating a new manipulation plan.\n   - This part is usually trained or configured with a mix of language model pretraining, instruction tuning, and rule-based routing.\n\n2. **Object and task grounding**\n   - The command is mapped to a specific tool, such as a claw hammer or screwdriver.\n   - Semantic terms like \u201cupright,\u201d \u201cflat,\u201d \u201chead down,\u201d or \u201ctip forward\u201d are grounded using object metadata and the current simulation state.\n   - Spatial phrases like \u201cleft side,\u201d \u201cfront,\u201d or \u201ccenter\u201d are converted into tabletop coordinates.\n\n3. **Goal generation**\n   - For many manipulation tasks, the system generates target poses for the robot hand or gripper.\n   - These goals include:\n     - approach direction,\n     - grasp/contact point,\n     - tool axis,\n     - pregrasp offset,\n     - grasp depth,\n     - lift height,\n     - timing for approach, close, and lift.\n\n4. **Motion primitive selection**\n   - Instead of learning every motion end-to-end, the system uses structured primitives.\n   - Examples include:\n     - grasp tool,\n     - release tool,\n     - apply a relative goal delta,\n     - execute a swing trajectory,\n     - execute a predefined motion.\n   - This makes behavior more reliable than a fully unconstrained policy.\n\n5. **Trajectory execution**\n   - For swing or twist tasks, the policy chooses a target point on the tabletop and generates a trajectory toward it.\n   - In this interface, those commands use explicit tabletop coordinates.\n   - The trajectory generator then converts the high-level target into robot/object motion.\n\n6. **Simulation-state feedback**\n   - Before semantically meaningful pose changes or swing/twist motions, the system reads the current simulation state.\n   - This helps avoid acting from stale assumptions.\n   - The state can include current object pose, active goal pose, runtime mode, and semantic pose definitions.\n\n7. **Training data sources**\n   A system like this may be trained or tuned using several kinds of data:\n   - human-written robot instructions,\n   - simulated demonstrations,\n   - teleoperated robot trajectories,\n   - synthetic task variations,\n   - successful and failed manipulation rollouts,\n   - annotated object poses and grasp points,\n   - reinforcement learning in simulation,\n   - imitation learning from expert demonstrations.\n\n8. **Imitation learning**\n   - The robot observes expert examples of successful behavior.\n   - It learns mappings from observations and goals to actions.\n   - For example, it may learn how to approach a hammer handle, align the gripper, close, and lift.\n\n9. **Reinforcement learning**\n   - The robot can improve through trial and error in simulation.\n   - Rewards might include:\n     - reaching the target,\n     - maintaining a stable grasp,\n     - avoiding collisions,\n     - keeping the tool aligned,\n     - striking the correct tabletop point,\n     - completing the task quickly and smoothly.\n\n10. **Safety and constraint layers**\n   - The learned or generated actions are constrained by workspace bounds, valid object lists, allowed target regions, and task-specific rules.\n   - For example, strike targets are kept inside a known tabletop region.\n   - Tool choice is also constrained so hammer motions use hammer-like tools and twist motions use screwdriver-like tools.\n\n11. **Evaluation**\n   - Policies are usually tested on:\n     - grasp success rate,\n     - task completion rate,\n     - trajectory smoothness,\n     - robustness to object pose variation,\n     - generalization to different tools,\n     - recovery from small errors.\n\nSo, in short: the system likely combines a language model for interpreting the command, structured task-routing rules, object metadata, simulation-state feedback, and motion primitives or learned controllers. It is not just a single neural network directly turning text into motor commands; it is a layered policy that converts language into constrained robotic actions.",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "expected_tool_call": null,
+  "predicted_tool_call": null,
+  "target_evaluation": {
+    "match": true,
+    "reason": "no_target_expected"
+  },
+  "predicted_tool_trace": [],
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

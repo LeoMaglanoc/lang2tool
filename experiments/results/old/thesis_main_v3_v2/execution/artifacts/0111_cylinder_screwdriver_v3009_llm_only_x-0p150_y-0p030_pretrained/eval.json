@@ -1,0 +1,26 @@
+{
+    "avg_goal_pct": 1.0,
+    "avg_time_sec": 10.1,
+    "episode_goal_pcts": [
+        1.0
+    ],
+    "episode_lengths": [
+        606
+    ],
+    "episode_trial_stops": [
+        {
+            "should_stop": true,
+            "reason": "object_z_low",
+            "is_failure": true,
+            "details": {
+                "dropped": false,
+                "object_z_low": true,
+                "success_count": 1,
+                "success_target": 100,
+                "sim_time_sec": 10.1,
+                "timeout_sec": 180.0
+            }
+        }
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v2/execution/artifacts/0111_cylinder_screwdriver_v3009_llm_only_x-0p150_y-0p030_pretrained/trace.json"
+}

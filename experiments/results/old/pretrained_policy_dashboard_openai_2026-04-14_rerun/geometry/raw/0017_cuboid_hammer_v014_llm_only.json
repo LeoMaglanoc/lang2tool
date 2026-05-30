@@ -1,0 +1,82 @@
+{
+  "trial_id": "0017_cuboid_hammer_v014_llm_only",
+  "object_name": "cuboid_hammer_v014",
+  "task_name": "swing_down",
+  "mode": "llm_only",
+  "seed": 0,
+  "target_xy": null,
+  "resolved_baseline_object": "claw_hammer",
+  "pivot_point": null,
+  "compile_success": true,
+  "validation_success": true,
+  "num_waypoints": 6,
+  "goals": [
+    [
+      0.13,
+      0.06,
+      0.5,
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.17,
+      0.04,
+      0.46,
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.21,
+      0.02,
+      0.42,
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.25,
+      0.0,
+      0.38,
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.29,
+      -0.02,
+      0.34,
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.33,
+      -0.04,
+      0.3,
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "clamp_summary": {},
+  "resampling_summary": {},
+  "metrics": {
+    "mean_translation_error_m": 0.37439144758353166,
+    "max_translation_error_m": 0.5811595619561144,
+    "mean_rotation_error_deg": 77.26930006481881,
+    "max_rotation_error_deg": 109.79208335256892,
+    "reference_path_length_m": 1.0647205635790191,
+    "candidate_path_length_m": 0.3627071925226268,
+    "path_length_ratio": 0.34065951661851995,
+    "sample_count": 38.0
+  },
+  "error": null
+}

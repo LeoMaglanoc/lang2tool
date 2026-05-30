@@ -1,0 +1,12 @@
+{
+  "experiment_dir": "experiments/results/thesis_main_6obj_v2",
+  "config_path": "pretrained_policy/config.yaml",
+  "checkpoint_path": "pretrained_policy/model.pth",
+  "num_episodes": 1,
+  "max_trials": null,
+  "overwrite": true,
+  "timeout_sec": 600.0,
+  "success_goal_pct_threshold": 2.0,
+  "tracking_translation_tolerance_m": 0.03,
+  "tracking_rotation_tolerance_deg": 15.0
+}

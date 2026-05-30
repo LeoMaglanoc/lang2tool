@@ -1,0 +1,27 @@
+{
+  "trial_id": "0001_clarify_screwdriver_family",
+  "prompt_id": "clarify_screwdriver_family",
+  "prompt_text": "use the screwdriver",
+  "backend": "openai",
+  "active_object_context": "long_screwdriver",
+  "expected_outcome_type": "clarification",
+  "expected_intent": null,
+  "expected_object_name": null,
+  "expected_target_label": null,
+  "expected_clarification": true,
+  "predicted_outcome_type": "clarification",
+  "predicted_intent": null,
+  "predicted_object_name": null,
+  "predicted_target_label": null,
+  "predicted_clarification": true,
+  "assistant_text": "Which screwdriver do you want: long screwdriver or short screwdriver or cylinder screwdriver v3009?",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

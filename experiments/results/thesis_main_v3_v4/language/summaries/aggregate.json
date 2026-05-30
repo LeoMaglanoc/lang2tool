@@ -1,0 +1,84 @@
+{
+  "backend": "openai",
+  "model": "gpt-5.5",
+  "num_trials": 50,
+  "exact_match_accuracy": 0.94,
+  "intent_accuracy": 0.96,
+  "object_accuracy": 0.98,
+  "target_accuracy": 0.96,
+  "clarification_accuracy": 0.96,
+  "by_prompt_family": [
+    {
+      "prompt_family": "clarification_or_ambiguity",
+      "num_trials": 6,
+      "exact_match_accuracy": 1.0,
+      "intent_accuracy": 1.0,
+      "object_accuracy": 1.0,
+      "target_accuracy": 1.0,
+      "clarification_accuracy": 1.0
+    },
+    {
+      "prompt_family": "default_family_selection",
+      "num_trials": 8,
+      "exact_match_accuracy": 0.875,
+      "intent_accuracy": 0.875,
+      "object_accuracy": 0.875,
+      "target_accuracy": 0.875,
+      "clarification_accuracy": 0.875
+    },
+    {
+      "prompt_family": "explicit_object_switching",
+      "num_trials": 5,
+      "exact_match_accuracy": 1.0,
+      "intent_accuracy": 1.0,
+      "object_accuracy": 1.0,
+      "target_accuracy": 1.0,
+      "clarification_accuracy": 1.0
+    },
+    {
+      "prompt_family": "lifecycle_and_predefined_commands",
+      "num_trials": 7,
+      "exact_match_accuracy": 1.0,
+      "intent_accuracy": 1.0,
+      "object_accuracy": 1.0,
+      "target_accuracy": 1.0,
+      "clarification_accuracy": 1.0
+    },
+    {
+      "prompt_family": "paraphrase_robustness",
+      "num_trials": 6,
+      "exact_match_accuracy": 0.8333333333333334,
+      "intent_accuracy": 0.8333333333333334,
+      "object_accuracy": 1.0,
+      "target_accuracy": 0.8333333333333334,
+      "clarification_accuracy": 1.0
+    },
+    {
+      "prompt_family": "semantic_pose_edits",
+      "num_trials": 5,
+      "exact_match_accuracy": 1.0,
+      "intent_accuracy": 1.0,
+      "object_accuracy": 1.0,
+      "target_accuracy": 1.0,
+      "clarification_accuracy": 1.0
+    },
+    {
+      "prompt_family": "target_grounding",
+      "num_trials": 8,
+      "exact_match_accuracy": 1.0,
+      "intent_accuracy": 1.0,
+      "object_accuracy": 1.0,
+      "target_accuracy": 1.0,
+      "clarification_accuracy": 1.0
+    },
+    {
+      "prompt_family": "unsupported_or_out_of_scope",
+      "num_trials": 5,
+      "exact_match_accuracy": 0.8,
+      "intent_accuracy": 1.0,
+      "object_accuracy": 1.0,
+      "target_accuracy": 1.0,
+      "clarification_accuracy": 0.8
+    }
+  ]
+}

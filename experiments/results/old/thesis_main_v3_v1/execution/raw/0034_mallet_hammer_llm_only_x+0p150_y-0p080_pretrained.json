@@ -1,0 +1,45 @@
+{
+  "trial_id": "0034_mallet_hammer_llm_only_x+0p150_y-0p080_pretrained",
+  "geometry_trial_id": "0034_mallet_hammer_llm_only_x+0p150_y-0p080",
+  "object_name": "mallet_hammer",
+  "task_name": "swing_down",
+  "mode": "llm_only",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_only + pretrained",
+  "seed": 0,
+  "execution_success": true,
+  "goal_completion_pct": 100.0,
+  "peak_success_count": 100,
+  "failure_stage": null,
+  "failure_category": null,
+  "resolved_baseline_object": "mallet_hammer",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_v3_v1/execution/artifacts/0034_mallet_hammer_llm_only_x+0p150_y-0p080_pretrained/trace.json",
+  "tracking_success_rate": 0.0260989010989011,
+  "translation_rmse_m": 0.05470245760869162,
+  "rotation_rmse_deg": 16.94323189499001,
+  "mean_translation_error_m": 0.05103259576516513,
+  "mean_rotation_error_deg": 12.894033935660696,
+  "final_translation_error_m": 0.07161799108749613,
+  "final_rotation_error_deg": 6.925724076977944,
+  "geometry_goal_count": 36,
+  "execution_goal_count": 36,
+  "reference_goal_count": 36,
+  "execution_goal_transform": "identity",
+  "execution_goal_cycle_style": null,
+  "metrics": {
+    "avg_goal_pct": 100.0,
+    "avg_time_sec": 12.116666666666667,
+    "episode_goal_pcts": [
+      100.0
+    ],
+    "episode_lengths": [
+      727
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v1/execution/artifacts/0034_mallet_hammer_llm_only_x+0p150_y-0p080_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_v3_v1/execution/artifacts/0034_mallet_hammer_llm_only_x+0p150_y-0p080_pretrained",
+  "replay_artifact_path": "execution/replay/trials/0034_mallet_hammer_llm_only_x+0p150_y-0p080_pretrained.json"
+}

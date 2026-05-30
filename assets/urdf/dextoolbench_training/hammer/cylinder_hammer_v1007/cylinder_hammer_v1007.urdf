@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot name="cylinder_hammer_v1007">
+
+  <link name="cylinder_hammer_v1007">
+    <!-- Handle -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 1.5707963267948966 0"/>
+      <geometry>
+        <cylinder length="0.22234551554143503" radius="0.026741028408754294"/>
+      </geometry>
+      <material name="material">
+        <color rgba="0.639 0.847 0.882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963267948966 0"/>
+      <geometry>
+        <cylinder length="0.22234551554143503" radius="0.026741028408754294"/>
+      </geometry>
+    </collision>
+
+    <!-- Head -->
+    <visual>
+      <origin xyz="0.12282735776916628 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.023309199996897543 0.08406608315867123 0.03962827977418083"/>
+      </geometry>
+      <material name="material">
+        <color rgba="0.639 0.847 0.882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.12282735776916628 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.023309199996897543 0.08406608315867123 0.03962827977418083"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <density value="400.0"/>
+    </inertial>
+  </link>
+
+</robot>

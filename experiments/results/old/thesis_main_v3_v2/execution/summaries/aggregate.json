@@ -1,0 +1,244 @@
+{
+  "num_trials": 114,
+  "execution_success_rate": 0.18421052631578946,
+  "mean_translation_rmse_m": 0.18114321891276855,
+  "mean_tracking_success_rate": 0.0017181185910628764,
+  "by_object_mode": [
+    {
+      "object_name": "claw_hammer",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 9,
+      "execution_success_rate": 0.2222222222222222,
+      "mean_goal_completion_pct": 27.32732732732733,
+      "mean_translation_rmse_m": 0.20769706924533213,
+      "mean_tracking_success_rate": 0.0020287282017077985
+    },
+    {
+      "object_name": "claw_hammer",
+      "mode": "llm_only",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_only + pretrained",
+      "num_trials": 9,
+      "execution_success_rate": 0.2222222222222222,
+      "mean_goal_completion_pct": 33.333333333333336,
+      "mean_translation_rmse_m": 0.1673165940404986,
+      "mean_tracking_success_rate": 0.001085363113904384
+    },
+    {
+      "object_name": "claw_hammer",
+      "mode": "predefined",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "predefined + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0,
+      "mean_translation_rmse_m": 0.11870137423049927,
+      "mean_tracking_success_rate": 0.0066090493136756485
+    },
+    {
+      "object_name": "cuboid_hammer_v014",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 9,
+      "execution_success_rate": 0.3333333333333333,
+      "mean_goal_completion_pct": 35.13513513513513,
+      "mean_translation_rmse_m": 0.2134011598200029,
+      "mean_tracking_success_rate": 0.003810749544266142
+    },
+    {
+      "object_name": "cuboid_hammer_v014",
+      "mode": "llm_only",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_only + pretrained",
+      "num_trials": 9,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 2.7027027027027026,
+      "mean_translation_rmse_m": 0.17795767512163413,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "cuboid_hammer_v014",
+      "mode": "predefined",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "predefined + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 2.7027027027027026,
+      "mean_translation_rmse_m": 0.18168774307491403,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "cylinder_screwdriver_v3009",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 9,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 1.0,
+      "mean_translation_rmse_m": 0.2503774755756951,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "cylinder_screwdriver_v3009",
+      "mode": "llm_only",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_only + pretrained",
+      "num_trials": 9,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 1.0,
+      "mean_translation_rmse_m": 0.1983745562755881,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "cylinder_screwdriver_v3009",
+      "mode": "predefined",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "predefined + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 1.0,
+      "mean_translation_rmse_m": 0.18324290551531353,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "long_screwdriver",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 9,
+      "execution_success_rate": 0.5555555555555556,
+      "mean_goal_completion_pct": 71.88888888888889,
+      "mean_translation_rmse_m": 0.12337939056334785,
+      "mean_tracking_success_rate": 1.5408557913064918e-05
+    },
+    {
+      "object_name": "long_screwdriver",
+      "mode": "llm_only",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_only + pretrained",
+      "num_trials": 9,
+      "execution_success_rate": 0.1111111111111111,
+      "mean_goal_completion_pct": 39.77777777777778,
+      "mean_translation_rmse_m": 0.12527298682661447,
+      "mean_tracking_success_rate": 0.0014196735698144979
+    },
+    {
+      "object_name": "long_screwdriver",
+      "mode": "predefined",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "predefined + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 35.0,
+      "mean_translation_rmse_m": 0.12626196990442567,
+      "mean_tracking_success_rate": 0.0036719706242350062
+    },
+    {
+      "object_name": "mallet_hammer",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 9,
+      "execution_success_rate": 0.5555555555555556,
+      "mean_goal_completion_pct": 56.79012345679012,
+      "mean_translation_rmse_m": 0.21804372209733594,
+      "mean_tracking_success_rate": 0.011516835219407063
+    },
+    {
+      "object_name": "mallet_hammer",
+      "mode": "llm_only",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_only + pretrained",
+      "num_trials": 9,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 2.7777777777777777,
+      "mean_translation_rmse_m": 0.2144287565478894,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "mallet_hammer",
+      "mode": "predefined",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "predefined + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 2.7777777777777777,
+      "mean_translation_rmse_m": 0.2241685856386713,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "short_screwdriver",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 9,
+      "execution_success_rate": 0.2222222222222222,
+      "mean_goal_completion_pct": 47.514619883040936,
+      "mean_translation_rmse_m": 0.12831505580327746,
+      "mean_tracking_success_rate": 3.149101887603226e-05
+    },
+    {
+      "object_name": "short_screwdriver",
+      "mode": "llm_only",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_only + pretrained",
+      "num_trials": 9,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 6.432748538011697,
+      "mean_translation_rmse_m": 0.15913498671623855,
+      "mean_tracking_success_rate": 0.0007122507122507122
+    },
+    {
+      "object_name": "short_screwdriver",
+      "mode": "predefined",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "predefined + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 1.3157894736842106,
+      "mean_translation_rmse_m": 0.16296951999069806,
+      "mean_tracking_success_rate": 0.0
+    }
+  ],
+  "failure_attribution_by_mode": [
+    {
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 54,
+      "successful_trials": 17,
+      "geometry_originated_failures": 0,
+      "execution_runtime_failures": 0,
+      "successful_share": 0.3148148148148148,
+      "geometry_originated_failure_share": 0.0,
+      "execution_runtime_failure_share": 0.0
+    },
+    {
+      "mode": "llm_only",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_only + pretrained",
+      "num_trials": 54,
+      "successful_trials": 3,
+      "geometry_originated_failures": 0,
+      "execution_runtime_failures": 0,
+      "successful_share": 0.05555555555555555,
+      "geometry_originated_failure_share": 0.0,
+      "execution_runtime_failure_share": 0.0
+    },
+    {
+      "mode": "predefined",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "predefined + pretrained",
+      "num_trials": 6,
+      "successful_trials": 1,
+      "geometry_originated_failures": 0,
+      "execution_runtime_failures": 0,
+      "successful_share": 0.16666666666666666,
+      "geometry_originated_failure_share": 0.0,
+      "execution_runtime_failure_share": 0.0
+    }
+  ]
+}

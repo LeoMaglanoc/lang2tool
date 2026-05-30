@@ -1,0 +1,26 @@
+{
+    "avg_goal_pct": 100.0,
+    "avg_time_sec": 109.33333333333333,
+    "episode_goal_pcts": [
+        100.0
+    ],
+    "episode_lengths": [
+        6560
+    ],
+    "episode_trial_stops": [
+        {
+            "should_stop": true,
+            "reason": "success_complete",
+            "is_failure": false,
+            "details": {
+                "dropped": false,
+                "object_z_low": false,
+                "success_count": 76,
+                "success_target": 76,
+                "sim_time_sec": 109.33333333333333,
+                "timeout_sec": 180.0
+            }
+        }
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v2/execution/artifacts/0080_short_screwdriver_llm_lie_x-0p150_y-0p080_pretrained/trace.json"
+}

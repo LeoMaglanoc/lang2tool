@@ -1,0 +1,6 @@
+{
+  "results_dir": "experiments/results",
+  "experiment_name": "thesis_main_6obj_v2_2026-04-14_fullrerun",
+  "backend": "openai",
+  "max_trials": null
+}

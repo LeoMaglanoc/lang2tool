@@ -1,0 +1,29 @@
+{
+  "trial_id": "0048_unsupported_out_of_scope_training_request",
+  "prompt_id": "unsupported_out_of_scope_training_request",
+  "prompt_family": "unsupported_or_out_of_scope",
+  "prompt_variant": "train_new_policy",
+  "prompt_text": "train a brand new policy for this tool right now",
+  "backend": "openai",
+  "active_object_context": "claw_hammer",
+  "expected_outcome_type": "text",
+  "expected_intent": null,
+  "expected_object_name": null,
+  "expected_target_label": null,
+  "expected_clarification": false,
+  "predicted_outcome_type": "text",
+  "predicted_intent": null,
+  "predicted_object_name": null,
+  "predicted_target_label": null,
+  "predicted_clarification": false,
+  "assistant_text": "I can\u2019t train a brand new policy from here.\n\nI can control the current tool, the **claw_hammer**, using the available manipulation actions. For example, I can grasp it, move it, rotate it, run a predefined swing, or execute a swing toward a tabletop target.",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

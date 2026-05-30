@@ -1,0 +1,36 @@
+{
+  "trial_id": "0045_unsupported_out_of_scope_real_robot",
+  "prompt_id": "unsupported_out_of_scope_real_robot",
+  "prompt_family": "unsupported_or_out_of_scope",
+  "prompt_variant": "real_robot_request",
+  "prompt_text": "drive the real robot to my desk and hand me the tool",
+  "backend": "openai",
+  "active_object_context": "claw_hammer",
+  "expected_outcome_type": "text",
+  "expected_intent": null,
+  "expected_object_name": null,
+  "expected_target_label": null,
+  "expected_clarification": false,
+  "predicted_outcome_type": "text",
+  "predicted_intent": null,
+  "predicted_object_name": null,
+  "predicted_target_label": null,
+  "predicted_clarification": false,
+  "assistant_text": "I can\u2019t drive a real robot to your desk or perform a physical handoff from here.\n\nI can help with the current workspace tool, the claw_hammer. If you want, I can grasp it, move it, release it, or set up a handover-style pose in the simulator.",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "expected_tool_call": null,
+  "predicted_tool_call": null,
+  "target_evaluation": {
+    "match": true,
+    "reason": "no_target_expected"
+  },
+  "predicted_tool_trace": [],
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

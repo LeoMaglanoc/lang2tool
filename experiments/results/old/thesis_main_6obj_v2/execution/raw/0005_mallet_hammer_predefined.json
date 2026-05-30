@@ -1,0 +1,37 @@
+{
+  "trial_id": "0005_mallet_hammer_predefined",
+  "geometry_trial_id": "0005_mallet_hammer_predefined",
+  "object_name": "mallet_hammer",
+  "task_name": "swing_down",
+  "mode": "predefined",
+  "seed": 0,
+  "execution_success": true,
+  "goal_completion_pct": 100.0,
+  "peak_success_count": 100,
+  "failure_stage": null,
+  "failure_category": null,
+  "resolved_baseline_object": "mallet_hammer",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_6obj_v2/execution/artifacts/0005_mallet_hammer_predefined/trace.json",
+  "tracking_success_rate": 0.007309941520467836,
+  "translation_rmse_m": 0.05734434625194402,
+  "rotation_rmse_deg": 19.670281358906937,
+  "mean_translation_error_m": 0.0532191334513238,
+  "mean_rotation_error_deg": 15.644270944900642,
+  "final_translation_error_m": 0.0730154006234895,
+  "final_rotation_error_deg": 6.925724076977944,
+  "metrics": {
+    "avg_goal_pct": 100.0,
+    "avg_time_sec": 11.383333333333333,
+    "episode_goal_pcts": [
+      100.0
+    ],
+    "episode_lengths": [
+      683
+    ],
+    "trace_path": "experiments/results/thesis_main_6obj_v2/execution/artifacts/0005_mallet_hammer_predefined/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_6obj_v2/execution/artifacts/0005_mallet_hammer_predefined"
+}

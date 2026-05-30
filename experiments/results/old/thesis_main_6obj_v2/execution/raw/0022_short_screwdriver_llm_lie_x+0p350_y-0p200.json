@@ -1,0 +1,37 @@
+{
+  "trial_id": "0022_short_screwdriver_llm_lie_x+0p350_y-0p200",
+  "geometry_trial_id": "0022_short_screwdriver_llm_lie_x+0p350_y-0p200",
+  "object_name": "short_screwdriver",
+  "task_name": "spin_vertical",
+  "mode": "llm_lie",
+  "seed": 0,
+  "execution_success": true,
+  "goal_completion_pct": 100.0,
+  "peak_success_count": 100,
+  "failure_stage": null,
+  "failure_category": null,
+  "resolved_baseline_object": "short_screwdriver",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_6obj_v2/execution/artifacts/0022_short_screwdriver_llm_lie_x+0p350_y-0p200/trace.json",
+  "tracking_success_rate": 0.0,
+  "translation_rmse_m": 0.15618723238802235,
+  "rotation_rmse_deg": 57.235798625674114,
+  "mean_translation_error_m": 0.11591558237816062,
+  "mean_rotation_error_deg": 48.52642770119937,
+  "final_translation_error_m": 0.4308248312889178,
+  "final_rotation_error_deg": 89.40875413685426,
+  "metrics": {
+    "avg_goal_pct": 100.0,
+    "avg_time_sec": 17.516666666666666,
+    "episode_goal_pcts": [
+      100.0
+    ],
+    "episode_lengths": [
+      1051
+    ],
+    "trace_path": "experiments/results/thesis_main_6obj_v2/execution/artifacts/0022_short_screwdriver_llm_lie_x+0p350_y-0p200/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_6obj_v2/execution/artifacts/0022_short_screwdriver_llm_lie_x+0p350_y-0p200"
+}

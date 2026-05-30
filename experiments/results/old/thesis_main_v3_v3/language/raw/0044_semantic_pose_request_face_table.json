@@ -1,0 +1,29 @@
+{
+  "trial_id": "0044_semantic_pose_request_face_table",
+  "prompt_id": "semantic_pose_request_face_table",
+  "prompt_family": "semantic_pose_edits",
+  "prompt_variant": "face_table_pose_edit",
+  "prompt_text": "rotate it so the face points toward the table",
+  "backend": "openai",
+  "active_object_context": "cuboid_hammer_v014",
+  "expected_outcome_type": "command",
+  "expected_intent": "move_tool",
+  "expected_object_name": "cuboid_hammer_v014",
+  "expected_target_label": "face_table",
+  "expected_clarification": false,
+  "predicted_outcome_type": "command",
+  "predicted_intent": "move_tool",
+  "predicted_object_name": "cuboid_hammer_v014",
+  "predicted_target_label": "face_table",
+  "predicted_clarification": false,
+  "assistant_text": "Rotated the current cuboid_hammer_v014 so its face points toward the table.",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

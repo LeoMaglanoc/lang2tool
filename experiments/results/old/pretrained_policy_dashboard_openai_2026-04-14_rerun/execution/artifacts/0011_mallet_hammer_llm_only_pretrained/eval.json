@@ -1,0 +1,11 @@
+{
+    "avg_goal_pct": 0.0,
+    "avg_time_sec": 118.1,
+    "episode_goal_pcts": [
+        0.0
+    ],
+    "episode_lengths": [
+        7086
+    ],
+    "trace_path": "experiments/results/pretrained_policy_dashboard_openai_2026-04-14_rerun/execution/artifacts/0011_mallet_hammer_llm_only_pretrained/trace.json"
+}

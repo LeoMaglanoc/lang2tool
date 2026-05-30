@@ -1,0 +1,29 @@
+{
+  "trial_id": "0030_target_grounding_current_tool_a",
+  "prompt_id": "target_grounding_current_tool_a",
+  "prompt_family": "target_grounding",
+  "prompt_variant": "current_tool_target_a",
+  "prompt_text": "aim the current tool at strike point a",
+  "backend": "openai",
+  "active_object_context": "claw_hammer",
+  "expected_outcome_type": "command",
+  "expected_intent": "execute_lie_trajectory",
+  "expected_object_name": "claw_hammer",
+  "expected_target_label": "strike_point_a",
+  "expected_clarification": false,
+  "predicted_outcome_type": "command",
+  "predicted_intent": "execute_lie_trajectory",
+  "predicted_object_name": null,
+  "predicted_target_label": "strike_point_a",
+  "predicted_clarification": false,
+  "assistant_text": "Aiming the claw_hammer at strike point a.",
+  "exact_match": false,
+  "object_match": false,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

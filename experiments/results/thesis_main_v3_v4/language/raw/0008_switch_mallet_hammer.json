@@ -1,0 +1,54 @@
+{
+  "trial_id": "0008_switch_mallet_hammer",
+  "prompt_id": "switch_mallet_hammer",
+  "prompt_family": "explicit_object_switching",
+  "prompt_variant": "switch_mallet_hammer",
+  "prompt_text": "make the mallet hammer active",
+  "backend": "openai",
+  "active_object_context": "short_screwdriver",
+  "expected_outcome_type": "command",
+  "expected_intent": "switch_active_object",
+  "expected_object_name": "mallet_hammer",
+  "expected_target_label": null,
+  "expected_clarification": false,
+  "predicted_outcome_type": "command",
+  "predicted_intent": "switch_active_object",
+  "predicted_object_name": "mallet_hammer",
+  "predicted_target_label": null,
+  "predicted_clarification": false,
+  "assistant_text": "The mallet hammer is now active.",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "expected_tool_call": {
+    "intent": "switch_active_object",
+    "object_name": "mallet_hammer"
+  },
+  "predicted_tool_call": {
+    "intent": "switch_active_object",
+    "object_name": "mallet_hammer"
+  },
+  "target_evaluation": {
+    "match": true,
+    "reason": "no_target_expected"
+  },
+  "predicted_tool_trace": [
+    {
+      "tool_name": "switch_active_object",
+      "arguments": {
+        "object_name": "mallet_hammer"
+      },
+      "result": {
+        "ok": true,
+        "command": "switch_active_object",
+        "object_name": "mallet_hammer"
+      }
+    }
+  ],
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

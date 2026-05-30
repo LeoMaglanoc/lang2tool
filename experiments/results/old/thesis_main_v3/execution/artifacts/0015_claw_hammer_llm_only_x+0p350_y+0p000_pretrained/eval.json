@@ -1,0 +1,11 @@
+{
+    "avg_goal_pct": 80.0,
+    "avg_time_sec": 3.183333333333333,
+    "episode_goal_pcts": [
+        80.0
+    ],
+    "episode_lengths": [
+        191
+    ],
+    "trace_path": "experiments/results/thesis_main_v3/execution/artifacts/0015_claw_hammer_llm_only_x+0p350_y+0p000_pretrained/trace.json"
+}

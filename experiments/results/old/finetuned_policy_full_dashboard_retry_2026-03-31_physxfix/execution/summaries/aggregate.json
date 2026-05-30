@@ -1,0 +1,140 @@
+{
+  "num_trials": 12,
+  "execution_success_rate": 0.0,
+  "mean_translation_rmse_m": 0.0,
+  "mean_tracking_success_rate": 0.0,
+  "by_object_mode": [
+    {
+      "object_name": "claw_hammer",
+      "mode": "llm_lie",
+      "policy_variant": "finetuned",
+      "benchmark_cell": "llm_lie + finetuned",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 0.0,
+      "mean_translation_rmse_m": 0.0,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "claw_hammer",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 0.0,
+      "mean_translation_rmse_m": 0.0,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "cuboid_hammer_v014",
+      "mode": "llm_lie",
+      "policy_variant": "finetuned",
+      "benchmark_cell": "llm_lie + finetuned",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 0.0,
+      "mean_translation_rmse_m": 0.0,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "cuboid_hammer_v014",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 0.0,
+      "mean_translation_rmse_m": 0.0,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "cylinder_screwdriver_v3009",
+      "mode": "llm_lie",
+      "policy_variant": "finetuned",
+      "benchmark_cell": "llm_lie + finetuned",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 0.0,
+      "mean_translation_rmse_m": 0.0,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "cylinder_screwdriver_v3009",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 0.0,
+      "mean_translation_rmse_m": 0.0,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "long_screwdriver",
+      "mode": "llm_lie",
+      "policy_variant": "finetuned",
+      "benchmark_cell": "llm_lie + finetuned",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 0.0,
+      "mean_translation_rmse_m": 0.0,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "long_screwdriver",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 0.0,
+      "mean_translation_rmse_m": 0.0,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "mallet_hammer",
+      "mode": "llm_lie",
+      "policy_variant": "finetuned",
+      "benchmark_cell": "llm_lie + finetuned",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 0.0,
+      "mean_translation_rmse_m": 0.0,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "mallet_hammer",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 0.0,
+      "mean_translation_rmse_m": 0.0,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "short_screwdriver",
+      "mode": "llm_lie",
+      "policy_variant": "finetuned",
+      "benchmark_cell": "llm_lie + finetuned",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 0.0,
+      "mean_translation_rmse_m": 0.0,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "short_screwdriver",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 0.0,
+      "mean_translation_rmse_m": 0.0,
+      "mean_tracking_success_rate": 0.0
+    }
+  ]
+}

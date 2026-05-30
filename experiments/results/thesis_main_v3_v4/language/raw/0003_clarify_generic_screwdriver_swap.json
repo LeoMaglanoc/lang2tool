@@ -1,0 +1,36 @@
+{
+  "trial_id": "0003_clarify_generic_screwdriver_swap",
+  "prompt_id": "clarify_generic_screwdriver_swap",
+  "prompt_family": "clarification_or_ambiguity",
+  "prompt_variant": "generic_screwdriver_swap",
+  "prompt_text": "can you use a screwdriver instead?",
+  "backend": "openai",
+  "active_object_context": "claw_hammer",
+  "expected_outcome_type": "clarification",
+  "expected_intent": null,
+  "expected_object_name": null,
+  "expected_target_label": null,
+  "expected_clarification": true,
+  "predicted_outcome_type": "clarification",
+  "predicted_intent": null,
+  "predicted_object_name": null,
+  "predicted_target_label": null,
+  "predicted_clarification": true,
+  "assistant_text": "Which screwdriver do you want: long screwdriver or short screwdriver or cylinder screwdriver v3009?",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "expected_tool_call": null,
+  "predicted_tool_call": null,
+  "target_evaluation": {
+    "match": true,
+    "reason": "no_target_expected"
+  },
+  "predicted_tool_trace": [],
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

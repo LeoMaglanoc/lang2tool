@@ -1,0 +1,60 @@
+{
+  "trial_id": "0015_claw_hammer_llm_only_x+0p150_y-0p080_pretrained",
+  "geometry_trial_id": "0015_claw_hammer_llm_only_x+0p150_y-0p080",
+  "object_name": "claw_hammer",
+  "task_name": "swing_down",
+  "mode": "llm_only",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_only + pretrained",
+  "seed": 0,
+  "execution_success": true,
+  "goal_completion_pct": 100.0,
+  "peak_success_count": 100,
+  "failure_stage": null,
+  "failure_category": null,
+  "resolved_baseline_object": "claw_hammer",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_v3_v2/execution/artifacts/0015_claw_hammer_llm_only_x+0p150_y-0p080_pretrained/trace.json",
+  "tracking_success_rate": 0.001357378320729106,
+  "translation_rmse_m": 0.1276025655200973,
+  "rotation_rmse_deg": 92.21724445903617,
+  "mean_translation_error_m": 0.09689037487109158,
+  "mean_rotation_error_deg": 58.92196331996009,
+  "final_translation_error_m": 0.1375893414068172,
+  "final_rotation_error_deg": 114.94133108768227,
+  "geometry_goal_count": 37,
+  "execution_goal_count": 37,
+  "reference_goal_count": 37,
+  "execution_goal_transform": "identity",
+  "execution_goal_cycle_style": null,
+  "metrics": {
+    "avg_goal_pct": 100.0,
+    "avg_time_sec": 85.93333333333334,
+    "episode_goal_pcts": [
+      100.0
+    ],
+    "episode_lengths": [
+      5156
+    ],
+    "episode_trial_stops": [
+      {
+        "should_stop": true,
+        "reason": "success_complete",
+        "is_failure": false,
+        "details": {
+          "dropped": false,
+          "object_z_low": false,
+          "success_count": 37,
+          "success_target": 37,
+          "sim_time_sec": 85.93333333333334,
+          "timeout_sec": 180.0
+        }
+      }
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v2/execution/artifacts/0015_claw_hammer_llm_only_x+0p150_y-0p080_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_v3_v2/execution/artifacts/0015_claw_hammer_llm_only_x+0p150_y-0p080_pretrained",
+  "replay_artifact_path": "execution/replay/trials/0015_claw_hammer_llm_only_x+0p150_y-0p080_pretrained.json"
+}

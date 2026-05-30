@@ -1,0 +1,37 @@
+{
+  "trial_id": "0014_cuboid_hammer_v014_llm_lie_x+0p350_y+0p200",
+  "geometry_trial_id": "0014_cuboid_hammer_v014_llm_lie_x+0p350_y+0p200",
+  "object_name": "cuboid_hammer_v014",
+  "task_name": "swing_down",
+  "mode": "llm_lie",
+  "seed": 0,
+  "execution_success": true,
+  "goal_completion_pct": 100.0,
+  "peak_success_count": 100,
+  "failure_stage": null,
+  "failure_category": null,
+  "resolved_baseline_object": "claw_hammer",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_6obj_v2/execution/artifacts/0014_cuboid_hammer_v014_llm_lie_x+0p350_y+0p200/trace.json",
+  "tracking_success_rate": 0.008413461538461538,
+  "translation_rmse_m": 0.04298208744052279,
+  "rotation_rmse_deg": 72.33872798145411,
+  "mean_translation_error_m": 0.03697874243895771,
+  "mean_rotation_error_deg": 57.59807788277796,
+  "final_translation_error_m": 0.042384671017339726,
+  "final_rotation_error_deg": 138.3254952330112,
+  "metrics": {
+    "avg_goal_pct": 100.0,
+    "avg_time_sec": 13.85,
+    "episode_goal_pcts": [
+      100.0
+    ],
+    "episode_lengths": [
+      831
+    ],
+    "trace_path": "experiments/results/thesis_main_6obj_v2/execution/artifacts/0014_cuboid_hammer_v014_llm_lie_x+0p350_y+0p200/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_6obj_v2/execution/artifacts/0014_cuboid_hammer_v014_llm_lie_x+0p350_y+0p200"
+}

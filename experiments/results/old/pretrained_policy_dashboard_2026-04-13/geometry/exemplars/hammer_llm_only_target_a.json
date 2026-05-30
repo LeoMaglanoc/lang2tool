@@ -1,0 +1,65 @@
+{
+  "trial_id": "hammer_llm_only_target_a",
+  "object_name": "claw_hammer",
+  "task_name": "swing_down",
+  "mode": "llm_only",
+  "seed": 0,
+  "target_name": "target_a",
+  "target_xy": [
+    -0.22269390561861938,
+    0.04258896007442232
+  ],
+  "instruction": "Use the claw hammer and swing down to strike point a.",
+  "llm_backend": "openai",
+  "resolved_baseline_object": "claw_hammer",
+  "pivot_point": null,
+  "compile_success": true,
+  "validation_success": true,
+  "num_waypoints": 1,
+  "goals": [
+    [
+      0.5,
+      0.0,
+      0.5,
+      0.7071067811865476,
+      0.0,
+      0.0,
+      0.7071067811865476
+    ]
+  ],
+  "duration_sec": 2.5,
+  "sample_interval_sec": 2.5,
+  "metrics": {
+    "mean_translation_error_m": 0.5422901467971761,
+    "max_translation_error_m": 0.6078994099449817,
+    "mean_rotation_error_deg": 165.25019827120616,
+    "max_rotation_error_deg": 179.43936008161262,
+    "reference_path_length_m": 1.0647205635790191,
+    "candidate_path_length_m": 0.30000000000000004,
+    "path_length_ratio": 0.28176407055721836,
+    "sample_count": 38.0
+  },
+  "llm_raw": {
+    "goals": [
+      [
+        0.5,
+        0.0,
+        0.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.5,
+        0.0,
+        0.5,
+        0.707,
+        0.0,
+        0.0,
+        0.707
+      ]
+    ],
+    "duration_sec": 2.5
+  }
+}

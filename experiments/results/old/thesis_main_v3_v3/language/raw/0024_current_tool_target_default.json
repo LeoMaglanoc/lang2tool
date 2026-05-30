@@ -1,0 +1,29 @@
+{
+  "trial_id": "0024_current_tool_target_default",
+  "prompt_id": "current_tool_target_default",
+  "prompt_family": "default_family_selection",
+  "prompt_variant": "current_tool_target_a",
+  "prompt_text": "place the current tool over strike point a",
+  "backend": "openai",
+  "active_object_context": "short_screwdriver",
+  "expected_outcome_type": "command",
+  "expected_intent": "execute_lie_trajectory",
+  "expected_object_name": "short_screwdriver",
+  "expected_target_label": "strike_point_a",
+  "expected_clarification": false,
+  "predicted_outcome_type": "command",
+  "predicted_intent": "execute_lie_trajectory",
+  "predicted_object_name": null,
+  "predicted_target_label": "strike_point_a",
+  "predicted_clarification": false,
+  "assistant_text": "Placing the current tool, short_screwdriver, over strike point a at the table center.",
+  "exact_match": false,
+  "object_match": false,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

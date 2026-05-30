@@ -1,0 +1,39 @@
+{
+  "trial_id": "0015_cuboid_hammer_v014_llm_lie_x-0p350_y+0p200_pretrained",
+  "geometry_trial_id": "0015_cuboid_hammer_v014_llm_lie_x-0p350_y+0p200",
+  "object_name": "cuboid_hammer_v014",
+  "task_name": "swing_down",
+  "mode": "llm_lie",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_lie + pretrained",
+  "seed": 0,
+  "execution_success": true,
+  "goal_completion_pct": 100.0,
+  "peak_success_count": 100,
+  "failure_stage": null,
+  "failure_category": null,
+  "resolved_baseline_object": "claw_hammer",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/pretrained_policy_dashboard_openai_2026-04-14_rerun/execution/artifacts/0015_cuboid_hammer_v014_llm_lie_x-0p350_y+0p200_pretrained/trace.json",
+  "tracking_success_rate": 0.03317535545023697,
+  "translation_rmse_m": 0.17447023878570053,
+  "rotation_rmse_deg": 89.24751494279163,
+  "mean_translation_error_m": 0.14868486242389392,
+  "mean_rotation_error_deg": 68.99054508639486,
+  "final_translation_error_m": 0.20396770124828578,
+  "final_rotation_error_deg": 132.04986078049905,
+  "metrics": {
+    "avg_goal_pct": 100.0,
+    "avg_time_sec": 7.016666666666667,
+    "episode_goal_pcts": [
+      100.0
+    ],
+    "episode_lengths": [
+      421
+    ],
+    "trace_path": "experiments/results/pretrained_policy_dashboard_openai_2026-04-14_rerun/execution/artifacts/0015_cuboid_hammer_v014_llm_lie_x-0p350_y+0p200_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/pretrained_policy_dashboard_openai_2026-04-14_rerun/execution/artifacts/0015_cuboid_hammer_v014_llm_lie_x-0p350_y+0p200_pretrained"
+}

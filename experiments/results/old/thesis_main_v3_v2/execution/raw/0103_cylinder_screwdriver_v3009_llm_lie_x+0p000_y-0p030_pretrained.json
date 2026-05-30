@@ -1,0 +1,60 @@
+{
+  "trial_id": "0103_cylinder_screwdriver_v3009_llm_lie_x+0p000_y-0p030_pretrained",
+  "geometry_trial_id": "0103_cylinder_screwdriver_v3009_llm_lie_x+0p000_y-0p030",
+  "object_name": "cylinder_screwdriver_v3009",
+  "task_name": "spin_vertical",
+  "mode": "llm_lie",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_lie + pretrained",
+  "seed": 0,
+  "execution_success": false,
+  "goal_completion_pct": 1.0,
+  "peak_success_count": 1,
+  "failure_stage": "execution_failure",
+  "failure_category": "object_z_low",
+  "resolved_baseline_object": "long_screwdriver",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_v3_v2/execution/artifacts/0103_cylinder_screwdriver_v3009_llm_lie_x+0p000_y-0p030_pretrained/trace.json",
+  "tracking_success_rate": 0.0,
+  "translation_rmse_m": 0.21538500535845104,
+  "rotation_rmse_deg": 110.69892372691855,
+  "mean_translation_error_m": 0.2038096199262592,
+  "mean_rotation_error_deg": 108.5299241308586,
+  "final_translation_error_m": 0.8437010975663345,
+  "final_rotation_error_deg": 143.27863790518015,
+  "geometry_goal_count": 9,
+  "execution_goal_count": 100,
+  "reference_goal_count": 100,
+  "execution_goal_transform": "cycle_to_predefined_length",
+  "execution_goal_cycle_style": "forward_repeat",
+  "metrics": {
+    "avg_goal_pct": 1.0,
+    "avg_time_sec": 12.433333333333334,
+    "episode_goal_pcts": [
+      1.0
+    ],
+    "episode_lengths": [
+      746
+    ],
+    "episode_trial_stops": [
+      {
+        "should_stop": true,
+        "reason": "object_z_low",
+        "is_failure": true,
+        "details": {
+          "dropped": false,
+          "object_z_low": true,
+          "success_count": 1,
+          "success_target": 100,
+          "sim_time_sec": 12.433333333333334,
+          "timeout_sec": 180.0
+        }
+      }
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v2/execution/artifacts/0103_cylinder_screwdriver_v3009_llm_lie_x+0p000_y-0p030_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_v3_v2/execution/artifacts/0103_cylinder_screwdriver_v3009_llm_lie_x+0p000_y-0p030_pretrained",
+  "replay_artifact_path": "execution/replay/trials/0103_cylinder_screwdriver_v3009_llm_lie_x+0p000_y-0p030_pretrained.json"
+}

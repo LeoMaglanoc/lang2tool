@@ -1,0 +1,45 @@
+{
+  "trial_id": "0057_long_screwdriver_predefined_pretrained",
+  "geometry_trial_id": "0057_long_screwdriver_predefined",
+  "object_name": "long_screwdriver",
+  "task_name": "spin_vertical",
+  "mode": "predefined",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "predefined + pretrained",
+  "seed": 0,
+  "execution_success": true,
+  "goal_completion_pct": 58.0,
+  "peak_success_count": 58,
+  "failure_stage": null,
+  "failure_category": null,
+  "resolved_baseline_object": "long_screwdriver",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_v3_v1/execution/artifacts/0057_long_screwdriver_predefined_pretrained/trace.json",
+  "tracking_success_rate": 0.0006551648831622625,
+  "translation_rmse_m": 0.09610866209921871,
+  "rotation_rmse_deg": 86.13352744788097,
+  "mean_translation_error_m": 0.08538690470914122,
+  "mean_rotation_error_deg": 77.94159399857787,
+  "final_translation_error_m": 0.07654508696693327,
+  "final_rotation_error_deg": 16.051159680765558,
+  "geometry_goal_count": 100,
+  "execution_goal_count": 100,
+  "reference_goal_count": 100,
+  "execution_goal_transform": "identity",
+  "execution_goal_cycle_style": null,
+  "metrics": {
+    "avg_goal_pct": 58.0,
+    "avg_time_sec": 76.3,
+    "episode_goal_pcts": [
+      58.0
+    ],
+    "episode_lengths": [
+      4578
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v1/execution/artifacts/0057_long_screwdriver_predefined_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_v3_v1/execution/artifacts/0057_long_screwdriver_predefined_pretrained",
+  "replay_artifact_path": "execution/replay/trials/0057_long_screwdriver_predefined_pretrained.json"
+}

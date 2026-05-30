@@ -1,0 +1,40 @@
+{
+  "trial_id": "0005_claw_hammer_llm_lie_x+0p000_y+0p000_pretrained",
+  "geometry_trial_id": "0005_claw_hammer_llm_lie_x+0p000_y+0p000",
+  "object_name": "claw_hammer",
+  "task_name": "swing_down",
+  "mode": "llm_lie",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_lie + pretrained",
+  "seed": 0,
+  "execution_success": true,
+  "goal_completion_pct": 100.0,
+  "peak_success_count": 100,
+  "failure_stage": null,
+  "failure_category": null,
+  "resolved_baseline_object": "claw_hammer",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_v3/execution/artifacts/0005_claw_hammer_llm_lie_x+0p000_y+0p000_pretrained/trace.json",
+  "tracking_success_rate": 0.061224489795918366,
+  "translation_rmse_m": 0.03968842224677116,
+  "rotation_rmse_deg": 54.86795597062875,
+  "mean_translation_error_m": 0.03637644027542829,
+  "mean_rotation_error_deg": 45.85222574722177,
+  "final_translation_error_m": 0.02679997125154507,
+  "final_rotation_error_deg": 100.33617865714648,
+  "metrics": {
+    "avg_goal_pct": 100.0,
+    "avg_time_sec": 5.7,
+    "episode_goal_pcts": [
+      100.0
+    ],
+    "episode_lengths": [
+      342
+    ],
+    "trace_path": "experiments/results/thesis_main_v3/execution/artifacts/0005_claw_hammer_llm_lie_x+0p000_y+0p000_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_v3/execution/artifacts/0005_claw_hammer_llm_lie_x+0p000_y+0p000_pretrained",
+  "replay_artifact_path": "execution/replay/trials/0005_claw_hammer_llm_lie_x+0p000_y+0p000_pretrained.json"
+}

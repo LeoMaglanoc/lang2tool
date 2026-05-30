@@ -1,0 +1,39 @@
+{
+  "trial_id": "0008_claw_hammer_llm_only_x+0p350_y+0p200_pretrained",
+  "geometry_trial_id": "0008_claw_hammer_llm_only_x+0p350_y+0p200",
+  "object_name": "claw_hammer",
+  "task_name": "swing_down",
+  "mode": "llm_only",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_only + pretrained",
+  "seed": 0,
+  "execution_success": true,
+  "goal_completion_pct": 66.66666666666667,
+  "peak_success_count": 67,
+  "failure_stage": null,
+  "failure_category": null,
+  "resolved_baseline_object": "claw_hammer",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/pretrained_policy_dashboard_openai_2026-04-14_rerun/execution/artifacts/0008_claw_hammer_llm_only_x+0p350_y+0p200_pretrained/trace.json",
+  "tracking_success_rate": 0.04484304932735426,
+  "translation_rmse_m": 0.12131956396032824,
+  "rotation_rmse_deg": 57.682518582810765,
+  "mean_translation_error_m": 0.10115561569439126,
+  "mean_rotation_error_deg": 36.737018956868965,
+  "final_translation_error_m": 0.12156402503225977,
+  "final_rotation_error_deg": 0.0,
+  "metrics": {
+    "avg_goal_pct": 66.66666666666667,
+    "avg_time_sec": 3.7,
+    "episode_goal_pcts": [
+      66.66666666666667
+    ],
+    "episode_lengths": [
+      222
+    ],
+    "trace_path": "experiments/results/pretrained_policy_dashboard_openai_2026-04-14_rerun/execution/artifacts/0008_claw_hammer_llm_only_x+0p350_y+0p200_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/pretrained_policy_dashboard_openai_2026-04-14_rerun/execution/artifacts/0008_claw_hammer_llm_only_x+0p350_y+0p200_pretrained"
+}

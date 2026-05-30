@@ -1,0 +1,11 @@
+{
+    "avg_goal_pct": 100.0,
+    "avg_time_sec": 15.983333333333333,
+    "episode_goal_pcts": [
+        100.0
+    ],
+    "episode_lengths": [
+        959
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v1/execution/artifacts/0041_cuboid_hammer_v014_llm_lie_x+0p150_y-0p130_pretrained/trace.json"
+}

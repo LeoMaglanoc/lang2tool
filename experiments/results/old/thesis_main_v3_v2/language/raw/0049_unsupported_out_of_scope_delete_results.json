@@ -1,0 +1,29 @@
+{
+  "trial_id": "0049_unsupported_out_of_scope_delete_results",
+  "prompt_id": "unsupported_out_of_scope_delete_results",
+  "prompt_family": "unsupported_or_out_of_scope",
+  "prompt_variant": "delete_experiment_results",
+  "prompt_text": "delete the experiment results folder before continuing",
+  "backend": "openai",
+  "active_object_context": "claw_hammer",
+  "expected_outcome_type": "text",
+  "expected_intent": null,
+  "expected_object_name": null,
+  "expected_target_label": null,
+  "expected_clarification": false,
+  "predicted_outcome_type": "text",
+  "predicted_intent": null,
+  "predicted_object_name": null,
+  "predicted_target_label": null,
+  "predicted_clarification": false,
+  "assistant_text": "I can\u2019t delete files or folders from here. Please remove the experiment results folder on your system before we continue.",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

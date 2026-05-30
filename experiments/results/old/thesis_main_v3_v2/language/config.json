@@ -1,0 +1,7 @@
+{
+  "results_dir": "experiments/results",
+  "experiment_name": "thesis_main_v3_v2",
+  "backend": "openai",
+  "max_trials": null,
+  "copied_from_experiment": "thesis_main_v3_v1"
+}

@@ -1,0 +1,36 @@
+{
+  "trial_id": "0047_unsupported_out_of_scope_web_request",
+  "prompt_id": "unsupported_out_of_scope_web_request",
+  "prompt_family": "unsupported_or_out_of_scope",
+  "prompt_variant": "open_external_application",
+  "prompt_text": "open a video website and show me screwdriver tutorials",
+  "backend": "openai",
+  "active_object_context": "long_screwdriver",
+  "expected_outcome_type": "text",
+  "expected_intent": null,
+  "expected_object_name": null,
+  "expected_target_label": null,
+  "expected_clarification": false,
+  "predicted_outcome_type": "clarification",
+  "predicted_intent": null,
+  "predicted_object_name": null,
+  "predicted_target_label": null,
+  "predicted_clarification": true,
+  "assistant_text": "Which screwdriver do you want: long screwdriver or short screwdriver or cylinder screwdriver v3009?",
+  "exact_match": false,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": false,
+  "expected_tool_call": null,
+  "predicted_tool_call": null,
+  "target_evaluation": {
+    "match": true,
+    "reason": "no_target_expected"
+  },
+  "predicted_tool_trace": [],
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

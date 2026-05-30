@@ -1,0 +1,32 @@
+{
+  "results_dir": "experiments/results",
+  "experiment_name": "finetuned_policy_full_dashboard_retry_2026-03-31",
+  "object_names_csv": "claw_hammer,mallet_hammer,cuboid_hammer_v014,long_screwdriver,short_screwdriver,cylinder_screwdriver_v3009",
+  "modes_csv": "llm_lie",
+  "seed": 0,
+  "llm_backend": "mock",
+  "llm_instruction": "Swing the hammer down toward the right.",
+  "target_grid_x": 1,
+  "target_grid_y": 1,
+  "max_trials": null,
+  "z_offset": 0.03,
+  "llm_lie_horizontal_strike_clearance_m": 0.01,
+  "llm_lie_waypoint_table_clearance_m": 0.01,
+  "llm_lie_screwdriver_twist_extra_hover_m": 0.21411251831297096,
+  "llm_lie_training_resampling_enabled": true,
+  "llm_lie_training_resampling_pos_scale_m": 0.03,
+  "llm_lie_training_resampling_rot_scale_deg": 15.0,
+  "llm_lie_training_resampling_target_cost": 1.0,
+  "llm_lie_training_resampling_min_waypoints": 4,
+  "llm_lie_training_volume_clamp_enabled": true,
+  "llm_lie_training_target_volume_mins": [
+    -0.35,
+    -0.2,
+    0.6
+  ],
+  "llm_lie_training_target_volume_maxs": [
+    0.35,
+    0.2,
+    0.95
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "num_trials": 4,
+  "execution_success_rate": 0.25,
+  "mean_translation_rmse_m": 12130.113395397064,
+  "mean_tracking_success_rate": 0.0029683244972070963,
+  "by_object_mode": [
+    {
+      "object_name": "cuboid_hammer_v014",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 97.29729729729729,
+      "mean_translation_rmse_m": 48519.964851456934,
+      "mean_tracking_success_rate": 0.0026849365799463012
+    },
+    {
+      "object_name": "cuboid_hammer_v014",
+      "mode": "predefined",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "predefined + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 2.7027027027027026,
+      "mean_translation_rmse_m": 0.18168774307491403,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "mallet_hammer",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0,
+      "mean_translation_rmse_m": 0.08287380260445025,
+      "mean_tracking_success_rate": 0.009188361408882083
+    },
+    {
+      "object_name": "mallet_hammer",
+      "mode": "predefined",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "predefined + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 2.7777777777777777,
+      "mean_translation_rmse_m": 0.2241685856386713,
+      "mean_tracking_success_rate": 0.0
+    }
+  ],
+  "failure_attribution_by_mode": [
+    {
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 2,
+      "successful_trials": 1,
+      "geometry_originated_failures": 0,
+      "execution_runtime_failures": 0,
+      "successful_share": 0.5,
+      "geometry_originated_failure_share": 0.0,
+      "execution_runtime_failure_share": 0.0
+    },
+    {
+      "mode": "predefined",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "predefined + pretrained",
+      "num_trials": 2,
+      "successful_trials": 0,
+      "geometry_originated_failures": 0,
+      "execution_runtime_failures": 0,
+      "successful_share": 0.0,
+      "geometry_originated_failure_share": 0.0,
+      "execution_runtime_failure_share": 0.0
+    }
+  ]
+}

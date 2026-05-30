@@ -1,0 +1,11 @@
+{
+    "avg_goal_pct": 49.0,
+    "avg_time_sec": 21.133333333333333,
+    "episode_goal_pcts": [
+        49.0
+    ],
+    "episode_lengths": [
+        1268
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v1/execution/artifacts/0067_long_screwdriver_llm_only_x-0p150_y-0p130_pretrained/trace.json"
+}

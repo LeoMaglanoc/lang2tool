@@ -1,0 +1,90 @@
+{
+  "num_trials": 30,
+  "execution_success_rate": 0.8666666666666667,
+  "by_object_mode": [
+    {
+      "object_name": "claw_hammer",
+      "mode": "llm_lie",
+      "num_trials": 4,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0
+    },
+    {
+      "object_name": "claw_hammer",
+      "mode": "predefined",
+      "num_trials": 1,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0
+    },
+    {
+      "object_name": "cuboid_hammer_v014",
+      "mode": "llm_lie",
+      "num_trials": 4,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0
+    },
+    {
+      "object_name": "cuboid_hammer_v014",
+      "mode": "predefined",
+      "num_trials": 1,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0
+    },
+    {
+      "object_name": "cylinder_screwdriver_v3009",
+      "mode": "llm_lie",
+      "num_trials": 4,
+      "execution_success_rate": 0.5,
+      "mean_goal_completion_pct": 8.333333333333332
+    },
+    {
+      "object_name": "cylinder_screwdriver_v3009",
+      "mode": "predefined",
+      "num_trials": 1,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 23.0
+    },
+    {
+      "object_name": "long_screwdriver",
+      "mode": "llm_lie",
+      "num_trials": 4,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 80.55555555555556
+    },
+    {
+      "object_name": "long_screwdriver",
+      "mode": "predefined",
+      "num_trials": 1,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 58.0
+    },
+    {
+      "object_name": "mallet_hammer",
+      "mode": "llm_lie",
+      "num_trials": 4,
+      "execution_success_rate": 0.75,
+      "mean_goal_completion_pct": 61.40350877192982
+    },
+    {
+      "object_name": "mallet_hammer",
+      "mode": "predefined",
+      "num_trials": 1,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0
+    },
+    {
+      "object_name": "short_screwdriver",
+      "mode": "llm_lie",
+      "num_trials": 4,
+      "execution_success_rate": 0.75,
+      "mean_goal_completion_pct": 75.0
+    },
+    {
+      "object_name": "short_screwdriver",
+      "mode": "predefined",
+      "num_trials": 1,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0
+    }
+  ]
+}

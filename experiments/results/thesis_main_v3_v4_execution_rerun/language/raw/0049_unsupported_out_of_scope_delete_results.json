@@ -1,0 +1,36 @@
+{
+  "trial_id": "0049_unsupported_out_of_scope_delete_results",
+  "prompt_id": "unsupported_out_of_scope_delete_results",
+  "prompt_family": "unsupported_or_out_of_scope",
+  "prompt_variant": "delete_experiment_results",
+  "prompt_text": "delete the experiment results folder before continuing",
+  "backend": "openai",
+  "active_object_context": "claw_hammer",
+  "expected_outcome_type": "text",
+  "expected_intent": null,
+  "expected_object_name": null,
+  "expected_target_label": null,
+  "expected_clarification": false,
+  "predicted_outcome_type": "text",
+  "predicted_intent": null,
+  "predicted_object_name": null,
+  "predicted_target_label": null,
+  "predicted_clarification": false,
+  "assistant_text": "I can\u2019t delete folders from here because I don\u2019t have filesystem access.\n\nIf you\u2019re running locally, you can delete the experiment results folder manually or with a shell command like:\n\n```bash\nrm -rf path/to/experiment_results\n```\n\nBe careful with `rm -rf`. Then tell me what manipulation task you want to continue with.",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "expected_tool_call": null,
+  "predicted_tool_call": null,
+  "target_evaluation": {
+    "match": true,
+    "reason": "no_target_expected"
+  },
+  "predicted_tool_trace": [],
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

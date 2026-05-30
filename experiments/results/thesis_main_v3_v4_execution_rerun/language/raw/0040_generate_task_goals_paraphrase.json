@@ -1,0 +1,79 @@
+{
+  "trial_id": "0040_generate_task_goals_paraphrase",
+  "prompt_id": "generate_task_goals_paraphrase",
+  "prompt_family": "lifecycle_and_predefined_commands",
+  "prompt_variant": "generate_swing_goals",
+  "prompt_text": "generate goals for swing down",
+  "backend": "openai",
+  "active_object_context": "claw_hammer",
+  "expected_outcome_type": "goals",
+  "expected_intent": "set_goals",
+  "expected_object_name": "claw_hammer",
+  "expected_target_label": "swing_down",
+  "expected_clarification": false,
+  "predicted_outcome_type": "goals",
+  "predicted_intent": "set_goals",
+  "predicted_object_name": "claw_hammer",
+  "predicted_target_label": "swing_down",
+  "predicted_clarification": false,
+  "assistant_text": "Generated swing-down goals for the claw_hammer.",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "expected_tool_call": {
+    "intent": "set_goals",
+    "object_name": "claw_hammer",
+    "target_label": "swing_down",
+    "target_constraint": {
+      "label": "swing_down"
+    }
+  },
+  "predicted_tool_call": null,
+  "target_evaluation": {
+    "match": true,
+    "reason": "goals_target_label_match"
+  },
+  "predicted_tool_trace": [
+    {
+      "tool_name": "generate_goals",
+      "arguments": {
+        "schema_version": "v1",
+        "task_label": "swing_down_claw_hammer",
+        "object_frame": "claw_hammer",
+        "contact_point_object": [
+          0,
+          0,
+          -0.12
+        ],
+        "approach_direction_object": [
+          0,
+          -1,
+          0
+        ],
+        "tool_axis_object": [
+          1,
+          0,
+          0
+        ],
+        "grasp_depth_m": 0.04,
+        "pregrasp_offset_m": 0.08,
+        "lift_height_m": 0.15,
+        "timing_s": {
+          "approach": 1.2,
+          "close": 0.6,
+          "lift": 1.0
+        }
+      },
+      "result": {
+        "ok": true,
+        "num_goals": 2
+      }
+    }
+  ],
+  "metrics": {
+    "num_goals": 2
+  },
+  "error": null
+}

@@ -1,0 +1,60 @@
+{
+  "trial_id": "0068_long_screwdriver_llm_only_x+0p000_y-0p130_pretrained",
+  "geometry_trial_id": "0068_long_screwdriver_llm_only_x+0p000_y-0p130",
+  "object_name": "long_screwdriver",
+  "task_name": "spin_vertical",
+  "mode": "llm_only",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_only + pretrained",
+  "seed": 0,
+  "execution_success": false,
+  "goal_completion_pct": 68.0,
+  "peak_success_count": 68,
+  "failure_stage": "execution_failure",
+  "failure_category": "object_z_low",
+  "resolved_baseline_object": "long_screwdriver",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_v3_v2/execution/artifacts/0068_long_screwdriver_llm_only_x+0p000_y-0p130_pretrained/trace.json",
+  "tracking_success_rate": 0.002063679245283019,
+  "translation_rmse_m": 0.1049209821883817,
+  "rotation_rmse_deg": 104.2876310759436,
+  "mean_translation_error_m": 0.08794448578565017,
+  "mean_rotation_error_deg": 86.82059353961716,
+  "final_translation_error_m": 0.758181427664404,
+  "final_rotation_error_deg": 73.46325881243024,
+  "geometry_goal_count": 100,
+  "execution_goal_count": 100,
+  "reference_goal_count": 100,
+  "execution_goal_transform": "identity",
+  "execution_goal_cycle_style": null,
+  "metrics": {
+    "avg_goal_pct": 68.0,
+    "avg_time_sec": 56.516666666666666,
+    "episode_goal_pcts": [
+      68.0
+    ],
+    "episode_lengths": [
+      3391
+    ],
+    "episode_trial_stops": [
+      {
+        "should_stop": true,
+        "reason": "object_z_low",
+        "is_failure": true,
+        "details": {
+          "dropped": false,
+          "object_z_low": true,
+          "success_count": 68,
+          "success_target": 100,
+          "sim_time_sec": 56.516666666666666,
+          "timeout_sec": 180.0
+        }
+      }
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v2/execution/artifacts/0068_long_screwdriver_llm_only_x+0p000_y-0p130_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_v3_v2/execution/artifacts/0068_long_screwdriver_llm_only_x+0p000_y-0p130_pretrained",
+  "replay_artifact_path": "execution/replay/trials/0068_long_screwdriver_llm_only_x+0p000_y-0p130_pretrained.json"
+}

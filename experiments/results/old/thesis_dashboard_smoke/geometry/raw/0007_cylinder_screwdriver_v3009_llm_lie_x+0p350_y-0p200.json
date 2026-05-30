@@ -1,0 +1,19 @@
+{
+  "trial_id": "0007_cylinder_screwdriver_v3009_llm_lie_x+0p350_y-0p200",
+  "object_name": "cylinder_screwdriver_v3009",
+  "task_name": "spin_vertical",
+  "mode": "llm_lie",
+  "seed": 0,
+  "target_xy": [
+    0.35,
+    -0.2
+  ],
+  "compile_success": false,
+  "validation_success": false,
+  "num_waypoints": 0,
+  "goals": [],
+  "clamp_summary": {},
+  "resampling_summary": {},
+  "metrics": {},
+  "error": "compile_llm_lie_trajectory() missing 1 required keyword-only argument: 'pivot_point'"
+}

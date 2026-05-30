@@ -1,0 +1,78 @@
+{
+  "trial_id": "0097_cylinder_screwdriver_v3009_llm_lie_x+0p000_y-0p130_pretrained",
+  "geometry_trial_id": "0097_cylinder_screwdriver_v3009_llm_lie_x+0p000_y-0p130",
+  "object_name": "cylinder_screwdriver_v3009",
+  "task_name": "spin_vertical",
+  "mode": "llm_lie",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_lie + pretrained",
+  "seed": 0,
+  "execution_success": false,
+  "goal_completion_pct": 4.0,
+  "peak_success_count": 4,
+  "failure_stage": "execution_failure",
+  "failure_category": "experiment_timeout",
+  "resolved_baseline_object": "long_screwdriver",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_v3_v3/execution/artifacts/0097_cylinder_screwdriver_v3009_llm_lie_x+0p000_y-0p130_pretrained/trace.json",
+  "tracking_success_rate": 0.0,
+  "translation_rmse_m": 0.15538541304799036,
+  "rotation_rmse_deg": 112.44693528990018,
+  "mean_translation_error_m": 0.1311685729821751,
+  "mean_rotation_error_deg": 94.38111328222526,
+  "final_translation_error_m": 0.14260792801563277,
+  "final_rotation_error_deg": 78.37714662861616,
+  "dropped_count": 10359,
+  "dropped_first_step": 442,
+  "object_z_low_count": 10213,
+  "object_z_low_first_step": 588,
+  "geometry_goal_count": 9,
+  "execution_goal_count": 100,
+  "reference_goal_count": 100,
+  "execution_goal_transform": "cycle_to_predefined_length",
+  "execution_goal_cycle_style": "forward_repeat",
+  "metrics": {
+    "avg_goal_pct": 4.0,
+    "avg_time_sec": 180.0,
+    "episode_goal_pcts": [
+      4.0
+    ],
+    "episode_lengths": [
+      10800
+    ],
+    "episode_trial_stops": [
+      {
+        "should_stop": true,
+        "reason": "experiment_timeout",
+        "is_failure": true,
+        "details": {
+          "dropped": true,
+          "object_z_low": true,
+          "success_count": 4,
+          "success_target": 100,
+          "sim_time_sec": 180.0,
+          "timeout_sec": 180.0,
+          "object_z": -142601.703125,
+          "object_init_z": 0.6019588112831116,
+          "lifted_object": true,
+          "env_debug_dropped": false,
+          "env_debug_object_z_low": true,
+          "step": 10800
+        }
+      }
+    ],
+    "episode_reset_signal_summaries": [
+      {
+        "dropped_count": 10359,
+        "dropped_first_step": 442,
+        "object_z_low_count": 10213,
+        "object_z_low_first_step": 588
+      }
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v3/execution/artifacts/0097_cylinder_screwdriver_v3009_llm_lie_x+0p000_y-0p130_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_v3_v3/execution/artifacts/0097_cylinder_screwdriver_v3009_llm_lie_x+0p000_y-0p130_pretrained",
+  "replay_artifact_path": "execution/replay/trials/0097_cylinder_screwdriver_v3009_llm_lie_x+0p000_y-0p130_pretrained.json"
+}

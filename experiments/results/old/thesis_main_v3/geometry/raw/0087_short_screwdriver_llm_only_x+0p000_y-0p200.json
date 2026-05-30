@@ -1,0 +1,203 @@
+{
+  "trial_id": "0087_short_screwdriver_llm_only_x+0p000_y-0p200",
+  "object_name": "short_screwdriver",
+  "task_name": "spin_vertical",
+  "mode": "llm_only",
+  "seed": 0,
+  "target_xy": [
+    0.0,
+    -0.2
+  ],
+  "resolved_baseline_object": "short_screwdriver",
+  "pivot_point": [
+    -0.08124288503508437,
+    0.06992222301753948,
+    0.5834889486522075
+  ],
+  "compile_success": true,
+  "validation_success": true,
+  "num_waypoints": 7,
+  "goals": [
+    [
+      -0.05441323227336142,
+      0.030038007646887844,
+      0.54,
+      0.10394449734798629,
+      0.011913907911660805,
+      -0.05042867539010571,
+      0.9932323741037373
+    ],
+    [
+      -0.027583579511638465,
+      -0.00984620772376379,
+      0.53,
+      0.10394449734798629,
+      0.011913907911660805,
+      -0.05042867539010571,
+      0.9932323741037373
+    ],
+    [
+      -0.0007539267499155006,
+      -0.04973042309441544,
+      0.53,
+      0.10394449734798629,
+      0.011913907911660805,
+      -0.05042867539010571,
+      0.9932323741037373
+    ],
+    [
+      0.026075726011807458,
+      -0.08961463846506708,
+      0.53,
+      0.10394449734798629,
+      0.011913907911660805,
+      -0.05042867539010571,
+      0.9932323741037373
+    ],
+    [
+      0.0529053787735304,
+      -0.12949885383571874,
+      0.53,
+      0.10394449734798629,
+      0.011913907911660805,
+      -0.05042867539010571,
+      0.9932323741037373
+    ],
+    [
+      0.07973503153525337,
+      -0.16938306920637036,
+      0.53,
+      0.10394449734798629,
+      0.011913907911660805,
+      -0.05042867539010571,
+      0.9932323741037373
+    ],
+    [
+      0.0,
+      -0.2,
+      0.53,
+      0.10394449734798629,
+      0.011913907911660805,
+      -0.05042867539010571,
+      0.9932323741037373
+    ]
+  ],
+  "generation_context": {
+    "schema_version": "llm_only_target_conditioned_v1",
+    "object_name": "short_screwdriver",
+    "task_name": "spin_vertical",
+    "resolved_baseline_object": "short_screwdriver",
+    "start_pose": [
+      -0.08124288503508437,
+      0.06992222301753948,
+      0.5534889486522074,
+      0.10394449734798628,
+      0.011913907911660804,
+      -0.050428675390105704,
+      0.9932323741037372
+    ],
+    "start_context": {
+      "pivot_point": [
+        -0.08124288503508437,
+        0.06992222301753948,
+        0.5834889486522075
+      ],
+      "start_position": [
+        -0.08124288503508437,
+        0.06992222301753948,
+        0.5534889486522074
+      ]
+    },
+    "target_xy": [
+      0.0,
+      -0.2
+    ],
+    "reference_duration_sec": 1.2833333333333334,
+    "reference_num_goals": 77,
+    "static_strike_context": {
+      "available": false,
+      "frame": "world_table_xy",
+      "frame_description": "Use world-table XY coordinates on the tabletop plane. X increases toward the camera-right side of the table, and Y increases away from the robot base. When the user says front of the table, interpret that as farther away from the camera. When the user says back of the table, interpret that as closer to the camera.",
+      "table_target_region": {
+        "x_min": -0.19749999999999998,
+        "x_max": 0.19749999999999998,
+        "y_min": -0.16,
+        "y_max": 0.16
+      },
+      "named_strike_points": {
+        "available": true,
+        "frame": "world_table_xy",
+        "points": {
+          "target_a": {
+            "aliases": [
+              "a",
+              "strike point a",
+              "striking point a"
+            ],
+            "world_xy": [
+              -0.08168831378190461,
+              -0.043994911527795284
+            ],
+            "world_xyz": [
+              -0.08168831378190461,
+              -0.043994911527795284,
+              0.53
+            ]
+          },
+          "target_b": {
+            "aliases": [
+              "b",
+              "strike point b",
+              "striking point b",
+              "front of the table"
+            ],
+            "world_xy": [
+              0.0,
+              0.16
+            ],
+            "world_xyz": [
+              0.0,
+              0.16,
+              0.53
+            ]
+          },
+          "target_c": {
+            "aliases": [
+              "c",
+              "strike point c",
+              "striking point c",
+              "back of the table"
+            ],
+            "world_xy": [
+              0.0,
+              -0.16
+            ],
+            "world_xyz": [
+              0.0,
+              -0.16,
+              0.53
+            ]
+          }
+        }
+      }
+    }
+  },
+  "clamp_summary": {},
+  "resampling_summary": {},
+  "metrics": {
+    "mean_translation_error_m": 0.2128679501638587,
+    "max_translation_error_m": 0.2638454291078273,
+    "mean_rotation_error_deg": 102.89693056668908,
+    "max_rotation_error_deg": 178.5002668055584,
+    "reference_path_length_m": 0.5576316390668257,
+    "candidate_path_length_m": 0.37594254202882754,
+    "path_length_ratio": 0.6741772089151046,
+    "sample_count": 77.0,
+    "tool_family": "screwdriver",
+    "semantic_contact_point_xy_error_m": 0.06396266972032434,
+    "screwdriver_max_primary_axis_tilt_deg": 88.04296146529383,
+    "screwdriver_twist_angle_span_deg": 0.0
+  },
+  "error": null,
+  "replay_artifact_path": "geometry/replay/trials/0087_short_screwdriver_llm_only_x+0p000_y-0p200.json"
+}

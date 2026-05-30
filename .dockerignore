@@ -1,0 +1,8 @@
+local_logs/
+.git/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/

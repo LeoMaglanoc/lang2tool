@@ -1,0 +1,91 @@
+"""Public surface for kinematics-only geometric tool planning."""
+
+from .contracts import IntentContractV0, validate_intent_contract_v0
+from .errors import IntentSchemaError, IntentSemanticError
+from .llm import (
+    build_llm_lie_spec_from_target_xy,
+    build_named_llm_lie_spec,
+    clamp_llm_strike_target_xy,
+    generate_llm_lie_spec,
+    generate_llm_only_payload,
+    get_llm_static_strike_context,
+    get_named_strike_point_payload,
+    get_named_strike_points,
+    get_predefined_goal_sequence,
+    get_predefined_strike_target_xy,
+    is_target_a_strike_target_xy,
+    load_predefined_trajectory_payload,
+)
+from .orchestrator import (
+    DEFAULT_CONTROL_HZ,
+    SUPPORTED_GOAL_SOURCES,
+    EvalGoalSourcesArgs,
+    GoalSourceArtifact,
+    build_artifact_for_mode,
+    build_goal_source_artifacts,
+    build_reference_path,
+    compute_path_metrics,
+    goal_source_modes,
+    load_predefined_goals,
+    maybe_visualize,
+    run_goal_source_comparison,
+    sample_interval_sec,
+    summary_markdown,
+    validate_goal_source,
+)
+from .refiner import SwingRefinerPlanV0, refine_swing_down
+from .swing import compile_llm_lie_goals, validate_llm_lie_spec
+from .trajectory import (
+    matrix_to_quaternion_xyzw,
+    normalize_quaternion_xyzw,
+    resample_goals,
+    validate_pose_sequence,
+)
+from .verifier import VerificationReportV0, verify_and_repair_intent_contract
+from .viewer import ToolPlaybackState, ToolTrajectoryViewer
+
+__all__ = [
+    "DEFAULT_CONTROL_HZ",
+    "SUPPORTED_GOAL_SOURCES",
+    "EvalGoalSourcesArgs",
+    "GoalSourceArtifact",
+    "IntentContractV0",
+    "IntentSchemaError",
+    "IntentSemanticError",
+    "SwingRefinerPlanV0",
+    "VerificationReportV0",
+    "build_artifact_for_mode",
+    "build_llm_lie_spec_from_target_xy",
+    "build_named_llm_lie_spec",
+    "build_goal_source_artifacts",
+    "build_reference_path",
+    "clamp_llm_strike_target_xy",
+    "compile_llm_lie_goals",
+    "compute_path_metrics",
+    "generate_llm_lie_spec",
+    "generate_llm_only_payload",
+    "get_llm_static_strike_context",
+    "get_named_strike_point_payload",
+    "get_named_strike_points",
+    "get_predefined_goal_sequence",
+    "get_predefined_strike_target_xy",
+    "is_target_a_strike_target_xy",
+    "goal_source_modes",
+    "load_predefined_goals",
+    "load_predefined_trajectory_payload",
+    "matrix_to_quaternion_xyzw",
+    "maybe_visualize",
+    "normalize_quaternion_xyzw",
+    "refine_swing_down",
+    "resample_goals",
+    "run_goal_source_comparison",
+    "sample_interval_sec",
+    "summary_markdown",
+    "ToolPlaybackState",
+    "ToolTrajectoryViewer",
+    "validate_intent_contract_v0",
+    "validate_goal_source",
+    "validate_llm_lie_spec",
+    "validate_pose_sequence",
+    "verify_and_repair_intent_contract",
+]

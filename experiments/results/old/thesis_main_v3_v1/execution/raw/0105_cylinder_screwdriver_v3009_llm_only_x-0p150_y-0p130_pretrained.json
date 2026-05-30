@@ -1,0 +1,45 @@
+{
+  "trial_id": "0105_cylinder_screwdriver_v3009_llm_only_x-0p150_y-0p130_pretrained",
+  "geometry_trial_id": "0105_cylinder_screwdriver_v3009_llm_only_x-0p150_y-0p130",
+  "object_name": "cylinder_screwdriver_v3009",
+  "task_name": "spin_vertical",
+  "mode": "llm_only",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_only + pretrained",
+  "seed": 0,
+  "execution_success": false,
+  "goal_completion_pct": 22.0,
+  "peak_success_count": 22,
+  "failure_stage": null,
+  "failure_category": null,
+  "resolved_baseline_object": "long_screwdriver",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_v3_v1/execution/artifacts/0105_cylinder_screwdriver_v3009_llm_only_x-0p150_y-0p130_pretrained/trace.json",
+  "tracking_success_rate": 0.009708737864077669,
+  "translation_rmse_m": 0.21449217438927595,
+  "rotation_rmse_deg": 72.03445363269985,
+  "mean_translation_error_m": 0.1469855983409472,
+  "mean_rotation_error_deg": 46.7537556139596,
+  "final_translation_error_m": 0.07624291426734958,
+  "final_rotation_error_deg": 16.051148373989424,
+  "geometry_goal_count": 100,
+  "execution_goal_count": 100,
+  "reference_goal_count": 100,
+  "execution_goal_transform": "identity",
+  "execution_goal_cycle_style": null,
+  "metrics": {
+    "avg_goal_pct": 22.0,
+    "avg_time_sec": 8.566666666666666,
+    "episode_goal_pcts": [
+      22.0
+    ],
+    "episode_lengths": [
+      514
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v1/execution/artifacts/0105_cylinder_screwdriver_v3009_llm_only_x-0p150_y-0p130_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_v3_v1/execution/artifacts/0105_cylinder_screwdriver_v3009_llm_only_x-0p150_y-0p130_pretrained",
+  "replay_artifact_path": "execution/replay/trials/0105_cylinder_screwdriver_v3009_llm_only_x-0p150_y-0p130_pretrained.json"
+}

@@ -1,0 +1,6 @@
+{
+  "results_dir": "experiments/results",
+  "experiment_name": "pretrained_policy_dashboard_openai_2026-04-14",
+  "backend": "openai",
+  "max_trials": null
+}

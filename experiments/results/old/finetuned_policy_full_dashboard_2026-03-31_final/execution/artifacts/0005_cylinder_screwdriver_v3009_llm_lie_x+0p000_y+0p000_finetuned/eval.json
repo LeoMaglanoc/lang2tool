@@ -1,0 +1,11 @@
+{
+    "avg_goal_pct": 0.0,
+    "avg_time_sec": 4.35,
+    "episode_goal_pcts": [
+        0.0
+    ],
+    "episode_lengths": [
+        261
+    ],
+    "trace_path": "experiments/results/finetuned_policy_full_dashboard_2026-03-31_final/execution/artifacts/0005_cylinder_screwdriver_v3009_llm_lie_x+0p000_y+0p000_finetuned/trace.json"
+}

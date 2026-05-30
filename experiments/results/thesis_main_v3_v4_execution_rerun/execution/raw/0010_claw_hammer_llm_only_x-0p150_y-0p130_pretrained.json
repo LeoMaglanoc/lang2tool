@@ -1,0 +1,78 @@
+{
+  "trial_id": "0010_claw_hammer_llm_only_x-0p150_y-0p130_pretrained",
+  "geometry_trial_id": "0010_claw_hammer_llm_only_x-0p150_y-0p130",
+  "object_name": "claw_hammer",
+  "task_name": "swing_down",
+  "mode": "llm_only",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_only + pretrained",
+  "seed": 0,
+  "execution_success": true,
+  "goal_completion_pct": 100.0,
+  "peak_success_count": 100,
+  "failure_stage": null,
+  "failure_category": null,
+  "resolved_baseline_object": "claw_hammer",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_v3_v4_execution_rerun/execution/artifacts/0010_claw_hammer_llm_only_x-0p150_y-0p130_pretrained/trace.json",
+  "tracking_success_rate": 0.021739130434782608,
+  "translation_rmse_m": 0.055790532866531135,
+  "rotation_rmse_deg": 15.563108225760818,
+  "mean_translation_error_m": 0.051254200849920516,
+  "mean_rotation_error_deg": 12.579765106117868,
+  "final_translation_error_m": 0.24450500881492376,
+  "final_rotation_error_deg": 107.15552920990238,
+  "dropped_count": 0,
+  "dropped_first_step": null,
+  "object_z_low_count": 0,
+  "object_z_low_first_step": null,
+  "geometry_goal_count": 37,
+  "execution_goal_count": 37,
+  "reference_goal_count": 37,
+  "execution_goal_transform": "identity",
+  "execution_goal_cycle_style": null,
+  "metrics": {
+    "avg_goal_pct": 100.0,
+    "avg_time_sec": 12.25,
+    "episode_goal_pcts": [
+      100.0
+    ],
+    "episode_lengths": [
+      735
+    ],
+    "episode_trial_stops": [
+      {
+        "should_stop": true,
+        "reason": "success_complete",
+        "is_failure": false,
+        "details": {
+          "dropped": false,
+          "object_z_low": false,
+          "success_count": 37,
+          "success_target": 37,
+          "sim_time_sec": 12.25,
+          "timeout_sec": 180.0,
+          "object_z": 0.6805594563484192,
+          "object_init_z": 0.5743193030357361,
+          "lifted_object": true,
+          "env_debug_dropped": false,
+          "env_debug_object_z_low": false,
+          "step": 735
+        }
+      }
+    ],
+    "episode_reset_signal_summaries": [
+      {
+        "dropped_count": 0,
+        "dropped_first_step": null,
+        "object_z_low_count": 0,
+        "object_z_low_first_step": null
+      }
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v4_execution_rerun/execution/artifacts/0010_claw_hammer_llm_only_x-0p150_y-0p130_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_v3_v4_execution_rerun/execution/artifacts/0010_claw_hammer_llm_only_x-0p150_y-0p130_pretrained",
+  "replay_artifact_path": "execution/replay/trials/0010_claw_hammer_llm_only_x-0p150_y-0p130_pretrained.json"
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot name="cylinder_brush_v9010">
+
+  <link name="cylinder_brush_v9010">
+    <!-- Handle -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 1.5707963267948966 0"/>
+      <geometry>
+        <cylinder length="0.11119421455408479" radius="0.011881439261787917"/>
+      </geometry>
+      <material name="material">
+        <color rgba="0.639 0.847 0.882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963267948966 0"/>
+      <geometry>
+        <cylinder length="0.11119421455408479" radius="0.011881439261787917"/>
+      </geometry>
+    </collision>
+
+    <!-- Head -->
+    <visual>
+      <origin xyz="0.1117350820356813 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.1122759495172778 0.03790014480081113 0.06412907991046102"/>
+      </geometry>
+      <material name="material">
+        <color rgba="0.639 0.847 0.882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1117350820356813 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.1122759495172778 0.03790014480081113 0.06412907991046102"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <density value="400.0"/>
+    </inertial>
+  </link>
+
+</robot>

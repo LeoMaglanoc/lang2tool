@@ -1,0 +1,28 @@
+{
+  "trial_id": "0013_cuboid_hammer_v014_llm_lie_x-0p350_y+0p200",
+  "geometry_trial_id": "0013_cuboid_hammer_v014_llm_lie_x-0p350_y+0p200",
+  "object_name": "cuboid_hammer_v014",
+  "task_name": "swing_down",
+  "mode": "llm_lie",
+  "seed": 0,
+  "execution_success": true,
+  "goal_completion_pct": 100.0,
+  "peak_success_count": 100,
+  "failure_stage": null,
+  "failure_category": null,
+  "resolved_baseline_object": "claw_hammer",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "metrics": {
+    "avg_goal_pct": 100.0,
+    "avg_time_sec": 7.016666666666667,
+    "episode_goal_pcts": [
+      100.0
+    ],
+    "episode_lengths": [
+      421
+    ]
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_6obj/execution/artifacts/0013_cuboid_hammer_v014_llm_lie_x-0p350_y+0p200"
+}

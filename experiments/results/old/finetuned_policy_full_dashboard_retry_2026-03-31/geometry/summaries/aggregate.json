@@ -1,0 +1,22 @@
+{
+  "objects": [
+    "claw_hammer",
+    "mallet_hammer",
+    "cuboid_hammer_v014",
+    "long_screwdriver",
+    "short_screwdriver",
+    "cylinder_screwdriver_v3009"
+  ],
+  "modes": [
+    "llm_lie"
+  ],
+  "target_grid_xy": [
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "num_trials": 6,
+  "compile_success_rate": 1.0,
+  "validation_success_rate": 1.0
+}

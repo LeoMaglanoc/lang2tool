@@ -1,0 +1,40 @@
+{
+  "trial_id": "0052_cuboid_hammer_v014_llm_only_x+0p000_y+0p000_pretrained",
+  "geometry_trial_id": "0052_cuboid_hammer_v014_llm_only_x+0p000_y+0p000",
+  "object_name": "cuboid_hammer_v014",
+  "task_name": "swing_down",
+  "mode": "llm_only",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_only + pretrained",
+  "seed": 0,
+  "execution_success": false,
+  "goal_completion_pct": 29.72972972972973,
+  "peak_success_count": 30,
+  "failure_stage": null,
+  "failure_category": null,
+  "resolved_baseline_object": "claw_hammer",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_v3/execution/artifacts/0052_cuboid_hammer_v014_llm_only_x+0p000_y+0p000_pretrained/trace.json",
+  "tracking_success_rate": 0.004615384615384616,
+  "translation_rmse_m": 0.10255702495654834,
+  "rotation_rmse_deg": 75.73546866233207,
+  "mean_translation_error_m": 0.08339111187035775,
+  "mean_rotation_error_deg": 52.12772965283507,
+  "final_translation_error_m": 0.04277163636744251,
+  "final_rotation_error_deg": 0.0,
+  "metrics": {
+    "avg_goal_pct": 29.72972972972973,
+    "avg_time_sec": 10.816666666666666,
+    "episode_goal_pcts": [
+      29.72972972972973
+    ],
+    "episode_lengths": [
+      649
+    ],
+    "trace_path": "experiments/results/thesis_main_v3/execution/artifacts/0052_cuboid_hammer_v014_llm_only_x+0p000_y+0p000_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_v3/execution/artifacts/0052_cuboid_hammer_v014_llm_only_x+0p000_y+0p000_pretrained",
+  "replay_artifact_path": "execution/replay/trials/0052_cuboid_hammer_v014_llm_only_x+0p000_y+0p000_pretrained.json"
+}

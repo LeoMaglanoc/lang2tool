@@ -1,0 +1,55 @@
+{
+  "trial_id": "0011_mallet_hammer_llm_only",
+  "object_name": "mallet_hammer",
+  "task_name": "swing_down",
+  "mode": "llm_only",
+  "seed": 0,
+  "target_xy": null,
+  "resolved_baseline_object": "mallet_hammer",
+  "pivot_point": null,
+  "compile_success": true,
+  "validation_success": true,
+  "num_waypoints": 3,
+  "goals": [
+    [
+      0.15,
+      0.02,
+      0.45,
+      0.022423567732318843,
+      -0.9991131768598981,
+      0.025734957847727336,
+      0.024652695180282746
+    ],
+    [
+      0.18,
+      -0.02,
+      0.38,
+      0.022423567732318843,
+      -0.9991131768598981,
+      0.025734957847727336,
+      0.024652695180282746
+    ],
+    [
+      0.2,
+      -0.05,
+      0.3,
+      0.022423567732318843,
+      -0.9991131768598981,
+      0.025734957847727336,
+      0.024652695180282746
+    ]
+  ],
+  "clamp_summary": {},
+  "resampling_summary": {},
+  "metrics": {
+    "mean_translation_error_m": 0.35447016182126684,
+    "max_translation_error_m": 0.4589132484637395,
+    "mean_rotation_error_deg": 71.98580375397485,
+    "max_rotation_error_deg": 102.85215039925632,
+    "reference_path_length_m": 0.6542138327682845,
+    "candidate_path_length_m": 0.2877441690505683,
+    "path_length_ratio": 0.43983198556500747,
+    "sample_count": 37.0
+  },
+  "error": null
+}

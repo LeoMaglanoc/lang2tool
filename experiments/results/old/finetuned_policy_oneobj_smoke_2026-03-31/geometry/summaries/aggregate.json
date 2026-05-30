@@ -1,0 +1,17 @@
+{
+  "objects": [
+    "claw_hammer"
+  ],
+  "modes": [
+    "llm_lie"
+  ],
+  "target_grid_xy": [
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "num_trials": 1,
+  "compile_success_rate": 1.0,
+  "validation_success_rate": 1.0
+}

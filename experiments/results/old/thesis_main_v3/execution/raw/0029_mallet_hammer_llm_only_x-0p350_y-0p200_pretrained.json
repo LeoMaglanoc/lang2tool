@@ -1,0 +1,40 @@
+{
+  "trial_id": "0029_mallet_hammer_llm_only_x-0p350_y-0p200_pretrained",
+  "geometry_trial_id": "0029_mallet_hammer_llm_only_x-0p350_y-0p200",
+  "object_name": "mallet_hammer",
+  "task_name": "swing_down",
+  "mode": "llm_only",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_only + pretrained",
+  "seed": 0,
+  "execution_success": false,
+  "goal_completion_pct": 33.333333333333336,
+  "peak_success_count": 33,
+  "failure_stage": null,
+  "failure_category": null,
+  "resolved_baseline_object": "mallet_hammer",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_v3/execution/artifacts/0029_mallet_hammer_llm_only_x-0p350_y-0p200_pretrained/trace.json",
+  "tracking_success_rate": 0.0,
+  "translation_rmse_m": 0.16983219950409492,
+  "rotation_rmse_deg": 38.74667308648697,
+  "mean_translation_error_m": 0.15022573710028958,
+  "mean_rotation_error_deg": 28.677600646609577,
+  "final_translation_error_m": 0.2579642580808854,
+  "final_rotation_error_deg": 0.0,
+  "metrics": {
+    "avg_goal_pct": 33.333333333333336,
+    "avg_time_sec": 4.966666666666667,
+    "episode_goal_pcts": [
+      33.333333333333336
+    ],
+    "episode_lengths": [
+      298
+    ],
+    "trace_path": "experiments/results/thesis_main_v3/execution/artifacts/0029_mallet_hammer_llm_only_x-0p350_y-0p200_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_v3/execution/artifacts/0029_mallet_hammer_llm_only_x-0p350_y-0p200_pretrained",
+  "replay_artifact_path": "execution/replay/trials/0029_mallet_hammer_llm_only_x-0p350_y-0p200_pretrained.json"
+}

@@ -1,0 +1,78 @@
+{
+  "trial_id": "0053_cuboid_hammer_v014_llm_only_x+0p150_y-0p080_pretrained",
+  "geometry_trial_id": "0053_cuboid_hammer_v014_llm_only_x+0p150_y-0p080",
+  "object_name": "cuboid_hammer_v014",
+  "task_name": "swing_down",
+  "mode": "llm_only",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_only + pretrained",
+  "seed": 0,
+  "execution_success": false,
+  "goal_completion_pct": 40.54054054054054,
+  "peak_success_count": 41,
+  "failure_stage": "execution_failure",
+  "failure_category": "experiment_timeout",
+  "resolved_baseline_object": "claw_hammer",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_v3_v4_execution_rerun/execution/artifacts/0053_cuboid_hammer_v014_llm_only_x+0p150_y-0p080_pretrained/trace.json",
+  "tracking_success_rate": 0.0,
+  "translation_rmse_m": 0.05654275336413784,
+  "rotation_rmse_deg": 19.949771010467995,
+  "mean_translation_error_m": 0.05623581200535852,
+  "mean_rotation_error_deg": 19.60190957997545,
+  "final_translation_error_m": 0.05696917894719115,
+  "final_rotation_error_deg": 20.109428097792073,
+  "dropped_count": 0,
+  "dropped_first_step": null,
+  "object_z_low_count": 0,
+  "object_z_low_first_step": null,
+  "geometry_goal_count": 37,
+  "execution_goal_count": 37,
+  "reference_goal_count": 37,
+  "execution_goal_transform": "identity",
+  "execution_goal_cycle_style": null,
+  "metrics": {
+    "avg_goal_pct": 40.54054054054054,
+    "avg_time_sec": 180.0,
+    "episode_goal_pcts": [
+      40.54054054054054
+    ],
+    "episode_lengths": [
+      10800
+    ],
+    "episode_trial_stops": [
+      {
+        "should_stop": true,
+        "reason": "experiment_timeout",
+        "is_failure": true,
+        "details": {
+          "dropped": false,
+          "object_z_low": false,
+          "success_count": 15,
+          "success_target": 37,
+          "sim_time_sec": 180.0,
+          "timeout_sec": 180.0,
+          "object_z": 0.6586071848869324,
+          "object_init_z": 0.5743193030357361,
+          "lifted_object": true,
+          "env_debug_dropped": false,
+          "env_debug_object_z_low": false,
+          "step": 10800
+        }
+      }
+    ],
+    "episode_reset_signal_summaries": [
+      {
+        "dropped_count": 0,
+        "dropped_first_step": null,
+        "object_z_low_count": 0,
+        "object_z_low_first_step": null
+      }
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v4_execution_rerun/execution/artifacts/0053_cuboid_hammer_v014_llm_only_x+0p150_y-0p080_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_v3_v4_execution_rerun/execution/artifacts/0053_cuboid_hammer_v014_llm_only_x+0p150_y-0p080_pretrained",
+  "replay_artifact_path": "execution/replay/trials/0053_cuboid_hammer_v014_llm_only_x+0p150_y-0p080_pretrained.json"
+}

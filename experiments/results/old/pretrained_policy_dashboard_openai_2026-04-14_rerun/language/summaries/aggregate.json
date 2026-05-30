@@ -1,0 +1,9 @@
+{
+  "backend": "openai",
+  "num_trials": 12,
+  "exact_match_accuracy": 0.75,
+  "intent_accuracy": 0.9166666666666666,
+  "object_accuracy": 1.0,
+  "target_accuracy": 0.75,
+  "clarification_accuracy": 1.0
+}

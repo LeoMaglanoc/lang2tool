@@ -1,0 +1,38 @@
+services:
+  isaaclab:
+    build:
+      context: .
+      dockerfile: docker/isaaclab/Dockerfile
+    image: simtoolreal-isaaclab
+    environment:
+      WANDB_API_KEY: ${WANDB_API_KEY:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      ACCEPT_EULA: "Y"
+      PRIVACY_CONSENT: "Y"
+      # Required by isaacsim/__init__.py to locate the simulation_app extension
+      ISAAC_PATH: "/isaac-sim"
+      # Required by AppLauncher to find .kit experience files
+      EXP_PATH: "/isaac-sim/apps"
+      # Required by SimulationApp to locate the Omniverse Kit kernel
+      CARB_APP_PATH: "/isaac-sim/kit"
+      # Replicate the environment that /isaac-sim/python.sh sets up so that
+      # import carb / import omni / import isaaclab all resolve correctly.
+      # Sources: /isaac-sim/setup_python_env.sh + /isaac-sim/python.sh
+      PYTHONPATH: "/opt/isaaclab/source/isaaclab:/isaac-sim/kit/python/lib/python3.10:/isaac-sim/kit/python/lib/python3.10/site-packages:/isaac-sim/python_packages:/isaac-sim/exts/isaacsim.simulation_app:/isaac-sim/extsDeprecated/omni.isaac.kit:/isaac-sim/kit/kernel/py:/isaac-sim/kit/plugins/bindings-python:/isaac-sim/kit/extscore/omni.client.lib:/isaac-sim/extscache/omni.kit.pip_archive-0.0.0+d02c707b.lx64.cp310/pip_prebundle:/isaac-sim/exts/omni.isaac.core_archive/pip_prebundle:/isaac-sim/exts/omni.isaac.ml_archive/pip_prebundle:/isaac-sim/exts/omni.pip.compute/pip_prebundle:/isaac-sim/exts/omni.pip.cloud/pip_prebundle"
+      # libcarb.so must be pre-loaded before Python starts (required by carb)
+      LD_PRELOAD: "/isaac-sim/kit/libcarb.so"
+    volumes:
+      # Live-mount repo so edits take effect without rebuilds
+      - .:/workspace
+      - ./pretrained_policy:/workspace/pretrained_policy
+    ports:
+      # Viser visualization UI (human debugging only)
+      - "8080:8080"
+    working_dir: /workspace
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

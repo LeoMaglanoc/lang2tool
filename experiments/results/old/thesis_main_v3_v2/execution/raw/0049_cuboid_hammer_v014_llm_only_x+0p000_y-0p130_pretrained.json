@@ -1,0 +1,60 @@
+{
+  "trial_id": "0049_cuboid_hammer_v014_llm_only_x+0p000_y-0p130_pretrained",
+  "geometry_trial_id": "0049_cuboid_hammer_v014_llm_only_x+0p000_y-0p130",
+  "object_name": "cuboid_hammer_v014",
+  "task_name": "swing_down",
+  "mode": "llm_only",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_only + pretrained",
+  "seed": 0,
+  "execution_success": false,
+  "goal_completion_pct": 2.7027027027027026,
+  "peak_success_count": 3,
+  "failure_stage": "execution_failure",
+  "failure_category": "object_z_low",
+  "resolved_baseline_object": "claw_hammer",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_v3_v2/execution/artifacts/0049_cuboid_hammer_v014_llm_only_x+0p000_y-0p130_pretrained/trace.json",
+  "tracking_success_rate": 0.0,
+  "translation_rmse_m": 0.1782909835020265,
+  "rotation_rmse_deg": 172.39567809803654,
+  "mean_translation_error_m": 0.1720754085738793,
+  "mean_rotation_error_deg": 172.35943222069915,
+  "final_translation_error_m": 0.6787456397950465,
+  "final_rotation_error_deg": 176.5646186068412,
+  "geometry_goal_count": 37,
+  "execution_goal_count": 37,
+  "reference_goal_count": 37,
+  "execution_goal_transform": "identity",
+  "execution_goal_cycle_style": null,
+  "metrics": {
+    "avg_goal_pct": 2.7027027027027026,
+    "avg_time_sec": 15.283333333333333,
+    "episode_goal_pcts": [
+      2.7027027027027026
+    ],
+    "episode_lengths": [
+      917
+    ],
+    "episode_trial_stops": [
+      {
+        "should_stop": true,
+        "reason": "object_z_low",
+        "is_failure": true,
+        "details": {
+          "dropped": false,
+          "object_z_low": true,
+          "success_count": 1,
+          "success_target": 37,
+          "sim_time_sec": 15.283333333333333,
+          "timeout_sec": 180.0
+        }
+      }
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v2/execution/artifacts/0049_cuboid_hammer_v014_llm_only_x+0p000_y-0p130_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_v3_v2/execution/artifacts/0049_cuboid_hammer_v014_llm_only_x+0p000_y-0p130_pretrained",
+  "replay_artifact_path": "execution/replay/trials/0049_cuboid_hammer_v014_llm_only_x+0p000_y-0p130_pretrained.json"
+}

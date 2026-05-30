@@ -1,0 +1,13 @@
+trial_id,prompt_id,backend,active_object_context,expected_outcome_type,expected_intent,expected_object_name,expected_target_label,expected_clarification,predicted_outcome_type,predicted_intent,predicted_object_name,predicted_target_label,predicted_clarification,exact_match,object_match,intent_match,target_match,clarification_match,error
+0000_clarify_hammer_family,clarify_hammer_family,openai,claw_hammer,clarification,,,,True,clarification,,,,True,True,True,True,True,True,
+0001_clarify_screwdriver_family,clarify_screwdriver_family,openai,long_screwdriver,clarification,,,,True,clarification,,,,True,True,True,True,True,True,
+0002_switch_specific_object,switch_specific_object,openai,claw_hammer,command,switch_active_object,short_screwdriver,,False,command,switch_active_object,short_screwdriver,,False,True,True,True,True,True,
+0003_generic_hammer_default,generic_hammer_default,openai,mallet_hammer,command,execute_lie_trajectory,claw_hammer,right_side_of_table,False,command,execute_lie_trajectory,claw_hammer,custom_xy,False,False,True,True,False,True,
+0004_specific_hammer_target_a,specific_hammer_target_a,openai,claw_hammer,command,execute_lie_trajectory,mallet_hammer,strike_point_a,False,command,execute_lie_trajectory,mallet_hammer,strike_point_a,False,True,True,True,True,True,
+0005_specific_twist_default_target,specific_twist_default_target,openai,claw_hammer,command,execute_lie_trajectory,long_screwdriver,unspecified_target,False,command,execute_lie_trajectory,long_screwdriver,strike_point_a,False,False,True,True,False,True,
+0006_predefined_keep_current,predefined_keep_current,openai,short_screwdriver,command,execute_predefined_swing,short_screwdriver,predefined_motion,False,command,execute_predefined_swing,short_screwdriver,predefined_motion,False,True,True,True,True,True,
+0007_predefined_explicit_object,predefined_explicit_object,openai,claw_hammer,command,execute_predefined_swing,cuboid_hammer_v014,predefined_motion,False,command,execute_predefined_swing,cuboid_hammer_v014,predefined_motion,False,True,True,True,True,True,
+0008_semantic_pose_request,semantic_pose_request,openai,long_screwdriver,command,move_tool,long_screwdriver,upright,False,command,move_tool,long_screwdriver,upright,False,True,True,True,True,True,
+0009_grasp_tool,grasp_tool,openai,claw_hammer,command,grasp_tool,claw_hammer,,False,command,grasp_tool,claw_hammer,,False,True,True,True,True,True,
+0010_release_tool,release_tool,openai,claw_hammer,command,release_tool,claw_hammer,,False,command,release_tool,claw_hammer,,False,True,True,True,True,True,
+0011_generate_task_goals,generate_task_goals,openai,claw_hammer,goals,set_goals,claw_hammer,swing_down,False,command,execute_lie_trajectory,claw_hammer,strike_point_a,False,False,True,False,False,True,

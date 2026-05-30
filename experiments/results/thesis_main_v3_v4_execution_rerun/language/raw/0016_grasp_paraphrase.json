@@ -1,0 +1,50 @@
+{
+  "trial_id": "0016_grasp_paraphrase",
+  "prompt_id": "grasp_paraphrase",
+  "prompt_family": "paraphrase_robustness",
+  "prompt_variant": "grasp_tool_paraphrase",
+  "prompt_text": "pick up the current tool again",
+  "backend": "openai",
+  "active_object_context": "claw_hammer",
+  "expected_outcome_type": "command",
+  "expected_intent": "grasp_tool",
+  "expected_object_name": "claw_hammer",
+  "expected_target_label": null,
+  "expected_clarification": false,
+  "predicted_outcome_type": "command",
+  "predicted_intent": "grasp_tool",
+  "predicted_object_name": "claw_hammer",
+  "predicted_target_label": null,
+  "predicted_clarification": false,
+  "assistant_text": "I\u2019ll pick up the current tool again.",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "expected_tool_call": {
+    "intent": "grasp_tool",
+    "object_name": "claw_hammer"
+  },
+  "predicted_tool_call": {
+    "intent": "grasp_tool"
+  },
+  "target_evaluation": {
+    "match": true,
+    "reason": "no_target_expected"
+  },
+  "predicted_tool_trace": [
+    {
+      "tool_name": "grasp_tool",
+      "arguments": {},
+      "result": {
+        "ok": true,
+        "command": "grasp_tool"
+      }
+    }
+  ],
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

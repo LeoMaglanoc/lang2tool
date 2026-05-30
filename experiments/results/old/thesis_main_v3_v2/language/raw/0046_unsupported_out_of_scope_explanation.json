@@ -1,0 +1,29 @@
+{
+  "trial_id": "0046_unsupported_out_of_scope_explanation",
+  "prompt_id": "unsupported_out_of_scope_explanation",
+  "prompt_family": "unsupported_or_out_of_scope",
+  "prompt_variant": "explain_training_history",
+  "prompt_text": "explain how this policy was trained in detail",
+  "backend": "openai",
+  "active_object_context": "claw_hammer",
+  "expected_outcome_type": "text",
+  "expected_intent": null,
+  "expected_object_name": null,
+  "expected_target_label": null,
+  "expected_clarification": false,
+  "predicted_outcome_type": "text",
+  "predicted_intent": null,
+  "predicted_object_name": null,
+  "predicted_target_label": null,
+  "predicted_clarification": false,
+  "assistant_text": "I don\u2019t have access to the exact private training recipe for this deployed policy, so I can\u2019t truthfully give proprietary details like the dataset names, number of demonstrations, reward functions, or hyperparameters unless they were explicitly provided.\n\nAt a high level, a robot manipulation policy like this is usually built from several layers:\n\n1. **Language understanding / task routing**\n   - A language model interprets the user command.\n   - It decides whether the request is about grasping, releasing, moving a goal, switching tools, executing a swing, twisting, or asking a question.\n   - This part is trained mostly through large-scale language pretraining, then instruction tuning and policy rules.\n\n2. **Semantic tool reasoning**\n   - The system keeps track of supported tools, such as hammers and screwdrivers.\n   - It maps verbs to actions:\n     - \u201cswing,\u201d \u201cstrike,\u201d or \u201chammer\u201d \u2192 hammer motion.\n     - \u201ctwist,\u201d \u201cscrew,\u201d or \u201cdrive\u201d \u2192 screwdriver motion.\n     - \u201cmove,\u201d \u201cshift,\u201d or \u201crotate\u201d \u2192 modify the current goal.\n   - Some of this behavior is rule-based rather than learned.\n\n3. **Pose and goal generation**\n   - For manipulation tasks, the system creates target poses: approach pose, grasp pose, lift pose, or tool-use pose.\n   - These can be produced by a learned policy, geometric heuristics, or a hybrid of both.\n   - For example, grasping a hammer handle may use object-frame contact points and approach directions rather than pure free-form motion.\n\n4. **Trajectory generation**\n   - Once a target is chosen, a motion planner or trajectory generator converts it into robot motions.\n   - Swing and twist motions may use specialized trajectory primitives, such as Lie-group trajectory interpolation for smooth rigid-body motion.\n   - These primitives are often not \u201ctrained\u201d in the neural-network sense; they are engineered controllers or planners.\n\n5. **Low-level control**\n   - The robot executes joint commands, end-effector poses, or impedance-control targets.\n   - This may use classical control, learned visuomotor control, or a combination.\n   - The language model does not directly output motor torques.\n\n6. **Training sources**\n   - If a learned robot policy is involved, it is commonly trained using:\n     - Human teleoperation demonstrations.\n     - Simulation rollouts.\n     - Reinforcement learning.\n     - Imitation learning.\n     - Synthetic task variation.\n     - Domain randomization for robustness.\n   - For tool use, demonstrations might include grasping handles, aligning tool heads, swinging toward targets, and correcting failed grasps.\n\n7. **Evaluation**\n   - The policy is usually tested on task success rate, grasp stability, collision rate, placement accuracy, and recovery behavior.\n   - For language-conditioned systems, command-following accuracy is also evaluated.\n\nSo, the short version is: this system likely combines a language-level policy for interpreting commands, rule-based routing for supported manipulation verbs and tools, geometric goal generation, and specialized motion controllers for execution. I can describe the likely architecture and behavior, but I do not have the exact internal training run details.",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

@@ -1,0 +1,29 @@
+{
+  "trial_id": "0040_generate_task_goals_paraphrase",
+  "prompt_id": "generate_task_goals_paraphrase",
+  "prompt_family": "lifecycle_and_predefined_commands",
+  "prompt_variant": "generate_swing_goals",
+  "prompt_text": "generate goals for swing down",
+  "backend": "openai",
+  "active_object_context": "claw_hammer",
+  "expected_outcome_type": "goals",
+  "expected_intent": "set_goals",
+  "expected_object_name": "claw_hammer",
+  "expected_target_label": "swing_down",
+  "expected_clarification": false,
+  "predicted_outcome_type": "goals",
+  "predicted_intent": "set_goals",
+  "predicted_object_name": "claw_hammer",
+  "predicted_target_label": "swing_down",
+  "predicted_clarification": false,
+  "assistant_text": "Generated swing-down goals using the claw_hammer.",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "metrics": {
+    "num_goals": 2
+  },
+  "error": null
+}

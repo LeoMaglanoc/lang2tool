@@ -1,0 +1,39 @@
+{
+  "trial_id": "0012_cuboid_hammer_v014_predefined_pretrained",
+  "geometry_trial_id": "0012_cuboid_hammer_v014_predefined",
+  "object_name": "cuboid_hammer_v014",
+  "task_name": "swing_down",
+  "mode": "predefined",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "predefined + pretrained",
+  "seed": 0,
+  "execution_success": true,
+  "goal_completion_pct": 100.0,
+  "peak_success_count": 100,
+  "failure_stage": null,
+  "failure_category": null,
+  "resolved_baseline_object": "claw_hammer",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/pretrained_policy_dashboard_2026-04-13/execution/artifacts/0012_cuboid_hammer_v014_predefined_pretrained/trace.json",
+  "tracking_success_rate": 0.0012285012285012285,
+  "translation_rmse_m": 0.06045998616280605,
+  "rotation_rmse_deg": 39.60019618971623,
+  "mean_translation_error_m": 0.05496852475612935,
+  "mean_rotation_error_deg": 31.035481775158573,
+  "final_translation_error_m": 0.07908689457855388,
+  "final_rotation_error_deg": 4.4321367066224315,
+  "metrics": {
+    "avg_goal_pct": 100.0,
+    "avg_time_sec": 27.116666666666667,
+    "episode_goal_pcts": [
+      100.0
+    ],
+    "episode_lengths": [
+      1627
+    ],
+    "trace_path": "experiments/results/pretrained_policy_dashboard_2026-04-13/execution/artifacts/0012_cuboid_hammer_v014_predefined_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/pretrained_policy_dashboard_2026-04-13/execution/artifacts/0012_cuboid_hammer_v014_predefined_pretrained"
+}

@@ -1,0 +1,11 @@
+{
+    "avg_goal_pct": 44.44444444444444,
+    "avg_time_sec": 5.3,
+    "episode_goal_pcts": [
+        44.44444444444444
+    ],
+    "episode_lengths": [
+        318
+    ],
+    "trace_path": "experiments/results/pretrained_policy_dashboard_openai_2026-04-14_rerun/execution/artifacts/0034_cylinder_screwdriver_v3009_llm_lie_x+0p350_y+0p200_pretrained/trace.json"
+}

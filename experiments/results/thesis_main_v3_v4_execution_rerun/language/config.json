@@ -1,0 +1,8 @@
+{
+  "results_dir": "experiments/results",
+  "experiment_name": "thesis_main_v3_v4",
+  "backend": "openai",
+  "model": "gpt-5.5",
+  "max_trials": null,
+  "copied_from_experiment": "thesis_main_v3_v3"
+}

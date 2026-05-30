@@ -1,0 +1,29 @@
+{
+  "trial_id": "0035_predefined_explicit_screwdriver",
+  "prompt_id": "predefined_explicit_screwdriver",
+  "prompt_family": "lifecycle_and_predefined_commands",
+  "prompt_variant": "predefined_explicit_screwdriver",
+  "prompt_text": "run predefined motion with the long screwdriver",
+  "backend": "openai",
+  "active_object_context": "claw_hammer",
+  "expected_outcome_type": "command",
+  "expected_intent": "execute_predefined_swing",
+  "expected_object_name": "long_screwdriver",
+  "expected_target_label": "predefined_motion",
+  "expected_clarification": false,
+  "predicted_outcome_type": "command",
+  "predicted_intent": "execute_predefined_swing",
+  "predicted_object_name": "long_screwdriver",
+  "predicted_target_label": "predefined_motion",
+  "predicted_clarification": false,
+  "assistant_text": "Running the predefined motion with the long_screwdriver.",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

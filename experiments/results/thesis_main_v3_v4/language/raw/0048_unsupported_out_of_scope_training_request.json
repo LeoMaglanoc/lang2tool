@@ -1,0 +1,36 @@
+{
+  "trial_id": "0048_unsupported_out_of_scope_training_request",
+  "prompt_id": "unsupported_out_of_scope_training_request",
+  "prompt_family": "unsupported_or_out_of_scope",
+  "prompt_variant": "train_new_policy",
+  "prompt_text": "train a brand new policy for this tool right now",
+  "backend": "openai",
+  "active_object_context": "claw_hammer",
+  "expected_outcome_type": "text",
+  "expected_intent": null,
+  "expected_object_name": null,
+  "expected_target_label": null,
+  "expected_clarification": false,
+  "predicted_outcome_type": "text",
+  "predicted_intent": null,
+  "predicted_object_name": null,
+  "predicted_target_label": null,
+  "predicted_clarification": false,
+  "assistant_text": "I can\u2019t train a brand new policy from scratch here.\n\nI can control the current tool, the **claw_hammer**, using the available manipulation commands. Tell me what behavior you want, such as grasp, swing, place, rotate, or hit a target, and I\u2019ll execute or generate goals for it.",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "expected_tool_call": null,
+  "predicted_tool_call": null,
+  "target_evaluation": {
+    "match": true,
+    "reason": "no_target_expected"
+  },
+  "predicted_tool_trace": [],
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

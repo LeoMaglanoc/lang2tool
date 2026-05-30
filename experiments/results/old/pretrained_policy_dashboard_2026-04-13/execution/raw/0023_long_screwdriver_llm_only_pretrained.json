@@ -1,0 +1,39 @@
+{
+  "trial_id": "0023_long_screwdriver_llm_only_pretrained",
+  "geometry_trial_id": "0023_long_screwdriver_llm_only",
+  "object_name": "long_screwdriver",
+  "task_name": "spin_vertical",
+  "mode": "llm_only",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_only + pretrained",
+  "seed": 0,
+  "execution_success": false,
+  "goal_completion_pct": 33.0,
+  "peak_success_count": 33,
+  "failure_stage": null,
+  "failure_category": null,
+  "resolved_baseline_object": "long_screwdriver",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/pretrained_policy_dashboard_2026-04-13/execution/artifacts/0023_long_screwdriver_llm_only_pretrained/trace.json",
+  "tracking_success_rate": 0.000651890482398957,
+  "translation_rmse_m": 0.09896063563554712,
+  "rotation_rmse_deg": 67.61281427507872,
+  "mean_translation_error_m": 0.07689238213952697,
+  "mean_rotation_error_deg": 50.95491110437136,
+  "final_translation_error_m": 0.07659466792488831,
+  "final_rotation_error_deg": 16.051159680765558,
+  "metrics": {
+    "avg_goal_pct": 33.0,
+    "avg_time_sec": 25.55,
+    "episode_goal_pcts": [
+      33.0
+    ],
+    "episode_lengths": [
+      1533
+    ],
+    "trace_path": "experiments/results/pretrained_policy_dashboard_2026-04-13/execution/artifacts/0023_long_screwdriver_llm_only_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/pretrained_policy_dashboard_2026-04-13/execution/artifacts/0023_long_screwdriver_llm_only_pretrained"
+}

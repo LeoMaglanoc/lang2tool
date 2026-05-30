@@ -1,0 +1,11 @@
+{
+    "avg_goal_pct": 50.0,
+    "avg_time_sec": 13.05,
+    "episode_goal_pcts": [
+        50.0
+    ],
+    "episode_lengths": [
+        783
+    ],
+    "trace_path": "experiments/results/pretrained_policy_dashboard_openai_2026-04-14_rerun/execution/artifacts/0023_cuboid_hammer_v014_llm_only_x-0p350_y-0p200_pretrained/trace.json"
+}

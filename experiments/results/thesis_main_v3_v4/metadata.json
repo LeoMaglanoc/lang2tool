@@ -1,0 +1,9 @@
+{
+  "experiment_name": "thesis_main_v3_v3",
+  "created_at_utc": "2026-04-29T10:41:39.510436+00:00",
+  "benchmark_version": "v3",
+  "git_commit": null,
+  "renamed_from": "geometry_full_horizontal_head_debug",
+  "language_copied_from": "thesis_main_v3_v1",
+  "geometry_copied_from": "thesis_main_v3_v2"
+}

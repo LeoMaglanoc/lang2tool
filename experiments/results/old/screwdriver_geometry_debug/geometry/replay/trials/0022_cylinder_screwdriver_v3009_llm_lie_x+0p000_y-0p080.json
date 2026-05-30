@@ -1,0 +1,461 @@
+{
+  "schema_version": "offline_replay_v4",
+  "object_name": "cylinder_screwdriver_v3009",
+  "task_name": "spin_vertical",
+  "control_hz": 60.0,
+  "table_urdf": "urdf/table_narrow.urdf",
+  "summary": {
+    "replay_kind": "geometry_commanded",
+    "geometry_trial_id": "0022_cylinder_screwdriver_v3009_llm_lie_x+0p000_y-0p080",
+    "num_frames": 9
+  },
+  "runtime_snapshot": {},
+  "mode_order": [
+    "llm_lie"
+  ],
+  "sources": {
+    "llm_lie": {
+      "object_name": "cylinder_screwdriver_v3009",
+      "task_name": "spin_vertical",
+      "reference_track": {
+        "tool_poses": [
+          [
+            0.0,
+            -0.08,
+            0.74591023,
+            0.0,
+            0.7071067811865476,
+            0.0,
+            0.7071067811865476
+          ],
+          [
+            0.0,
+            -0.08,
+            0.74591023,
+            0.2705980500730985,
+            0.6532814824381883,
+            -0.2705980500730985,
+            0.6532814824381883
+          ],
+          [
+            0.0,
+            -0.08,
+            0.74591023,
+            0.49999999999999994,
+            0.5000000000000001,
+            -0.49999999999999994,
+            0.5000000000000001
+          ],
+          [
+            -3.469446951953614e-18,
+            -0.08,
+            0.74591023,
+            0.6532814824381883,
+            0.27059805007309856,
+            -0.6532814824381883,
+            0.27059805007309856
+          ],
+          [
+            2.1729687669135742e-34,
+            -0.08,
+            0.74591023,
+            0.7071067811865476,
+            4.3297802811774664e-17,
+            -0.7071067811865476,
+            4.3297802811774664e-17
+          ],
+          [
+            0.0,
+            -0.08,
+            0.74591023,
+            0.6532814824381883,
+            -0.2705980500730985,
+            -0.6532814824381883,
+            -0.2705980500730985
+          ],
+          [
+            0.0,
+            -0.08,
+            0.74591023,
+            0.5000000000000001,
+            -0.49999999999999994,
+            -0.5000000000000001,
+            -0.49999999999999994
+          ],
+          [
+            0.0,
+            -0.08,
+            0.74591023,
+            0.2705980500730986,
+            -0.6532814824381883,
+            -0.2705980500730986,
+            -0.6532814824381883
+          ],
+          [
+            0.0,
+            -0.08,
+            0.74591023,
+            8.659560562354933e-17,
+            -0.7071067811865476,
+            -8.659560562354933e-17,
+            -0.7071067811865476
+          ]
+        ],
+        "duration_sec": 0.15,
+        "sample_interval_sec": 0.01875
+      },
+      "policy_track": {
+        "frames": [
+          {
+            "tool_pose": [
+              0.0,
+              -0.08,
+              0.74591023,
+              0.0,
+              0.7071067811865476,
+              0.0,
+              0.7071067811865476
+            ],
+            "goal_pose": [
+              0.0,
+              -0.08,
+              0.74591023,
+              0.0,
+              0.7071067811865476,
+              0.0,
+              0.7071067811865476
+            ],
+            "goal_index": 0,
+            "success_count": 0,
+            "sim_time_sec": 0.0,
+            "event": "geometry_commanded",
+            "robot_joint_positions": null
+          },
+          {
+            "tool_pose": [
+              0.0,
+              -0.08,
+              0.74591023,
+              0.2705980500730985,
+              0.6532814824381883,
+              -0.2705980500730985,
+              0.6532814824381883
+            ],
+            "goal_pose": [
+              0.0,
+              -0.08,
+              0.74591023,
+              0.2705980500730985,
+              0.6532814824381883,
+              -0.2705980500730985,
+              0.6532814824381883
+            ],
+            "goal_index": 1,
+            "success_count": 1,
+            "sim_time_sec": 0.016666666666666666,
+            "event": "geometry_commanded",
+            "robot_joint_positions": null
+          },
+          {
+            "tool_pose": [
+              0.0,
+              -0.08,
+              0.74591023,
+              0.49999999999999994,
+              0.5000000000000001,
+              -0.49999999999999994,
+              0.5000000000000001
+            ],
+            "goal_pose": [
+              0.0,
+              -0.08,
+              0.74591023,
+              0.49999999999999994,
+              0.5000000000000001,
+              -0.49999999999999994,
+              0.5000000000000001
+            ],
+            "goal_index": 2,
+            "success_count": 2,
+            "sim_time_sec": 0.03333333333333333,
+            "event": "geometry_commanded",
+            "robot_joint_positions": null
+          },
+          {
+            "tool_pose": [
+              -3.469446951953614e-18,
+              -0.08,
+              0.74591023,
+              0.6532814824381883,
+              0.27059805007309856,
+              -0.6532814824381883,
+              0.27059805007309856
+            ],
+            "goal_pose": [
+              -3.469446951953614e-18,
+              -0.08,
+              0.74591023,
+              0.6532814824381883,
+              0.27059805007309856,
+              -0.6532814824381883,
+              0.27059805007309856
+            ],
+            "goal_index": 3,
+            "success_count": 3,
+            "sim_time_sec": 0.05,
+            "event": "geometry_commanded",
+            "robot_joint_positions": null
+          },
+          {
+            "tool_pose": [
+              2.1729687669135742e-34,
+              -0.08,
+              0.74591023,
+              0.7071067811865476,
+              4.3297802811774664e-17,
+              -0.7071067811865476,
+              4.3297802811774664e-17
+            ],
+            "goal_pose": [
+              2.1729687669135742e-34,
+              -0.08,
+              0.74591023,
+              0.7071067811865476,
+              4.3297802811774664e-17,
+              -0.7071067811865476,
+              4.3297802811774664e-17
+            ],
+            "goal_index": 4,
+            "success_count": 4,
+            "sim_time_sec": 0.06666666666666667,
+            "event": "geometry_commanded",
+            "robot_joint_positions": null
+          },
+          {
+            "tool_pose": [
+              0.0,
+              -0.08,
+              0.74591023,
+              0.6532814824381883,
+              -0.2705980500730985,
+              -0.6532814824381883,
+              -0.2705980500730985
+            ],
+            "goal_pose": [
+              0.0,
+              -0.08,
+              0.74591023,
+              0.6532814824381883,
+              -0.2705980500730985,
+              -0.6532814824381883,
+              -0.2705980500730985
+            ],
+            "goal_index": 5,
+            "success_count": 5,
+            "sim_time_sec": 0.08333333333333333,
+            "event": "geometry_commanded",
+            "robot_joint_positions": null
+          },
+          {
+            "tool_pose": [
+              0.0,
+              -0.08,
+              0.74591023,
+              0.5000000000000001,
+              -0.49999999999999994,
+              -0.5000000000000001,
+              -0.49999999999999994
+            ],
+            "goal_pose": [
+              0.0,
+              -0.08,
+              0.74591023,
+              0.5000000000000001,
+              -0.49999999999999994,
+              -0.5000000000000001,
+              -0.49999999999999994
+            ],
+            "goal_index": 6,
+            "success_count": 6,
+            "sim_time_sec": 0.1,
+            "event": "geometry_commanded",
+            "robot_joint_positions": null
+          },
+          {
+            "tool_pose": [
+              0.0,
+              -0.08,
+              0.74591023,
+              0.2705980500730986,
+              -0.6532814824381883,
+              -0.2705980500730986,
+              -0.6532814824381883
+            ],
+            "goal_pose": [
+              0.0,
+              -0.08,
+              0.74591023,
+              0.2705980500730986,
+              -0.6532814824381883,
+              -0.2705980500730986,
+              -0.6532814824381883
+            ],
+            "goal_index": 7,
+            "success_count": 7,
+            "sim_time_sec": 0.11666666666666667,
+            "event": "geometry_commanded",
+            "robot_joint_positions": null
+          },
+          {
+            "tool_pose": [
+              0.0,
+              -0.08,
+              0.74591023,
+              8.659560562354933e-17,
+              -0.7071067811865476,
+              -8.659560562354933e-17,
+              -0.7071067811865476
+            ],
+            "goal_pose": [
+              0.0,
+              -0.08,
+              0.74591023,
+              8.659560562354933e-17,
+              -0.7071067811865476,
+              -8.659560562354933e-17,
+              -0.7071067811865476
+            ],
+            "goal_index": 8,
+            "success_count": 8,
+            "sim_time_sec": 0.13333333333333333,
+            "event": "geometry_commanded",
+            "robot_joint_positions": null
+          }
+        ],
+        "summary": {
+          "episode_goal_pct": 0.0,
+          "episode_length_steps": 9,
+          "replay_kind": "geometry_commanded"
+        }
+      },
+      "metrics": {
+        "requested_target_xy": [
+          0.0,
+          -0.08
+        ],
+        "hammer_swing_solver": null,
+        "step_delta_summary": {},
+        "tool_family": "screwdriver",
+        "semantic_contact_point_xy_error_m": 4.794170171962263e-17,
+        "screwdriver_max_primary_axis_tilt_deg": 0.0,
+        "screwdriver_twist_angle_span_deg": 360.0
+      },
+      "metadata": {
+        "replay_kind": "geometry_commanded",
+        "geometry_trial_id": "0022_cylinder_screwdriver_v3009_llm_lie_x+0p000_y-0p080",
+        "target_xy": [
+          0.0,
+          -0.08
+        ],
+        "resolved_baseline_object": "long_screwdriver",
+        "generation_context": {
+          "spec": {
+            "schema_version": "twist_v1",
+            "verb": "twist",
+            "task_frame": "world_table_xy",
+            "pivot_point": [
+              0.0,
+              -0.08,
+              0.74591023
+            ],
+            "strike_target_xy": [
+              0.0,
+              -0.08
+            ],
+            "object_name": "cylinder_screwdriver_v3009",
+            "task_name": "spin_vertical",
+            "aligned_target_xyz": [
+              0.0,
+              -0.08,
+              0.63
+            ],
+            "aligned_support_xyz": [
+              0.0,
+              -0.08,
+              0.63
+            ],
+            "semantic_tip_point_local": [
+              0.11591023,
+              0.0,
+              0.0
+            ],
+            "semantic_support_point_local": [
+              0.11591023,
+              0.0,
+              0.0
+            ],
+            "twist_axis_local": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "upright_quaternion_xyzw": [
+              -0.0,
+              0.7071067811865475,
+              0.0,
+              0.7071067811865475
+            ],
+            "support_point_z_offset_m": -0.11591022999999998,
+            "execution_target_z": 0.63,
+            "semantic_contact_clearance_m": 0.1,
+            "waypoint_table_clearance_m": 0.01,
+            "screwdriver_twist_extra_hover_m": 0.21411251831297096,
+            "twist_angle_deg": 360.0,
+            "cycle_style": "forward_repeat",
+            "waypoint_count": 9,
+            "training_distribution_resampling": {
+              "enabled": true,
+              "applied": false,
+              "pos_scale_m": 0.03,
+              "rot_scale_deg": 15.0,
+              "target_cost": 1.0,
+              "min_waypoints": 4,
+              "original_waypoint_count": 9,
+              "resampled_waypoint_count": 9,
+              "step_delta_summary": {
+                "max_step_translation_m": 3.469446951953614e-18,
+                "mean_step_translation_m": 8.673617379884035e-19,
+                "max_step_rotation_deg": 44.99999062831112,
+                "mean_step_rotation_deg": 44.999990628311124
+              }
+            },
+            "training_distribution_clamp": {
+              "enabled": true,
+              "applied": false,
+              "clamp_z": false,
+              "target_volume_mins": [
+                -0.35,
+                -0.2,
+                0.6
+              ],
+              "target_volume_maxs": [
+                0.35,
+                0.2,
+                0.95
+              ],
+              "corrected_indices": [],
+              "original_positions": [],
+              "corrected_positions": [],
+              "step_delta_summary": {
+                "max_step_translation_m": 3.469446951953614e-18,
+                "mean_step_translation_m": 8.673617379884035e-19,
+                "max_step_rotation_deg": 44.99999062831112,
+                "mean_step_rotation_deg": 44.999990628311124
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

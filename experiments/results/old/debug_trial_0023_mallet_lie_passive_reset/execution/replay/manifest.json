@@ -1,0 +1,45 @@
+{
+  "schema_version": "experiment_replay_manifest_v1",
+  "stage": "execution",
+  "num_trials": 2,
+  "entries": [
+    {
+      "trial_id": "0023_mallet_hammer_llm_lie_x-0p150_y-0p080_pretrained",
+      "object_name": "mallet_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.15,
+        -0.08
+      ],
+      "resolved_baseline_object": "mallet_hammer",
+      "replay_artifact_path": "execution/replay/trials/0023_mallet_hammer_llm_lie_x-0p150_y-0p080_pretrained.json",
+      "replay_kind": "execution_actual",
+      "geometry_trial_id": "0023_mallet_hammer_llm_lie_x-0p150_y-0p080",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "execution_success": true,
+      "goal_completion_pct": 100.0,
+      "failure_category": null
+    },
+    {
+      "trial_id": "0042_cuboid_hammer_v014_llm_lie_x-0p150_y-0p080_pretrained",
+      "object_name": "cuboid_hammer_v014",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.15,
+        -0.08
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "execution/replay/trials/0042_cuboid_hammer_v014_llm_lie_x-0p150_y-0p080_pretrained.json",
+      "replay_kind": "execution_actual",
+      "geometry_trial_id": "0042_cuboid_hammer_v014_llm_lie_x-0p150_y-0p080",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "execution_success": false,
+      "goal_completion_pct": 97.29729729729729,
+      "failure_category": "experiment_timeout"
+    }
+  ]
+}

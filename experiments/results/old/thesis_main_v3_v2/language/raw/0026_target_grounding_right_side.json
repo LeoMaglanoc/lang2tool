@@ -1,0 +1,29 @@
+{
+  "trial_id": "0026_target_grounding_right_side",
+  "prompt_id": "target_grounding_right_side",
+  "prompt_family": "target_grounding",
+  "prompt_variant": "right_side_table",
+  "prompt_text": "swing on the right side of the table",
+  "backend": "openai",
+  "active_object_context": "claw_hammer",
+  "expected_outcome_type": "command",
+  "expected_intent": "execute_lie_trajectory",
+  "expected_object_name": "claw_hammer",
+  "expected_target_label": "right_side_of_table",
+  "expected_clarification": false,
+  "predicted_outcome_type": "command",
+  "predicted_intent": "execute_lie_trajectory",
+  "predicted_object_name": "claw_hammer",
+  "predicted_target_label": "custom_xy",
+  "predicted_clarification": false,
+  "assistant_text": "Swinging the claw_hammer on the right side of the table.",
+  "exact_match": false,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": false,
+  "clarification_match": true,
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

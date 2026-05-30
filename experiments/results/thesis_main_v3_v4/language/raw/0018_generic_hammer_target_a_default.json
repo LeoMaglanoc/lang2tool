@@ -1,0 +1,131 @@
+{
+  "trial_id": "0018_generic_hammer_target_a_default",
+  "prompt_id": "generic_hammer_target_a_default",
+  "prompt_family": "default_family_selection",
+  "prompt_variant": "generic_hammer_target_a",
+  "prompt_text": "hit strike point a",
+  "backend": "openai",
+  "active_object_context": "mallet_hammer",
+  "expected_outcome_type": "command",
+  "expected_intent": "execute_lie_trajectory",
+  "expected_object_name": "claw_hammer",
+  "expected_target_label": "strike_point_a",
+  "expected_clarification": false,
+  "predicted_outcome_type": "command",
+  "predicted_intent": "execute_lie_trajectory",
+  "predicted_object_name": "claw_hammer",
+  "predicted_target_label": "strike_point_a",
+  "predicted_clarification": false,
+  "assistant_text": "I selected the claw_hammer and aimed it at strike point a.",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "expected_tool_call": {
+    "intent": "execute_lie_trajectory",
+    "object_name": "claw_hammer",
+    "target_label": "strike_point_a",
+    "target_constraint": {
+      "strike_target_xy": [
+        0.0,
+        0.0
+      ],
+      "tolerance": 1e-06
+    }
+  },
+  "predicted_tool_call": {
+    "intent": "execute_lie_trajectory",
+    "strike_target_xy": [
+      0.0,
+      0.0
+    ],
+    "target_description": "strike point a at the center of the table",
+    "replace_active_goals": true,
+    "object_name": "claw_hammer"
+  },
+  "target_evaluation": {
+    "match": true,
+    "reason": "strike_point_a_origin_check",
+    "strike_target_xy": [
+      0.0,
+      0.0
+    ],
+    "inside_table_bounds": true
+  },
+  "predicted_tool_trace": [
+    {
+      "tool_name": "get_sim_state",
+      "arguments": {},
+      "result": {
+        "ok": true,
+        "sim_state": {
+          "object_name": "mallet_hammer",
+          "object_pose_xyzw": [
+            0.0,
+            0.0,
+            0.7,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "goal_pose_xyzw": [
+            0.0,
+            0.0,
+            0.7,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "runtime_mode": "policy",
+          "pose_semantics": {
+            "semantic_targets": [
+              "upright",
+              "flat",
+              "head_down",
+              "tip_forward",
+              "face_table"
+            ]
+          },
+          "active_strike_target": {
+            "available": true,
+            "world_xy": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "summary": "The current object is mallet_hammer in policy mode. Its current pose is [0.0, 0.0, 0.7, 0.0, 0.0, 0.0, 1.0] (xyzw), and the goal pose is [0.0, 0.0, 0.7, 0.0, 0.0, 0.0, 1.0] (xyzw). Supported semantic pose targets are upright, flat, head down, tip forward, face table. The currently active Lie strike target is at [0.0, 0.0]."
+      }
+    },
+    {
+      "tool_name": "execute_lie_trajectory",
+      "arguments": {
+        "object_name": "claw_hammer",
+        "strike_target_xy": [
+          0,
+          0
+        ],
+        "target_description": "strike point a at the center of the table",
+        "replace_active_goals": true
+      },
+      "result": {
+        "ok": true,
+        "command": "execute_lie_trajectory",
+        "strike_target_xy": [
+          0.0,
+          0.0
+        ],
+        "target_description": "strike point a at the center of the table",
+        "replace_active_goals": true,
+        "object_name": "claw_hammer"
+      }
+    }
+  ],
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

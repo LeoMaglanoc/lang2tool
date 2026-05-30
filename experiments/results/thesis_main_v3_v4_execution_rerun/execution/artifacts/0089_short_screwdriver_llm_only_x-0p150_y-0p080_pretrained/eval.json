@@ -1,0 +1,40 @@
+{
+    "avg_goal_pct": 100.0,
+    "avg_time_sec": 17.683333333333334,
+    "episode_goal_pcts": [
+        100.0
+    ],
+    "episode_lengths": [
+        1061
+    ],
+    "episode_trial_stops": [
+        {
+            "should_stop": true,
+            "reason": "success_complete",
+            "is_failure": false,
+            "details": {
+                "dropped": false,
+                "object_z_low": false,
+                "success_count": 76,
+                "success_target": 76,
+                "sim_time_sec": 17.683333333333334,
+                "timeout_sec": 180.0,
+                "object_z": 0.6811100244522095,
+                "object_init_z": 0.583488941192627,
+                "lifted_object": true,
+                "env_debug_dropped": false,
+                "env_debug_object_z_low": false,
+                "step": 1061
+            }
+        }
+    ],
+    "episode_reset_signal_summaries": [
+        {
+            "dropped_count": 0,
+            "dropped_first_step": null,
+            "object_z_low_count": 0,
+            "object_z_low_first_step": null
+        }
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v4_execution_rerun/execution/artifacts/0089_short_screwdriver_llm_only_x-0p150_y-0p080_pretrained/trace.json"
+}

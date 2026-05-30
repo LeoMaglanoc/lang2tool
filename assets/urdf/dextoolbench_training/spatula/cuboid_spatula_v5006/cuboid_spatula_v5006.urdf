@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot name="cuboid_spatula_v5006">
+
+  <link name="cuboid_spatula_v5006">
+    <!-- Handle -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.15491443835996796 0.017892727439748627 0.017894237137880086"/>
+      </geometry>
+      <material name="material">
+        <color rgba="0.639 0.847 0.882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.15491443835996796 0.017892727439748627 0.017894237137880086"/>
+      </geometry>
+    </collision>
+
+    <!-- Head -->
+    <visual>
+      <origin xyz="0.12049008590249669 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.08606573344502542 0.05050956978427033 0.024734113769644406"/>
+      </geometry>
+      <material name="material">
+        <color rgba="0.639 0.847 0.882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.12049008590249669 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.08606573344502542 0.05050956978427033 0.024734113769644406"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <density value="400.0"/>
+    </inertial>
+  </link>
+
+</robot>

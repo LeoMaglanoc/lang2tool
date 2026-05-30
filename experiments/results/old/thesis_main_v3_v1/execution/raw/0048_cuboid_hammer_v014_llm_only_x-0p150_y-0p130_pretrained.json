@@ -1,0 +1,50 @@
+{
+  "trial_id": "0048_cuboid_hammer_v014_llm_only_x-0p150_y-0p130_pretrained",
+  "geometry_trial_id": "0048_cuboid_hammer_v014_llm_only_x-0p150_y-0p130",
+  "object_name": "cuboid_hammer_v014",
+  "task_name": "swing_down",
+  "mode": "llm_only",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_only + pretrained",
+  "seed": 0,
+  "execution_success": false,
+  "goal_completion_pct": 0.0,
+  "peak_success_count": 0,
+  "failure_stage": "execution_failure",
+  "failure_category": "eval_timeout",
+  "resolved_baseline_object": "claw_hammer",
+  "eval_returncode": null,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_v3_v1/execution/artifacts/0048_cuboid_hammer_v014_llm_only_x-0p150_y-0p130_pretrained/trace.json",
+  "tracking_success_rate": 0.008559201141226819,
+  "translation_rmse_m": 0.06011334883003968,
+  "rotation_rmse_deg": 39.70422659070698,
+  "mean_translation_error_m": 0.054516284971983624,
+  "mean_rotation_error_deg": 29.228547944311078,
+  "final_translation_error_m": 0.07829390133858355,
+  "final_rotation_error_deg": 4.4321367066224315,
+  "geometry_goal_count": 37,
+  "execution_goal_count": 37,
+  "reference_goal_count": 37,
+  "execution_goal_transform": "identity",
+  "execution_goal_cycle_style": null,
+  "metrics": {
+    "diagnostics": {
+      "exception_type": "TimeoutExpired",
+      "timeout_sec": 600.0,
+      "artifact_presence": {
+        "has_goals_json": true,
+        "has_runtime_snapshot": true,
+        "has_env_cfg": true,
+        "has_policy_config": true,
+        "has_eval_json": true,
+        "has_trace_json": true,
+        "has_stdout_txt": true,
+        "has_stderr_txt": true
+      }
+    }
+  },
+  "error": "eval.py timed out after 600.0s. See experiments/results/thesis_main_v3_v1/execution/artifacts/0048_cuboid_hammer_v014_llm_only_x-0p150_y-0p130_pretrained/stderr.txt",
+  "artifact_dir": "experiments/results/thesis_main_v3_v1/execution/artifacts/0048_cuboid_hammer_v014_llm_only_x-0p150_y-0p130_pretrained",
+  "replay_artifact_path": "execution/replay/trials/0048_cuboid_hammer_v014_llm_only_x-0p150_y-0p130_pretrained.json"
+}

@@ -1,0 +1,206 @@
+{
+  "num_trials": 36,
+  "execution_success_rate": 0.75,
+  "mean_translation_rmse_m": 0.1358353782580711,
+  "mean_tracking_success_rate": 0.00899192740160765,
+  "by_object_mode": [
+    {
+      "object_name": "claw_hammer",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 4,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0,
+      "mean_translation_rmse_m": 0.11185675259014145,
+      "mean_tracking_success_rate": 0.018558378044870826
+    },
+    {
+      "object_name": "claw_hammer",
+      "mode": "llm_only",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_only + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0,
+      "mean_translation_rmse_m": 0.06399304597124582,
+      "mean_tracking_success_rate": 0.023474178403755867
+    },
+    {
+      "object_name": "claw_hammer",
+      "mode": "predefined",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "predefined + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0,
+      "mean_translation_rmse_m": 0.06118210318799278,
+      "mean_tracking_success_rate": 0.01
+    },
+    {
+      "object_name": "cuboid_hammer_v014",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 4,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0,
+      "mean_translation_rmse_m": 0.12858064096619093,
+      "mean_tracking_success_rate": 0.02852992029655734
+    },
+    {
+      "object_name": "cuboid_hammer_v014",
+      "mode": "llm_only",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_only + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 0.0,
+      "mean_translation_rmse_m": 0.0,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "cuboid_hammer_v014",
+      "mode": "predefined",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "predefined + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0,
+      "mean_translation_rmse_m": 0.06045998616280605,
+      "mean_tracking_success_rate": 0.0012285012285012285
+    },
+    {
+      "object_name": "cylinder_screwdriver_v3009",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 4,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 11.11111111111111,
+      "mean_translation_rmse_m": 0.30631862088666617,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "cylinder_screwdriver_v3009",
+      "mode": "llm_only",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_only + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 0.0,
+      "mean_translation_rmse_m": 0.0,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "cylinder_screwdriver_v3009",
+      "mode": "predefined",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "predefined + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 23.0,
+      "mean_translation_rmse_m": 0.2519136253662634,
+      "mean_tracking_success_rate": 0.002997002997002997
+    },
+    {
+      "object_name": "long_screwdriver",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 4,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0,
+      "mean_translation_rmse_m": 0.14868890115694566,
+      "mean_tracking_success_rate": 0.0011045655375552283
+    },
+    {
+      "object_name": "long_screwdriver",
+      "mode": "llm_only",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_only + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 33.0,
+      "mean_translation_rmse_m": 0.09896063563554712,
+      "mean_tracking_success_rate": 0.000651890482398957
+    },
+    {
+      "object_name": "long_screwdriver",
+      "mode": "predefined",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "predefined + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 58.0,
+      "mean_translation_rmse_m": 0.09610866209921871,
+      "mean_tracking_success_rate": 0.0006551648831622625
+    },
+    {
+      "object_name": "mallet_hammer",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 4,
+      "execution_success_rate": 0.75,
+      "mean_goal_completion_pct": 61.40350877192982,
+      "mean_translation_rmse_m": 0.16956622553303355,
+      "mean_tracking_success_rate": 0.018750394316611657
+    },
+    {
+      "object_name": "mallet_hammer",
+      "mode": "llm_only",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_only + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0,
+      "mean_translation_rmse_m": 0.05643528545513774,
+      "mean_tracking_success_rate": 0.004398826979472141
+    },
+    {
+      "object_name": "mallet_hammer",
+      "mode": "predefined",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "predefined + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0,
+      "mean_translation_rmse_m": 0.05734434625194402,
+      "mean_tracking_success_rate": 0.007309941520467836
+    },
+    {
+      "object_name": "short_screwdriver",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 4,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0,
+      "mean_translation_rmse_m": 0.13856639411074245,
+      "mean_tracking_success_rate": 0.0
+    },
+    {
+      "object_name": "short_screwdriver",
+      "mode": "llm_only",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_only + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 63.1578947368421,
+      "mean_translation_rmse_m": 0.0754120553444577,
+      "mean_tracking_success_rate": 0.0005965697240865026
+    },
+    {
+      "object_name": "short_screwdriver",
+      "mode": "predefined",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "predefined + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0,
+      "mean_translation_rmse_m": 0.05395373084106451,
+      "mean_tracking_success_rate": 0.004624277456647399
+    }
+  ]
+}

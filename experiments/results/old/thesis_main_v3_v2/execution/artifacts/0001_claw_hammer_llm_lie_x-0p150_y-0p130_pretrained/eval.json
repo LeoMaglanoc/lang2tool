@@ -1,0 +1,26 @@
+{
+    "avg_goal_pct": 100.0,
+    "avg_time_sec": 42.5,
+    "episode_goal_pcts": [
+        100.0
+    ],
+    "episode_lengths": [
+        2550
+    ],
+    "episode_trial_stops": [
+        {
+            "should_stop": true,
+            "reason": "success_complete",
+            "is_failure": false,
+            "details": {
+                "dropped": false,
+                "object_z_low": false,
+                "success_count": 37,
+                "success_target": 37,
+                "sim_time_sec": 42.5,
+                "timeout_sec": 180.0
+            }
+        }
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v2/execution/artifacts/0001_claw_hammer_llm_lie_x-0p150_y-0p130_pretrained/trace.json"
+}

@@ -1,0 +1,44 @@
+{
+  "trial_id": "0026_cuboid_hammer_v014_llm_only_x+0p350_y+0p200_pretrained",
+  "geometry_trial_id": "0026_cuboid_hammer_v014_llm_only_x+0p350_y+0p200",
+  "object_name": "cuboid_hammer_v014",
+  "task_name": "swing_down",
+  "mode": "llm_only",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_only + pretrained",
+  "seed": 0,
+  "execution_success": false,
+  "goal_completion_pct": 0.0,
+  "peak_success_count": 0,
+  "failure_stage": "execution_failure",
+  "failure_category": "eval_timeout",
+  "resolved_baseline_object": "claw_hammer",
+  "eval_returncode": null,
+  "produced_eval_json": false,
+  "trace_path": null,
+  "tracking_success_rate": 0.0,
+  "translation_rmse_m": 0.0,
+  "rotation_rmse_deg": 0.0,
+  "mean_translation_error_m": 0.0,
+  "mean_rotation_error_deg": 0.0,
+  "final_translation_error_m": 0.0,
+  "final_rotation_error_deg": 0.0,
+  "metrics": {
+    "diagnostics": {
+      "exception_type": "TimeoutExpired",
+      "timeout_sec": 600.0,
+      "artifact_presence": {
+        "has_goals_json": true,
+        "has_runtime_snapshot": true,
+        "has_env_cfg": false,
+        "has_policy_config": false,
+        "has_eval_json": false,
+        "has_trace_json": false,
+        "has_stdout_txt": false,
+        "has_stderr_txt": false
+      }
+    }
+  },
+  "error": "eval.py timed out after 600.0s. See experiments/results/pretrained_policy_dashboard_openai_2026-04-14_rerun/execution/artifacts/0026_cuboid_hammer_v014_llm_only_x+0p350_y+0p200_pretrained/stderr.txt",
+  "artifact_dir": "experiments/results/pretrained_policy_dashboard_openai_2026-04-14_rerun/execution/artifacts/0026_cuboid_hammer_v014_llm_only_x+0p350_y+0p200_pretrained"
+}

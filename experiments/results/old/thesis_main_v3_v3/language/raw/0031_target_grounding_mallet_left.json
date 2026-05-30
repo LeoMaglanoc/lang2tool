@@ -1,0 +1,29 @@
+{
+  "trial_id": "0031_target_grounding_mallet_left",
+  "prompt_id": "target_grounding_mallet_left",
+  "prompt_family": "target_grounding",
+  "prompt_variant": "mallet_left_side",
+  "prompt_text": "aim the mallet hammer at the left side of the table",
+  "backend": "openai",
+  "active_object_context": "claw_hammer",
+  "expected_outcome_type": "command",
+  "expected_intent": "execute_lie_trajectory",
+  "expected_object_name": "mallet_hammer",
+  "expected_target_label": "left_side_of_table",
+  "expected_clarification": false,
+  "predicted_outcome_type": "command",
+  "predicted_intent": "execute_lie_trajectory",
+  "predicted_object_name": "mallet_hammer",
+  "predicted_target_label": "custom_xy",
+  "predicted_clarification": false,
+  "assistant_text": "Aiming the mallet hammer at the left side of the table.",
+  "exact_match": false,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": false,
+  "clarification_match": true,
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

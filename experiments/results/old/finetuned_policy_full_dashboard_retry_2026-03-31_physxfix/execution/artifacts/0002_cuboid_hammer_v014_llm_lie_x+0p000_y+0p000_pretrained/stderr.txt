@@ -1,0 +1,245 @@
+2026-03-31 09:54:12 [734ms] [Error] [omni.physx.tensors.plugin] CUDA error: out of memory: ../../../extensions/runtime/source/omni.physx.tensors/plugins/gpu/CudaCommon.h: 111
+2026-03-31 09:54:12 [734ms] [Error] [omni.physx.tensors.plugin] Failed to create primary CUDA context
+Warp CUDA error 2: out of memory (in function get_context_info, /builds/omniverse/warp/warp/native/warp.cu:323)
+Warp CUDA error 2: out of memory (in function get_context_info, /builds/omniverse/warp/warp/native/warp.cu:324)
+Warp CUDA error 2: out of memory (in function cuda_context_is_primary, /builds/omniverse/warp/warp/native/warp.cu:1972)
+Warp CUDA error 2: out of memory (in function cuda_context_is_primary, /builds/omniverse/warp/warp/native/warp.cu:1972)
+Warp CUDA error 709: context is destroyed (in function cuda_stream_create, /builds/omniverse/warp/warp/native/warp.cu:2230)
+2026-03-31 09:54:13 [1,475ms] [Error] [omni.ext._impl._internal] Failed to import python module isaaclab_assets from /opt/isaaclab/source/isaaclab_assets. Error: Failed to create stream on device cuda:0.0. Traceback:
+Traceback (most recent call last):
+  File "/isaac-sim/kit/kernel/py/omni/ext/_impl/_internal.py", line 187, in _custom_importer
+    return _import_public(ext_module.path, ext_module.name, reload_enabled)
+  File "/isaac-sim/kit/kernel/py/omni/ext/_impl/_internal.py", line 94, in _import_public
+    module = import_module(module_name)
+  File "/isaac-sim/kit/kernel/py/omni/ext/_impl/custom_importer.py", line 76, in import_module
+    return importlib.import_module(name)
+  File "/isaac-sim/kit/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/isaaclab/source/isaaclab_assets/isaaclab_assets/__init__.py", line 23, in <module>
+    from .robots import *
+  File "/opt/isaaclab/source/isaaclab_assets/isaaclab_assets/robots/__init__.py", line 12, in <module>
+    from .anymal import *
+  File "/opt/isaaclab/source/isaaclab_assets/isaaclab_assets/robots/anymal.py", line 22, in <module>
+    from isaaclab_assets.sensors.velodyne import VELODYNE_VLP_16_RAYCASTER_CFG
+  File "/opt/isaaclab/source/isaaclab_assets/isaaclab_assets/sensors/__init__.py", line 10, in <module>
+    from .velodyne import *
+  File "/opt/isaaclab/source/isaaclab_assets/isaaclab_assets/sensors/velodyne.py", line 9, in <module>
+    from isaaclab.sensors import RayCasterCfg, patterns
+  File "/opt/isaaclab/source/isaaclab/isaaclab/sensors/__init__.py", line 38, in <module>
+    from .camera import *  # noqa: F401, F403
+  File "/opt/isaaclab/source/isaaclab/isaaclab/sensors/camera/__init__.py", line 11, in <module>
+    from .tiled_camera import TiledCamera
+  File "/opt/isaaclab/source/isaaclab/isaaclab/sensors/camera/tiled_camera.py", line 22, in <module>
+    from isaaclab.utils.warp.kernels import reshape_tiled_image
+  File "/opt/isaaclab/source/isaaclab/isaaclab/utils/warp/__init__.py", line 8, in <module>
+    from .ops import convert_to_warp_mesh, raycast_mesh
+  File "/opt/isaaclab/source/isaaclab/isaaclab/utils/warp/ops.py", line 19, in <module>
+    wp.init()
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 6190, in init
+    runtime = Runtime()
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 3650, in __init__
+    self.set_default_device("cuda")
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 3820, in set_default_device
+    self.default_device = self.get_device(ident)
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 3815, in get_device
+    return self.get_current_cuda_device()
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 3840, in get_current_cuda_device
+    return self.map_cuda_device(alias, current_context)
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 3891, in map_cuda_device
+    device = Device(self, alias, ordinal=ordinal, is_primary=False, context=context)
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 2620, in __init__
+    self._init_streams()
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 2649, in _init_streams
+    self.set_stream(Stream(self))
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 2434, in __init__
+    raise RuntimeError(f"Failed to create stream on device {device}")
+RuntimeError: Failed to create stream on device cuda:0.0
+
+2026-03-31 09:54:13 [1,475ms] [Error] [carb.scripting-python.plugin] Exception: Extension python module: 'isaaclab_assets' in '/opt/isaaclab/source/isaaclab_assets' failed to load.
+
+At:
+  /isaac-sim/kit/kernel/py/omni/ext/_impl/_internal.py(213): startup
+  /isaac-sim/kit/kernel/py/omni/ext/_impl/_internal.py(328): startup_extension
+  PythonExtension.cpp::startup()(2): <module>
+  /isaac-sim/exts/isaacsim.simulation_app/isaacsim/simulation_app/simulation_app.py(427): _start_app
+  /isaac-sim/exts/isaacsim.simulation_app/isaacsim/simulation_app/simulation_app.py(212): __init__
+  /opt/isaaclab/source/isaaclab/isaaclab/app/app_launcher.py(780): _create_app
+  /opt/isaaclab/source/isaaclab/isaaclab/app/app_launcher.py(131): __init__
+  /workspace/dextoolbench/eval.py(2133): main
+  /workspace/dextoolbench/eval.py(2176): <module>
+
+2026-03-31 09:54:13 [1,475ms] [Error] [omni.ext.plugin] [ext: isaaclab_assets-0.2.2] Failed to startup python extension.
+Warp CUDA error 2: out of memory (in function cuda_context_is_primary, /builds/omniverse/warp/warp/native/warp.cu:1972)
+Warp CUDA error 2: out of memory (in function cuda_context_is_primary, /builds/omniverse/warp/warp/native/warp.cu:1972)
+Warp CUDA error 709: context is destroyed (in function cuda_stream_create, /builds/omniverse/warp/warp/native/warp.cu:2230)
+2026-03-31 09:54:13 [1,784ms] [Error] [omni.ext._impl._internal] Failed to import python module isaaclab_tasks from /opt/isaaclab/source/isaaclab_tasks. Error: Failed to create stream on device cuda:0.0. Traceback:
+Traceback (most recent call last):
+  File "/isaac-sim/kit/kernel/py/omni/ext/_impl/_internal.py", line 187, in _custom_importer
+    return _import_public(ext_module.path, ext_module.name, reload_enabled)
+  File "/isaac-sim/kit/kernel/py/omni/ext/_impl/_internal.py", line 94, in _import_public
+    module = import_module(module_name)
+  File "/isaac-sim/kit/kernel/py/omni/ext/_impl/custom_importer.py", line 76, in import_module
+    return importlib.import_module(name)
+  File "/isaac-sim/kit/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/isaaclab/source/isaaclab_tasks/isaaclab_tasks/__init__.py", line 25, in <module>
+    from .utils import import_packages
+  File "/opt/isaaclab/source/isaaclab_tasks/isaaclab_tasks/utils/__init__.py", line 9, in <module>
+    from .parse_cfg import get_checkpoint_path, load_cfg_from_registry, parse_env_cfg
+  File "/opt/isaaclab/source/isaaclab_tasks/isaaclab_tasks/utils/parse_cfg.py", line 16, in <module>
+    from isaaclab.envs import DirectRLEnvCfg, ManagerBasedRLEnvCfg
+  File "/opt/isaaclab/source/isaaclab/isaaclab/envs/__init__.py", line 45, in <module>
+    from . import mdp, ui
+  File "/opt/isaaclab/source/isaaclab/isaaclab/envs/mdp/__init__.py", line 18, in <module>
+    from .actions import *  # noqa: F401, F403
+  File "/opt/isaaclab/source/isaaclab/isaaclab/envs/mdp/actions/__init__.py", line 8, in <module>
+    from .actions_cfg import *
+  File "/opt/isaaclab/source/isaaclab/isaaclab/envs/mdp/actions/actions_cfg.py", line 9, in <module>
+    from isaaclab.managers.action_manager import ActionTerm, ActionTermCfg
+  File "/opt/isaaclab/source/isaaclab/isaaclab/managers/__init__.py", line 13, in <module>
+    from .action_manager import ActionManager, ActionTerm
+  File "/opt/isaaclab/source/isaaclab/isaaclab/managers/action_manager.py", line 22, in <module>
+    from .manager_base import ManagerBase, ManagerTermBase
+  File "/opt/isaaclab/source/isaaclab/isaaclab/managers/manager_base.py", line 21, in <module>
+    from .manager_term_cfg import ManagerTermBaseCfg
+  File "/opt/isaaclab/source/isaaclab/isaaclab/managers/manager_term_cfg.py", line 19, in <module>
+    from .scene_entity_cfg import SceneEntityCfg
+  File "/opt/isaaclab/source/isaaclab/isaaclab/managers/scene_entity_cfg.py", line 11, in <module>
+    from isaaclab.scene import InteractiveScene
+  File "/opt/isaaclab/source/isaaclab/isaaclab/scene/__init__.py", line 28, in <module>
+    from .interactive_scene import InteractiveScene
+  File "/opt/isaaclab/source/isaaclab/isaaclab/scene/interactive_scene.py", line 28, in <module>
+    from isaaclab.sensors import ContactSensorCfg, FrameTransformerCfg, SensorBase, SensorBaseCfg
+  File "/opt/isaaclab/source/isaaclab/isaaclab/sensors/__init__.py", line 38, in <module>
+    from .camera import *  # noqa: F401, F403
+  File "/opt/isaaclab/source/isaaclab/isaaclab/sensors/camera/__init__.py", line 11, in <module>
+    from .tiled_camera import TiledCamera
+  File "/opt/isaaclab/source/isaaclab/isaaclab/sensors/camera/tiled_camera.py", line 22, in <module>
+    from isaaclab.utils.warp.kernels import reshape_tiled_image
+  File "/opt/isaaclab/source/isaaclab/isaaclab/utils/warp/__init__.py", line 8, in <module>
+    from .ops import convert_to_warp_mesh, raycast_mesh
+  File "/opt/isaaclab/source/isaaclab/isaaclab/utils/warp/ops.py", line 19, in <module>
+    wp.init()
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 6190, in init
+    runtime = Runtime()
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 3650, in __init__
+    self.set_default_device("cuda")
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 3820, in set_default_device
+    self.default_device = self.get_device(ident)
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 3815, in get_device
+    return self.get_current_cuda_device()
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 3840, in get_current_cuda_device
+    return self.map_cuda_device(alias, current_context)
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 3891, in map_cuda_device
+    device = Device(self, alias, ordinal=ordinal, is_primary=False, context=context)
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 2620, in __init__
+    self._init_streams()
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 2649, in _init_streams
+    self.set_stream(Stream(self))
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 2434, in __init__
+    raise RuntimeError(f"Failed to create stream on device {device}")
+RuntimeError: Failed to create stream on device cuda:0.0
+
+2026-03-31 09:54:13 [1,785ms] [Error] [carb.scripting-python.plugin] Exception: Extension python module: 'isaaclab_tasks' in '/opt/isaaclab/source/isaaclab_tasks' failed to load.
+
+At:
+  /isaac-sim/kit/kernel/py/omni/ext/_impl/_internal.py(213): startup
+  /isaac-sim/kit/kernel/py/omni/ext/_impl/_internal.py(328): startup_extension
+  PythonExtension.cpp::startup()(2): <module>
+  /isaac-sim/exts/isaacsim.simulation_app/isaacsim/simulation_app/simulation_app.py(427): _start_app
+  /isaac-sim/exts/isaacsim.simulation_app/isaacsim/simulation_app/simulation_app.py(212): __init__
+  /opt/isaaclab/source/isaaclab/isaaclab/app/app_launcher.py(780): _create_app
+  /opt/isaaclab/source/isaaclab/isaaclab/app/app_launcher.py(131): __init__
+  /workspace/dextoolbench/eval.py(2133): main
+  /workspace/dextoolbench/eval.py(2176): <module>
+
+2026-03-31 09:54:13 [1,785ms] [Error] [omni.ext.plugin] [ext: isaaclab_tasks-0.10.31] Failed to startup python extension.
+2026-03-31 09:54:13 [2,251ms] [Error] [carb.cudainterop.plugin] CUDA error 2: cudaErrorMemoryAllocation - out of memory)
+2026-03-31 09:54:14 [2,647ms] [Error] [omni.physx.plugin] Failed to get primary context of requested CUDA device 0
+2026-03-31 09:54:14 [2,647ms] [Error] [omni.physx.plugin] Unable to create PxCudaContextManager!
+Warp CUDA error 2: out of memory (in function cuda_context_is_primary, /builds/omniverse/warp/warp/native/warp.cu:1972)
+Warp CUDA error 2: out of memory (in function cuda_context_is_primary, /builds/omniverse/warp/warp/native/warp.cu:1972)
+Warp CUDA error 709: context is destroyed (in function cuda_stream_create, /builds/omniverse/warp/warp/native/warp.cu:2230)
+Warp CUDA error 2: out of memory (in function cuda_context_is_primary, /builds/omniverse/warp/warp/native/warp.cu:1972)
+Warp CUDA error 2: out of memory (in function cuda_context_is_primary, /builds/omniverse/warp/warp/native/warp.cu:1972)
+Warp CUDA error 709: context is destroyed (in function cuda_stream_create, /builds/omniverse/warp/warp/native/warp.cu:2230)
+Warp CUDA error 2: out of memory (in function cuda_context_is_primary, /builds/omniverse/warp/warp/native/warp.cu:1972)
+Warp CUDA error 2: out of memory (in function cuda_context_is_primary, /builds/omniverse/warp/warp/native/warp.cu:1972)
+Warp CUDA error 709: context is destroyed (in function cuda_stream_create, /builds/omniverse/warp/warp/native/warp.cu:2230)
+Warp CUDA error 2: out of memory (in function cuda_context_is_primary, /builds/omniverse/warp/warp/native/warp.cu:1972)
+Warp CUDA error 2: out of memory (in function cuda_context_is_primary, /builds/omniverse/warp/warp/native/warp.cu:1972)
+Warp CUDA error 709: context is destroyed (in function cuda_stream_create, /builds/omniverse/warp/warp/native/warp.cu:2230)
+Traceback (most recent call last):
+  File "/workspace/dextoolbench/eval.py", line 2176, in <module>
+    main()
+  File "/workspace/dextoolbench/eval.py", line 2136, in main
+    env, selected_table_urdf, initial_start_pose = _build_eval_env(
+  File "/workspace/dextoolbench/eval.py", line 2114, in _build_eval_env
+    from deployment.isaac.isaac_env_lab import create_env_lab
+  File "/workspace/deployment/isaac/isaac_env_lab.py", line 23, in <module>
+    from simtoolreal_lab.tasks.simtoolreal.env_lab_cfg import SimToolRealEnvCfg
+  File "/workspace/simtoolreal_lab/tasks/simtoolreal/env_lab_cfg.py", line 17, in <module>
+    from isaaclab.envs import DirectRLEnvCfg
+  File "/opt/isaaclab/source/isaaclab/isaaclab/envs/__init__.py", line 45, in <module>
+    from . import mdp, ui
+  File "/opt/isaaclab/source/isaaclab/isaaclab/envs/mdp/__init__.py", line 18, in <module>
+    from .actions import *  # noqa: F401, F403
+  File "/opt/isaaclab/source/isaaclab/isaaclab/envs/mdp/actions/__init__.py", line 8, in <module>
+    from .actions_cfg import *
+  File "/opt/isaaclab/source/isaaclab/isaaclab/envs/mdp/actions/actions_cfg.py", line 9, in <module>
+    from isaaclab.managers.action_manager import ActionTerm, ActionTermCfg
+  File "/opt/isaaclab/source/isaaclab/isaaclab/managers/__init__.py", line 13, in <module>
+    from .action_manager import ActionManager, ActionTerm
+  File "/opt/isaaclab/source/isaaclab/isaaclab/managers/action_manager.py", line 22, in <module>
+    from .manager_base import ManagerBase, ManagerTermBase
+  File "/opt/isaaclab/source/isaaclab/isaaclab/managers/manager_base.py", line 21, in <module>
+    from .manager_term_cfg import ManagerTermBaseCfg
+  File "/opt/isaaclab/source/isaaclab/isaaclab/managers/manager_term_cfg.py", line 19, in <module>
+    from .scene_entity_cfg import SceneEntityCfg
+  File "/opt/isaaclab/source/isaaclab/isaaclab/managers/scene_entity_cfg.py", line 11, in <module>
+    from isaaclab.scene import InteractiveScene
+  File "/opt/isaaclab/source/isaaclab/isaaclab/scene/__init__.py", line 28, in <module>
+    from .interactive_scene import InteractiveScene
+  File "/opt/isaaclab/source/isaaclab/isaaclab/scene/interactive_scene.py", line 28, in <module>
+    from isaaclab.sensors import ContactSensorCfg, FrameTransformerCfg, SensorBase, SensorBaseCfg
+  File "/opt/isaaclab/source/isaaclab/isaaclab/sensors/__init__.py", line 38, in <module>
+    from .camera import *  # noqa: F401, F403
+  File "/opt/isaaclab/source/isaaclab/isaaclab/sensors/camera/__init__.py", line 11, in <module>
+    from .tiled_camera import TiledCamera
+  File "/opt/isaaclab/source/isaaclab/isaaclab/sensors/camera/tiled_camera.py", line 22, in <module>
+    from isaaclab.utils.warp.kernels import reshape_tiled_image
+  File "/opt/isaaclab/source/isaaclab/isaaclab/utils/warp/__init__.py", line 8, in <module>
+    from .ops import convert_to_warp_mesh, raycast_mesh
+  File "/opt/isaaclab/source/isaaclab/isaaclab/utils/warp/ops.py", line 19, in <module>
+    wp.init()
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 6190, in init
+    runtime = Runtime()
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 3650, in __init__
+    self.set_default_device("cuda")
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 3820, in set_default_device
+    self.default_device = self.get_device(ident)
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 3815, in get_device
+    return self.get_current_cuda_device()
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 3840, in get_current_cuda_device
+    return self.map_cuda_device(alias, current_context)
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 3891, in map_cuda_device
+    device = Device(self, alias, ordinal=ordinal, is_primary=False, context=context)
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 2620, in __init__
+    self._init_streams()
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 2649, in _init_streams
+    self.set_stream(Stream(self))
+  File "/isaac-sim/extscache/omni.warp.core-1.5.0+lx64/warp/context.py", line 2434, in __init__
+    raise RuntimeError(f"Failed to create stream on device {device}")
+RuntimeError: Failed to create stream on device cuda:0.0

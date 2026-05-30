@@ -1,0 +1,239 @@
+{
+  "trial_id": "0011_mallet_hammer_llm_lie_x+0p150_y-0p130",
+  "object_name": "mallet_hammer",
+  "task_name": "swing_down",
+  "mode": "llm_lie",
+  "seed": 0,
+  "target_xy": [
+    0.15,
+    -0.13
+  ],
+  "resolved_baseline_object": "mallet_hammer",
+  "pivot_point": [
+    0.10964212432374565,
+    0.05731781420714077,
+    0.5798402402360319
+  ],
+  "compile_success": true,
+  "validation_success": true,
+  "num_waypoints": 11,
+  "goals": [
+    [
+      0.07591355885880738,
+      0.11597839174258498,
+      0.74474186,
+      0.0748859946229662,
+      -0.7031302068673547,
+      0.07488599462296616,
+      0.7031302068673547
+    ],
+    [
+      0.07805611783768654,
+      0.10603387761718795,
+      0.7434239839152523,
+      0.12982137773712396,
+      -0.695087359278166,
+      0.019488920629932297,
+      0.70683813905789
+    ],
+    [
+      0.08012986846375177,
+      0.0964087318934307,
+      0.7405503096001942,
+      0.1839566539985327,
+      -0.6827590948469912,
+      -0.036028550152079626,
+      0.7061882974301688
+    ],
+    [
+      0.0820831417217267,
+      0.08734277212468092,
+      0.7361668433580866,
+      0.23695915318289862,
+      -0.6662209724122018,
+      -0.09132536200851507,
+      0.7011844649555476
+    ],
+    [
+      0.0838672568808213,
+      0.07906194598367418,
+      0.730382726208031,
+      0.28850156775447644,
+      -0.6455747831593464,
+      -0.14606006221867635,
+      0.6918572851221909
+    ],
+    [
+      0.08544180490964376,
+      0.07175380871973196,
+      0.7233586111265349,
+      0.3382641184812038,
+      -0.6209488038596932,
+      -0.19989301356299483,
+      0.6782645149659938
+    ],
+    [
+      0.0867605316389196,
+      0.06563304531667144,
+      0.7152335818043294,
+      0.38593939790890325,
+      -0.5924953666784323,
+      -0.2524916935573775,
+      0.6604907011388055
+    ],
+    [
+      0.0877989300456319,
+      0.06081340313872667,
+      0.7062391302926108,
+      0.4312370629864438,
+      -0.5603878450771999,
+      -0.30353574201002037,
+      0.638643963346546
+    ],
+    [
+      0.08852722377574856,
+      0.057433086723646234,
+      0.6965823891360311,
+      0.473873632866433,
+      -0.5248273991886513,
+      -0.3527055151596047,
+      0.612861159407939
+    ],
+    [
+      0.08892734214199377,
+      0.055575969704147576,
+      0.6865032008141577,
+      0.5135894223336593,
+      -0.48603073597566876,
+      -0.39970175822664916,
+      0.5832996943462712
+    ],
+    [
+      0.08899463502391201,
+      0.055263635238038816,
+      0.6762501,
+      0.5501405319468052,
+      -0.4442357427192078,
+      -0.4442357427192078,
+      0.5501405319468052
+    ]
+  ],
+  "generation_context": {
+    "spec": {
+      "schema_version": "swing_v1",
+      "verb": "swing_down",
+      "task_frame": "world",
+      "pivot_point": [
+        0.10964212432374565,
+        0.05731781420714077,
+        0.5798402402360319
+      ],
+      "strike_target_xy": [
+        0.15,
+        -0.13
+      ],
+      "execution_target_z": 0.63,
+      "swing_angle_rad": 1.6,
+      "duration_sec": 0.62,
+      "num_samples": 37,
+      "waypoint_table_clearance_m": 0.01,
+      "hammer_swing_solver": "horizontal_head",
+      "semantic_contact_clearance_m": 0.1,
+      "configured_horizontal_strike_clearance_m": 0.01,
+      "training_distribution_resampling": {
+        "enabled": true,
+        "applied": true,
+        "pos_scale_m": 0.03,
+        "rot_scale_deg": 15.0,
+        "target_cost": 1.0,
+        "min_waypoints": 4,
+        "original_waypoint_count": 37,
+        "resampled_waypoint_count": 11,
+        "step_delta_summary": {
+          "max_step_translation_m": 0.01025804877281189,
+          "mean_step_translation_m": 0.010257411003112792,
+          "max_step_rotation_deg": 9.000299651460038,
+          "mean_step_rotation_deg": 8.999968847388688
+        }
+      },
+      "training_distribution_clamp": {
+        "enabled": true,
+        "applied": false,
+        "clamp_z": false,
+        "target_volume_mins": [
+          -0.35,
+          -0.2,
+          0.6
+        ],
+        "target_volume_maxs": [
+          0.35,
+          0.2,
+          0.95
+        ],
+        "corrected_indices": [],
+        "original_positions": [],
+        "corrected_positions": [],
+        "step_delta_summary": {
+          "max_step_translation_m": 0.01025804877281189,
+          "mean_step_translation_m": 0.010257411003112792,
+          "max_step_rotation_deg": 9.000299651460038,
+          "mean_step_rotation_deg": 8.999968847388688
+        }
+      }
+    }
+  },
+  "clamp_summary": {
+    "enabled": true,
+    "applied": false,
+    "clamp_z": false,
+    "target_volume_mins": [
+      -0.35,
+      -0.2,
+      0.6
+    ],
+    "target_volume_maxs": [
+      0.35,
+      0.2,
+      0.95
+    ],
+    "corrected_indices": [],
+    "original_positions": [],
+    "corrected_positions": [],
+    "step_delta_summary": {
+      "max_step_translation_m": 0.01025804877281189,
+      "mean_step_translation_m": 0.010257411003112792,
+      "max_step_rotation_deg": 9.000299651460038,
+      "mean_step_rotation_deg": 8.999968847388688
+    }
+  },
+  "resampling_summary": {
+    "enabled": true,
+    "applied": true,
+    "pos_scale_m": 0.03,
+    "rot_scale_deg": 15.0,
+    "target_cost": 1.0,
+    "min_waypoints": 4,
+    "original_waypoint_count": 37,
+    "resampled_waypoint_count": 11,
+    "step_delta_summary": {
+      "max_step_translation_m": 0.01025804877281189,
+      "mean_step_translation_m": 0.010257411003112792,
+      "max_step_rotation_deg": 9.000299651460038,
+      "mean_step_rotation_deg": 8.999968847388688
+    }
+  },
+  "metrics": {
+    "requested_target_xy": [
+      0.15,
+      -0.13
+    ],
+    "hammer_swing_solver": "horizontal_head",
+    "step_delta_summary": {},
+    "tool_family": "hammer",
+    "semantic_contact_point_xy_error_m": 0.0,
+    "screwdriver_max_primary_axis_tilt_deg": null,
+    "screwdriver_twist_angle_span_deg": null
+  },
+  "error": null,
+  "replay_artifact_path": "geometry/replay/trials/0011_mallet_hammer_llm_lie_x+0p150_y-0p130.json"
+}

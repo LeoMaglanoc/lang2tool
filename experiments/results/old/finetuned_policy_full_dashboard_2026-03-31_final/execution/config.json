@@ -1,0 +1,15 @@
+{
+  "experiment_dir": "experiments/results/finetuned_policy_full_dashboard_2026-03-31_final",
+  "config_path": "pretrained_policy/config.yaml",
+  "checkpoint_path": "pretrained_policy/model.pth",
+  "finetuned_config_path": "pretrained_policy/config.yaml",
+  "finetuned_checkpoint_path": "train_dir/simtoolreal/2026-03-31/lie_watchdog_probe_2026-03-31_11-27-55/runs/00_lie_watchdog_probe_2026-03-31_11-27-55/last/model.pth",
+  "finetuned_policy_path": "train_dir/simtoolreal/2026-03-31/lie_watchdog_probe_2026-03-31_11-27-55/runs/00_lie_watchdog_probe_2026-03-31_11-27-55/last/model.pth",
+  "num_episodes": 1,
+  "max_trials": null,
+  "overwrite": false,
+  "timeout_sec": 180.0,
+  "success_goal_pct_threshold": 50.0,
+  "tracking_translation_tolerance_m": 0.03,
+  "tracking_rotation_tolerance_deg": 15.0
+}

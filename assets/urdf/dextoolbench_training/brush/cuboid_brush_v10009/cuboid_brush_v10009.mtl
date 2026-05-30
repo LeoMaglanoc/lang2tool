@@ -1,0 +1,9 @@
+# Material file for cuboid_brush_v10009.obj
+
+newmtl material_0
+Ka 0.0 0.0 0.0
+Kd 0.639 0.847 0.882
+Ks 0.4 0.4 0.4
+Ns 10.0
+d 1.0
+map_Kd cuboid_brush_v10009.png

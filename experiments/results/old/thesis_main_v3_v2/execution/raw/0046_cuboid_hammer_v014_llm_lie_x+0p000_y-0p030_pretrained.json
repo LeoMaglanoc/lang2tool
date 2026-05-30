@@ -1,0 +1,60 @@
+{
+  "trial_id": "0046_cuboid_hammer_v014_llm_lie_x+0p000_y-0p030_pretrained",
+  "geometry_trial_id": "0046_cuboid_hammer_v014_llm_lie_x+0p000_y-0p030",
+  "object_name": "cuboid_hammer_v014",
+  "task_name": "swing_down",
+  "mode": "llm_lie",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_lie + pretrained",
+  "seed": 0,
+  "execution_success": false,
+  "goal_completion_pct": 2.7027027027027026,
+  "peak_success_count": 3,
+  "failure_stage": "execution_failure",
+  "failure_category": "object_z_low",
+  "resolved_baseline_object": "claw_hammer",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_v3_v2/execution/artifacts/0046_cuboid_hammer_v014_llm_lie_x+0p000_y-0p030_pretrained/trace.json",
+  "tracking_success_rate": 0.0,
+  "translation_rmse_m": 0.2622765214772014,
+  "rotation_rmse_deg": 111.2591149611904,
+  "mean_translation_error_m": 0.2577556374852195,
+  "mean_rotation_error_deg": 108.60915357280538,
+  "final_translation_error_m": 0.7147382108592626,
+  "final_rotation_error_deg": 149.41815568551047,
+  "geometry_goal_count": 12,
+  "execution_goal_count": 37,
+  "reference_goal_count": 37,
+  "execution_goal_transform": "cycle_to_predefined_length",
+  "execution_goal_cycle_style": "mirrored",
+  "metrics": {
+    "avg_goal_pct": 2.7027027027027026,
+    "avg_time_sec": 15.416666666666666,
+    "episode_goal_pcts": [
+      2.7027027027027026
+    ],
+    "episode_lengths": [
+      925
+    ],
+    "episode_trial_stops": [
+      {
+        "should_stop": true,
+        "reason": "object_z_low",
+        "is_failure": true,
+        "details": {
+          "dropped": false,
+          "object_z_low": true,
+          "success_count": 1,
+          "success_target": 37,
+          "sim_time_sec": 15.416666666666666,
+          "timeout_sec": 180.0
+        }
+      }
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v2/execution/artifacts/0046_cuboid_hammer_v014_llm_lie_x+0p000_y-0p030_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_v3_v2/execution/artifacts/0046_cuboid_hammer_v014_llm_lie_x+0p000_y-0p030_pretrained",
+  "replay_artifact_path": "execution/replay/trials/0046_cuboid_hammer_v014_llm_lie_x+0p000_y-0p030_pretrained.json"
+}

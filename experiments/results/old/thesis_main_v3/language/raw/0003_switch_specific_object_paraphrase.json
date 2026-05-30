@@ -1,0 +1,29 @@
+{
+  "trial_id": "0003_switch_specific_object_paraphrase",
+  "prompt_id": "switch_specific_object_paraphrase",
+  "prompt_family": "paraphrase_robustness",
+  "prompt_variant": "switch_short_screwdriver_paraphrase",
+  "prompt_text": "change the active tool to the short screwdriver",
+  "backend": "openai",
+  "active_object_context": "claw_hammer",
+  "expected_outcome_type": "command",
+  "expected_intent": "switch_active_object",
+  "expected_object_name": "short_screwdriver",
+  "expected_target_label": null,
+  "expected_clarification": false,
+  "predicted_outcome_type": "command",
+  "predicted_intent": "switch_active_object",
+  "predicted_object_name": "short_screwdriver",
+  "predicted_target_label": null,
+  "predicted_clarification": false,
+  "assistant_text": "Switched the active tool to short_screwdriver.",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

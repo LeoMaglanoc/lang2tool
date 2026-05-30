@@ -1,0 +1,40 @@
+{
+    "avg_goal_pct": 97.29729729729729,
+    "avg_time_sec": 180.0,
+    "episode_goal_pcts": [
+        97.29729729729729
+    ],
+    "episode_lengths": [
+        10800
+    ],
+    "episode_trial_stops": [
+        {
+            "should_stop": true,
+            "reason": "experiment_timeout",
+            "is_failure": true,
+            "details": {
+                "dropped": true,
+                "object_z_low": true,
+                "success_count": 36,
+                "success_target": 37,
+                "sim_time_sec": 180.0,
+                "timeout_sec": 180.0,
+                "object_z": -117092.6953125,
+                "object_init_z": 0.5743193030357361,
+                "lifted_object": true,
+                "env_debug_dropped": false,
+                "env_debug_object_z_low": true,
+                "step": 10800
+            }
+        }
+    ],
+    "episode_reset_signal_summaries": [
+        {
+            "dropped_count": 9419,
+            "dropped_first_step": 1271,
+            "object_z_low_count": 9254,
+            "object_z_low_first_step": 1547
+        }
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v4_execution_rerun/execution/artifacts/0042_cuboid_hammer_v014_llm_lie_x-0p150_y-0p080_pretrained/trace.json"
+}

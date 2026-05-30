@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot name="cuboid_brush_v10007">
+
+  <link name="cuboid_brush_v10007">
+    <!-- Handle -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.19294986991519725 0.012154664215086531 0.012755870718556103"/>
+      </geometry>
+      <material name="material">
+        <color rgba="0.639 0.847 0.882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.19294986991519725 0.012154664215086531 0.012755870718556103"/>
+      </geometry>
+    </collision>
+
+    <!-- Head -->
+    <visual>
+      <origin xyz="0.1321312633842598 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.0713126568533223 0.0887028777845123 0.021939557774109587"/>
+      </geometry>
+      <material name="material">
+        <color rgba="0.639 0.847 0.882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1321312633842598 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.0713126568533223 0.0887028777845123 0.021939557774109587"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <density value="400.0"/>
+    </inertial>
+  </link>
+
+</robot>

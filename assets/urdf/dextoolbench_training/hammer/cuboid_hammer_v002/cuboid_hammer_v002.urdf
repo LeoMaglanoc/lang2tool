@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot name="cuboid_hammer_v002">
+
+  <link name="cuboid_hammer_v002">
+    <!-- Handle -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.2465797680120997 0.036455232265416596 0.021651212982409965"/>
+      </geometry>
+      <material name="material">
+        <color rgba="0.639 0.847 0.882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.2465797680120997 0.036455232265416596 0.021651212982409965"/>
+      </geometry>
+    </collision>
+
+    <!-- Head -->
+    <visual>
+      <origin xyz="0.1378346584417454 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.029089548871391074 0.08882093509110844 0.022552690244167013"/>
+      </geometry>
+      <material name="material">
+        <color rgba="0.639 0.847 0.882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.1378346584417454 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.029089548871391074 0.08882093509110844 0.022552690244167013"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <density value="400.0"/>
+    </inertial>
+  </link>
+
+</robot>

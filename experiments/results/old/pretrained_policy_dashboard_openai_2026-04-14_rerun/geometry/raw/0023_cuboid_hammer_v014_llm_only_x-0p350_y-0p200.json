@@ -1,0 +1,153 @@
+{
+  "trial_id": "0023_cuboid_hammer_v014_llm_only_x-0p350_y-0p200",
+  "object_name": "cuboid_hammer_v014",
+  "task_name": "swing_down",
+  "mode": "llm_only",
+  "seed": 0,
+  "target_xy": [
+    -0.35,
+    -0.2
+  ],
+  "resolved_baseline_object": "claw_hammer",
+  "pivot_point": [
+    0.09076502773615436,
+    0.08070982635558854,
+    0.5743193171844398
+  ],
+  "compile_success": true,
+  "validation_success": true,
+  "num_waypoints": 2,
+  "goals": [
+    [
+      -0.12961748383292282,
+      -0.05964508682271584,
+      0.5443193171844398,
+      0.07781270573992774,
+      -0.9964358547253278,
+      -0.02580069906429796,
+      0.01987697590254495
+    ],
+    [
+      -0.3499999999999999,
+      -0.19999999999999996,
+      0.5443193171844398,
+      0.07781270573992774,
+      -0.9964358547253278,
+      -0.02580069906429796,
+      0.01987697590254495
+    ]
+  ],
+  "generation_context": {
+    "schema_version": "llm_only_target_conditioned_v1",
+    "object_name": "cuboid_hammer_v014",
+    "task_name": "swing_down",
+    "resolved_baseline_object": "claw_hammer",
+    "start_pose": [
+      0.09076502773615436,
+      0.08070982635558854,
+      0.5443193171844398,
+      0.07781270573992773,
+      -0.9964358547253277,
+      -0.025800699064297956,
+      0.019876975902544947
+    ],
+    "start_context": {
+      "pivot_point": [
+        0.09076502773615436,
+        0.08070982635558854,
+        0.5743193171844398
+      ],
+      "start_position": [
+        0.09076502773615436,
+        0.08070982635558854,
+        0.5443193171844398
+      ]
+    },
+    "target_xy": [
+      -0.35,
+      -0.2
+    ],
+    "reference_duration_sec": 0.6333333333333333,
+    "reference_num_goals": 38,
+    "static_strike_context": {
+      "available": true,
+      "frame": "world_table_xy",
+      "frame_description": "Use world-table XY coordinates on the tabletop plane. X increases toward the camera-right side of the table, and Y increases away from the robot base. When the user says front of the table, interpret that as farther away from the camera. When the user says back of the table, interpret that as closer to the camera.",
+      "table_target_region": {
+        "x_min": -0.19749999999999998,
+        "x_max": 0.19749999999999998,
+        "y_min": -0.16,
+        "y_max": 0.16
+      },
+      "named_strike_points": {
+        "available": true,
+        "frame": "world_table_xy",
+        "points": {
+          "target_a": {
+            "aliases": [
+              "a",
+              "strike point a",
+              "striking point a"
+            ],
+            "world_xy": [
+              -0.1959162963345168,
+              0.047830040448630005
+            ],
+            "world_xyz": [
+              -0.1959162963345168,
+              0.047830040448630005,
+              0.53
+            ]
+          },
+          "target_b": {
+            "aliases": [
+              "b",
+              "strike point b",
+              "striking point b",
+              "front of the table"
+            ],
+            "world_xy": [
+              0.0,
+              0.16
+            ],
+            "world_xyz": [
+              0.0,
+              0.16,
+              0.53
+            ]
+          },
+          "target_c": {
+            "aliases": [
+              "c",
+              "strike point c",
+              "striking point c",
+              "back of the table"
+            ],
+            "world_xy": [
+              0.0,
+              -0.16
+            ],
+            "world_xyz": [
+              0.0,
+              -0.16,
+              0.53
+            ]
+          }
+        }
+      }
+    }
+  },
+  "clamp_summary": {},
+  "resampling_summary": {},
+  "metrics": {
+    "mean_translation_error_m": 0.24855094891699117,
+    "max_translation_error_m": 0.44530874946768845,
+    "mean_rotation_error_deg": 74.56666725376134,
+    "max_rotation_error_deg": 108.91685030780609,
+    "reference_path_length_m": 1.0647205635790191,
+    "candidate_path_length_m": 0.5225627390924819,
+    "path_length_ratio": 0.49079801496075776,
+    "sample_count": 38.0
+  },
+  "error": null
+}

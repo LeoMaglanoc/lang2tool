@@ -1,0 +1,40 @@
+{
+    "avg_goal_pct": 5.0,
+    "avg_time_sec": 180.0,
+    "episode_goal_pcts": [
+        5.0
+    ],
+    "episode_lengths": [
+        10800
+    ],
+    "episode_trial_stops": [
+        {
+            "should_stop": true,
+            "reason": "experiment_timeout",
+            "is_failure": true,
+            "details": {
+                "dropped": true,
+                "object_z_low": true,
+                "success_count": 5,
+                "success_target": 100,
+                "sim_time_sec": 180.0,
+                "timeout_sec": 180.0,
+                "object_z": -144488.046875,
+                "object_init_z": 0.6019588112831116,
+                "lifted_object": true,
+                "env_debug_dropped": false,
+                "env_debug_object_z_low": true,
+                "step": 10800
+            }
+        }
+    ],
+    "episode_reset_signal_summaries": [
+        {
+            "dropped_count": 10428,
+            "dropped_first_step": 343,
+            "object_z_low_count": 10280,
+            "object_z_low_first_step": 521
+        }
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v3/execution/artifacts/0104_cylinder_screwdriver_v3009_llm_lie_x+0p150_y-0p030_pretrained/trace.json"
+}

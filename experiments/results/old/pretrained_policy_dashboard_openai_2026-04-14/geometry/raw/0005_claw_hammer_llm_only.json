@@ -1,0 +1,18 @@
+{
+  "trial_id": "0005_claw_hammer_llm_only",
+  "object_name": "claw_hammer",
+  "task_name": "swing_down",
+  "mode": "llm_only",
+  "seed": 0,
+  "target_xy": null,
+  "resolved_baseline_object": "claw_hammer",
+  "pivot_point": null,
+  "compile_success": false,
+  "validation_success": false,
+  "num_waypoints": 0,
+  "goals": [],
+  "clamp_summary": {},
+  "resampling_summary": {},
+  "metrics": {},
+  "error": "The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable"
+}

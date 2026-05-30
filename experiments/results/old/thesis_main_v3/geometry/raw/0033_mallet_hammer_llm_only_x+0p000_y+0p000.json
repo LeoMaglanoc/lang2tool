@@ -1,0 +1,167 @@
+{
+  "trial_id": "0033_mallet_hammer_llm_only_x+0p000_y+0p000",
+  "object_name": "mallet_hammer",
+  "task_name": "swing_down",
+  "mode": "llm_only",
+  "seed": 0,
+  "target_xy": [
+    0.0,
+    0.0
+  ],
+  "resolved_baseline_object": "mallet_hammer",
+  "pivot_point": [
+    0.10964212432374565,
+    0.05731781420714077,
+    0.5798402402360319
+  ],
+  "compile_success": true,
+  "validation_success": true,
+  "num_waypoints": 3,
+  "goals": [
+    [
+      0.0732140621618724,
+      0.028658907103570386,
+      0.5398402402360318,
+      0.022423567732318843,
+      -0.9991131768598981,
+      0.025734957847727336,
+      0.024652695180282746
+    ],
+    [
+      0.03678599999999999,
+      0.0,
+      0.5298402402360318,
+      0.022423567732318843,
+      -0.9991131768598981,
+      0.025734957847727336,
+      0.024652695180282746
+    ],
+    [
+      0.0,
+      0.0,
+      0.53,
+      0.022423567732318843,
+      -0.9991131768598981,
+      0.025734957847727336,
+      0.024652695180282746
+    ]
+  ],
+  "generation_context": {
+    "schema_version": "llm_only_target_conditioned_v1",
+    "object_name": "mallet_hammer",
+    "task_name": "swing_down",
+    "resolved_baseline_object": "mallet_hammer",
+    "start_pose": [
+      0.10964212432374565,
+      0.05731781420714077,
+      0.5498402402360318,
+      0.022423567732318832,
+      -0.9991131768598976,
+      0.025734957847727325,
+      0.024652695180282735
+    ],
+    "start_context": {
+      "pivot_point": [
+        0.10964212432374565,
+        0.05731781420714077,
+        0.5798402402360319
+      ],
+      "start_position": [
+        0.10964212432374565,
+        0.05731781420714077,
+        0.5498402402360318
+      ]
+    },
+    "target_xy": [
+      0.0,
+      0.0
+    ],
+    "reference_duration_sec": 0.6166666666666667,
+    "reference_num_goals": 37,
+    "static_strike_context": {
+      "available": true,
+      "frame": "world_table_xy",
+      "frame_description": "Use world-table XY coordinates on the tabletop plane. X increases toward the camera-right side of the table, and Y increases away from the robot base. When the user says front of the table, interpret that as farther away from the camera. When the user says back of the table, interpret that as closer to the camera.",
+      "table_target_region": {
+        "x_min": -0.19749999999999998,
+        "x_max": 0.19749999999999998,
+        "y_min": -0.16,
+        "y_max": 0.16
+      },
+      "named_strike_points": {
+        "available": true,
+        "frame": "world_table_xy",
+        "points": {
+          "target_a": {
+            "aliases": [
+              "a",
+              "strike point a",
+              "striking point a"
+            ],
+            "world_xy": [
+              -0.1397246196175466,
+              0.05058474355746264
+            ],
+            "world_xyz": [
+              -0.1397246196175466,
+              0.05058474355746264,
+              0.53
+            ]
+          },
+          "target_b": {
+            "aliases": [
+              "b",
+              "strike point b",
+              "striking point b",
+              "front of the table"
+            ],
+            "world_xy": [
+              0.0,
+              0.16
+            ],
+            "world_xyz": [
+              0.0,
+              0.16,
+              0.53
+            ]
+          },
+          "target_c": {
+            "aliases": [
+              "c",
+              "strike point c",
+              "striking point c",
+              "back of the table"
+            ],
+            "world_xy": [
+              0.0,
+              -0.16
+            ],
+            "world_xyz": [
+              0.0,
+              -0.16,
+              0.53
+            ]
+          }
+        }
+      }
+    }
+  },
+  "clamp_summary": {},
+  "resampling_summary": {},
+  "metrics": {
+    "mean_translation_error_m": 0.20638036710385896,
+    "max_translation_error_m": 0.28887459790773995,
+    "mean_rotation_error_deg": 71.98580375397485,
+    "max_rotation_error_deg": 102.85215039925632,
+    "reference_path_length_m": 0.6542138327682845,
+    "candidate_path_length_m": 0.13161960414328935,
+    "path_length_ratio": 0.20118743681457374,
+    "sample_count": 37.0,
+    "tool_family": "hammer",
+    "semantic_contact_point_xy_error_m": 0.10955061278125547,
+    "screwdriver_max_primary_axis_tilt_deg": null,
+    "screwdriver_twist_angle_span_deg": null
+  },
+  "error": null,
+  "replay_artifact_path": "geometry/replay/trials/0033_mallet_hammer_llm_only_x+0p000_y+0p000.json"
+}

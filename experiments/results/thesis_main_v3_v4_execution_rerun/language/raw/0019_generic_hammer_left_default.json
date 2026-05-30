@@ -1,0 +1,49 @@
+{
+  "trial_id": "0019_generic_hammer_left_default",
+  "prompt_id": "generic_hammer_left_default",
+  "prompt_family": "default_family_selection",
+  "prompt_variant": "generic_hammer_left_side",
+  "prompt_text": "hammer the left side of the table",
+  "backend": "openai",
+  "active_object_context": "cuboid_hammer_v014",
+  "expected_outcome_type": "command",
+  "expected_intent": "execute_lie_trajectory",
+  "expected_object_name": "claw_hammer",
+  "expected_target_label": "left_side_of_table",
+  "expected_clarification": false,
+  "predicted_outcome_type": "clarification",
+  "predicted_intent": null,
+  "predicted_object_name": null,
+  "predicted_target_label": null,
+  "predicted_clarification": true,
+  "assistant_text": "Which hammer do you want: claw hammer or mallet hammer or cuboid hammer v014?",
+  "exact_match": false,
+  "object_match": false,
+  "intent_match": false,
+  "target_match": false,
+  "clarification_match": false,
+  "expected_tool_call": {
+    "intent": "execute_lie_trajectory",
+    "object_name": "claw_hammer",
+    "target_label": "left_side_of_table",
+    "target_constraint": {
+      "x": "< -1e-06",
+      "bounds": {
+        "x_min": -0.1975,
+        "x_max": 0.1975,
+        "y_min": -0.16,
+        "y_max": 0.16
+      }
+    }
+  },
+  "predicted_tool_call": null,
+  "target_evaluation": {
+    "match": false,
+    "reason": "missing_command"
+  },
+  "predicted_tool_trace": [],
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

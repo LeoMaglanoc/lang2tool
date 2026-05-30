@@ -1,0 +1,817 @@
+{
+  "schema_version": "experiment_replay_manifest_v1",
+  "stage": "geometry",
+  "num_trials": 54,
+  "entries": [
+    {
+      "trial_id": "0000_claw_hammer_predefined",
+      "object_name": "claw_hammer",
+      "task_name": "swing_down",
+      "mode": "predefined",
+      "target_xy": [
+        -0.22269390561861938,
+        0.04258896007442232
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0000_claw_hammer_predefined.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0001_claw_hammer_llm_lie_x-0p350_y-0p200",
+      "object_name": "claw_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.19749999999999998,
+        -0.16
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0001_claw_hammer_llm_lie_x-0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0002_claw_hammer_llm_lie_x+0p350_y-0p200",
+      "object_name": "claw_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.19749999999999998,
+        -0.16
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0002_claw_hammer_llm_lie_x+0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0003_claw_hammer_llm_lie_x-0p350_y+0p200",
+      "object_name": "claw_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.19749999999999998,
+        0.16
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0003_claw_hammer_llm_lie_x-0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0004_claw_hammer_llm_lie_x+0p350_y+0p200",
+      "object_name": "claw_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.19749999999999998,
+        0.16
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0004_claw_hammer_llm_lie_x+0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0005_claw_hammer_llm_only_x-0p350_y-0p200",
+      "object_name": "claw_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_only",
+      "target_xy": [
+        -0.35,
+        -0.2
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0005_claw_hammer_llm_only_x-0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0006_claw_hammer_llm_only_x+0p350_y-0p200",
+      "object_name": "claw_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_only",
+      "target_xy": [
+        0.35,
+        -0.2
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0006_claw_hammer_llm_only_x+0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0007_claw_hammer_llm_only_x-0p350_y+0p200",
+      "object_name": "claw_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_only",
+      "target_xy": [
+        -0.35,
+        0.2
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0007_claw_hammer_llm_only_x-0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0008_claw_hammer_llm_only_x+0p350_y+0p200",
+      "object_name": "claw_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_only",
+      "target_xy": [
+        0.35,
+        0.2
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0008_claw_hammer_llm_only_x+0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0009_mallet_hammer_predefined",
+      "object_name": "mallet_hammer",
+      "task_name": "swing_down",
+      "mode": "predefined",
+      "target_xy": [
+        -0.1397246196175466,
+        0.05058474355746264
+      ],
+      "resolved_baseline_object": "mallet_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0009_mallet_hammer_predefined.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0010_mallet_hammer_llm_lie_x-0p350_y-0p200",
+      "object_name": "mallet_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.19749999999999998,
+        -0.16
+      ],
+      "resolved_baseline_object": "mallet_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0010_mallet_hammer_llm_lie_x-0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0011_mallet_hammer_llm_lie_x+0p350_y-0p200",
+      "object_name": "mallet_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.19749999999999998,
+        -0.16
+      ],
+      "resolved_baseline_object": "mallet_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0011_mallet_hammer_llm_lie_x+0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0012_mallet_hammer_llm_lie_x-0p350_y+0p200",
+      "object_name": "mallet_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.19749999999999998,
+        0.16
+      ],
+      "resolved_baseline_object": "mallet_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0012_mallet_hammer_llm_lie_x-0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0013_mallet_hammer_llm_lie_x+0p350_y+0p200",
+      "object_name": "mallet_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.19749999999999998,
+        0.16
+      ],
+      "resolved_baseline_object": "mallet_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0013_mallet_hammer_llm_lie_x+0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0014_mallet_hammer_llm_only_x-0p350_y-0p200",
+      "object_name": "mallet_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_only",
+      "target_xy": [
+        -0.35,
+        -0.2
+      ],
+      "resolved_baseline_object": "mallet_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0014_mallet_hammer_llm_only_x-0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0015_mallet_hammer_llm_only_x+0p350_y-0p200",
+      "object_name": "mallet_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_only",
+      "target_xy": [
+        0.35,
+        -0.2
+      ],
+      "resolved_baseline_object": "mallet_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0015_mallet_hammer_llm_only_x+0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0016_mallet_hammer_llm_only_x-0p350_y+0p200",
+      "object_name": "mallet_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_only",
+      "target_xy": [
+        -0.35,
+        0.2
+      ],
+      "resolved_baseline_object": "mallet_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0016_mallet_hammer_llm_only_x-0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0017_mallet_hammer_llm_only_x+0p350_y+0p200",
+      "object_name": "mallet_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_only",
+      "target_xy": [
+        0.35,
+        0.2
+      ],
+      "resolved_baseline_object": "mallet_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0017_mallet_hammer_llm_only_x+0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0018_cuboid_hammer_v014_predefined",
+      "object_name": "cuboid_hammer_v014",
+      "task_name": "swing_down",
+      "mode": "predefined",
+      "target_xy": [
+        -0.1959162963345168,
+        0.047830040448630005
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0018_cuboid_hammer_v014_predefined.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0019_cuboid_hammer_v014_llm_lie_x-0p350_y-0p200",
+      "object_name": "cuboid_hammer_v014",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.19749999999999998,
+        -0.16
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0019_cuboid_hammer_v014_llm_lie_x-0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0020_cuboid_hammer_v014_llm_lie_x+0p350_y-0p200",
+      "object_name": "cuboid_hammer_v014",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.19749999999999998,
+        -0.16
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0020_cuboid_hammer_v014_llm_lie_x+0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0021_cuboid_hammer_v014_llm_lie_x-0p350_y+0p200",
+      "object_name": "cuboid_hammer_v014",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.19749999999999998,
+        0.16
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0021_cuboid_hammer_v014_llm_lie_x-0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0022_cuboid_hammer_v014_llm_lie_x+0p350_y+0p200",
+      "object_name": "cuboid_hammer_v014",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.19749999999999998,
+        0.16
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0022_cuboid_hammer_v014_llm_lie_x+0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0023_cuboid_hammer_v014_llm_only_x-0p350_y-0p200",
+      "object_name": "cuboid_hammer_v014",
+      "task_name": "swing_down",
+      "mode": "llm_only",
+      "target_xy": [
+        -0.35,
+        -0.2
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0023_cuboid_hammer_v014_llm_only_x-0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0024_cuboid_hammer_v014_llm_only_x+0p350_y-0p200",
+      "object_name": "cuboid_hammer_v014",
+      "task_name": "swing_down",
+      "mode": "llm_only",
+      "target_xy": [
+        0.35,
+        -0.2
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0024_cuboid_hammer_v014_llm_only_x+0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0025_cuboid_hammer_v014_llm_only_x-0p350_y+0p200",
+      "object_name": "cuboid_hammer_v014",
+      "task_name": "swing_down",
+      "mode": "llm_only",
+      "target_xy": [
+        -0.35,
+        0.2
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0025_cuboid_hammer_v014_llm_only_x-0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0026_cuboid_hammer_v014_llm_only_x+0p350_y+0p200",
+      "object_name": "cuboid_hammer_v014",
+      "task_name": "swing_down",
+      "mode": "llm_only",
+      "target_xy": [
+        0.35,
+        0.2
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0026_cuboid_hammer_v014_llm_only_x+0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0027_long_screwdriver_predefined",
+      "object_name": "long_screwdriver",
+      "task_name": "spin_vertical",
+      "mode": "predefined",
+      "target_xy": [
+        -0.0593696929539107,
+        -0.04574792165983691
+      ],
+      "resolved_baseline_object": "long_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0027_long_screwdriver_predefined.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0028_long_screwdriver_llm_lie_x-0p350_y-0p200",
+      "object_name": "long_screwdriver",
+      "task_name": "spin_vertical",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.19749999999999998,
+        -0.16
+      ],
+      "resolved_baseline_object": "long_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0028_long_screwdriver_llm_lie_x-0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0029_long_screwdriver_llm_lie_x+0p350_y-0p200",
+      "object_name": "long_screwdriver",
+      "task_name": "spin_vertical",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.19749999999999998,
+        -0.16
+      ],
+      "resolved_baseline_object": "long_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0029_long_screwdriver_llm_lie_x+0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0030_long_screwdriver_llm_lie_x-0p350_y+0p200",
+      "object_name": "long_screwdriver",
+      "task_name": "spin_vertical",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.19749999999999998,
+        0.16
+      ],
+      "resolved_baseline_object": "long_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0030_long_screwdriver_llm_lie_x-0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0031_long_screwdriver_llm_lie_x+0p350_y+0p200",
+      "object_name": "long_screwdriver",
+      "task_name": "spin_vertical",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.19749999999999998,
+        0.16
+      ],
+      "resolved_baseline_object": "long_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0031_long_screwdriver_llm_lie_x+0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0032_long_screwdriver_llm_only_x-0p350_y-0p200",
+      "object_name": "long_screwdriver",
+      "task_name": "spin_vertical",
+      "mode": "llm_only",
+      "target_xy": [
+        -0.35,
+        -0.2
+      ],
+      "resolved_baseline_object": "long_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0032_long_screwdriver_llm_only_x-0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0033_long_screwdriver_llm_only_x+0p350_y-0p200",
+      "object_name": "long_screwdriver",
+      "task_name": "spin_vertical",
+      "mode": "llm_only",
+      "target_xy": [
+        0.35,
+        -0.2
+      ],
+      "resolved_baseline_object": "long_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0033_long_screwdriver_llm_only_x+0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0034_long_screwdriver_llm_only_x-0p350_y+0p200",
+      "object_name": "long_screwdriver",
+      "task_name": "spin_vertical",
+      "mode": "llm_only",
+      "target_xy": [
+        -0.35,
+        0.2
+      ],
+      "resolved_baseline_object": "long_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0034_long_screwdriver_llm_only_x-0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0035_long_screwdriver_llm_only_x+0p350_y+0p200",
+      "object_name": "long_screwdriver",
+      "task_name": "spin_vertical",
+      "mode": "llm_only",
+      "target_xy": [
+        0.35,
+        0.2
+      ],
+      "resolved_baseline_object": "long_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0035_long_screwdriver_llm_only_x+0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0036_short_screwdriver_predefined",
+      "object_name": "short_screwdriver",
+      "task_name": "spin_vertical",
+      "mode": "predefined",
+      "target_xy": [
+        -0.08168831378190461,
+        -0.043994911527795284
+      ],
+      "resolved_baseline_object": "short_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0036_short_screwdriver_predefined.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0037_short_screwdriver_llm_lie_x-0p350_y-0p200",
+      "object_name": "short_screwdriver",
+      "task_name": "spin_vertical",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.19749999999999998,
+        -0.16
+      ],
+      "resolved_baseline_object": "short_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0037_short_screwdriver_llm_lie_x-0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0038_short_screwdriver_llm_lie_x+0p350_y-0p200",
+      "object_name": "short_screwdriver",
+      "task_name": "spin_vertical",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.19749999999999998,
+        -0.16
+      ],
+      "resolved_baseline_object": "short_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0038_short_screwdriver_llm_lie_x+0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0039_short_screwdriver_llm_lie_x-0p350_y+0p200",
+      "object_name": "short_screwdriver",
+      "task_name": "spin_vertical",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.19749999999999998,
+        0.16
+      ],
+      "resolved_baseline_object": "short_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0039_short_screwdriver_llm_lie_x-0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0040_short_screwdriver_llm_lie_x+0p350_y+0p200",
+      "object_name": "short_screwdriver",
+      "task_name": "spin_vertical",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.19749999999999998,
+        0.16
+      ],
+      "resolved_baseline_object": "short_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0040_short_screwdriver_llm_lie_x+0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0041_short_screwdriver_llm_only_x-0p350_y-0p200",
+      "object_name": "short_screwdriver",
+      "task_name": "spin_vertical",
+      "mode": "llm_only",
+      "target_xy": [
+        -0.35,
+        -0.2
+      ],
+      "resolved_baseline_object": "short_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0041_short_screwdriver_llm_only_x-0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0042_short_screwdriver_llm_only_x+0p350_y-0p200",
+      "object_name": "short_screwdriver",
+      "task_name": "spin_vertical",
+      "mode": "llm_only",
+      "target_xy": [
+        0.35,
+        -0.2
+      ],
+      "resolved_baseline_object": "short_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0042_short_screwdriver_llm_only_x+0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0043_short_screwdriver_llm_only_x-0p350_y+0p200",
+      "object_name": "short_screwdriver",
+      "task_name": "spin_vertical",
+      "mode": "llm_only",
+      "target_xy": [
+        -0.35,
+        0.2
+      ],
+      "resolved_baseline_object": "short_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0043_short_screwdriver_llm_only_x-0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0044_short_screwdriver_llm_only_x+0p350_y+0p200",
+      "object_name": "short_screwdriver",
+      "task_name": "spin_vertical",
+      "mode": "llm_only",
+      "target_xy": [
+        0.35,
+        0.2
+      ],
+      "resolved_baseline_object": "short_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0044_short_screwdriver_llm_only_x+0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0045_cylinder_screwdriver_v3009_predefined",
+      "object_name": "cylinder_screwdriver_v3009",
+      "task_name": "spin_vertical",
+      "mode": "predefined",
+      "target_xy": [
+        -0.0593696929539107,
+        -0.04574792165983691
+      ],
+      "resolved_baseline_object": "long_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0045_cylinder_screwdriver_v3009_predefined.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0046_cylinder_screwdriver_v3009_llm_lie_x-0p350_y-0p200",
+      "object_name": "cylinder_screwdriver_v3009",
+      "task_name": "spin_vertical",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.19749999999999998,
+        -0.16
+      ],
+      "resolved_baseline_object": "long_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0046_cylinder_screwdriver_v3009_llm_lie_x-0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0047_cylinder_screwdriver_v3009_llm_lie_x+0p350_y-0p200",
+      "object_name": "cylinder_screwdriver_v3009",
+      "task_name": "spin_vertical",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.19749999999999998,
+        -0.16
+      ],
+      "resolved_baseline_object": "long_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0047_cylinder_screwdriver_v3009_llm_lie_x+0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0048_cylinder_screwdriver_v3009_llm_lie_x-0p350_y+0p200",
+      "object_name": "cylinder_screwdriver_v3009",
+      "task_name": "spin_vertical",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.19749999999999998,
+        0.16
+      ],
+      "resolved_baseline_object": "long_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0048_cylinder_screwdriver_v3009_llm_lie_x-0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0049_cylinder_screwdriver_v3009_llm_lie_x+0p350_y+0p200",
+      "object_name": "cylinder_screwdriver_v3009",
+      "task_name": "spin_vertical",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.19749999999999998,
+        0.16
+      ],
+      "resolved_baseline_object": "long_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0049_cylinder_screwdriver_v3009_llm_lie_x+0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0050_cylinder_screwdriver_v3009_llm_only_x-0p350_y-0p200",
+      "object_name": "cylinder_screwdriver_v3009",
+      "task_name": "spin_vertical",
+      "mode": "llm_only",
+      "target_xy": [
+        -0.35,
+        -0.2
+      ],
+      "resolved_baseline_object": "long_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0050_cylinder_screwdriver_v3009_llm_only_x-0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0051_cylinder_screwdriver_v3009_llm_only_x+0p350_y-0p200",
+      "object_name": "cylinder_screwdriver_v3009",
+      "task_name": "spin_vertical",
+      "mode": "llm_only",
+      "target_xy": [
+        0.35,
+        -0.2
+      ],
+      "resolved_baseline_object": "long_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0051_cylinder_screwdriver_v3009_llm_only_x+0p350_y-0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0052_cylinder_screwdriver_v3009_llm_only_x-0p350_y+0p200",
+      "object_name": "cylinder_screwdriver_v3009",
+      "task_name": "spin_vertical",
+      "mode": "llm_only",
+      "target_xy": [
+        -0.35,
+        0.2
+      ],
+      "resolved_baseline_object": "long_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0052_cylinder_screwdriver_v3009_llm_only_x-0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0053_cylinder_screwdriver_v3009_llm_only_x+0p350_y+0p200",
+      "object_name": "cylinder_screwdriver_v3009",
+      "task_name": "spin_vertical",
+      "mode": "llm_only",
+      "target_xy": [
+        0.35,
+        0.2
+      ],
+      "resolved_baseline_object": "long_screwdriver",
+      "replay_artifact_path": "geometry/replay/trials/0053_cylinder_screwdriver_v3009_llm_only_x+0p350_y+0p200.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    }
+  ]
+}

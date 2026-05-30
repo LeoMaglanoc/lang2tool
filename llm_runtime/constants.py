@@ -1,0 +1,5 @@
+"""Default constants for tool-centered live command runtime."""
+
+DEFAULT_RELEASE_TABLE_CLEARANCE_M = 0.02
+DEFAULT_RELEASE_OPEN_STEPS = 30
+DEFAULT_RELEASE_PREMOVE_TIMEOUT_STEPS = 180

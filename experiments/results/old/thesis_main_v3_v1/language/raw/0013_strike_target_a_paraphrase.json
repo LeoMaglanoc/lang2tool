@@ -1,0 +1,29 @@
+{
+  "trial_id": "0013_strike_target_a_paraphrase",
+  "prompt_id": "strike_target_a_paraphrase",
+  "prompt_family": "paraphrase_robustness",
+  "prompt_variant": "strike_target_a_paraphrase",
+  "prompt_text": "please aim the claw hammer at strike point a",
+  "backend": "openai",
+  "active_object_context": "mallet_hammer",
+  "expected_outcome_type": "command",
+  "expected_intent": "execute_lie_trajectory",
+  "expected_object_name": "claw_hammer",
+  "expected_target_label": "strike_point_a",
+  "expected_clarification": false,
+  "predicted_outcome_type": "command",
+  "predicted_intent": "execute_lie_trajectory",
+  "predicted_object_name": "claw_hammer",
+  "predicted_target_label": "strike_point_a",
+  "predicted_clarification": false,
+  "assistant_text": "Aiming the claw hammer at strike point a.",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

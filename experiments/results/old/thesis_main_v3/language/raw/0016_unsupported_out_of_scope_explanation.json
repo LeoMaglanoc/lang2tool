@@ -1,0 +1,29 @@
+{
+  "trial_id": "0016_unsupported_out_of_scope_explanation",
+  "prompt_id": "unsupported_out_of_scope_explanation",
+  "prompt_family": "unsupported_or_out_of_scope",
+  "prompt_variant": "explain_training_history",
+  "prompt_text": "explain how this policy was trained in detail",
+  "backend": "openai",
+  "active_object_context": "claw_hammer",
+  "expected_outcome_type": "text",
+  "expected_intent": null,
+  "expected_object_name": null,
+  "expected_target_label": null,
+  "expected_clarification": false,
+  "predicted_outcome_type": "text",
+  "predicted_intent": null,
+  "predicted_object_name": null,
+  "predicted_target_label": null,
+  "predicted_clarification": false,
+  "assistant_text": "I can explain the control policy behavior from the interface and routing rules I\u2019ve been given, but I don\u2019t have the underlying training documentation or weights, so I can\u2019t truthfully describe the actual training pipeline \u201cin detail\u201d as a known fact.\n\nWhat I can say:\n\n- This system appears to be a tool-using robot manipulation assistant.\n- It is governed by instruction-level policies that decide when to:\n  - generate grasp/manipulation goals,\n  - apply relative pose deltas,\n  - switch active tools,\n  - execute hammer swing trajectories,\n  - execute screwdriver twist trajectories,\n  - perform predefined motions,\n  - grasp or release tools.\n- Part of the policy is symbolic/rule-based routing, not purely learned. For example:\n  - swing/hammer requests default to `claw_hammer` unless the user specifies another supported hammer,\n  - twist requests default to `long_screwdriver`,\n  - family-only references like \u201chammer\u201d require clarification,\n  - certain actions must first query simulator state with `get_sim_state`,\n  - strike targets must be explicit XY coordinates within bounded table limits.\n\nA plausible architecture is:\n\n1. Language interpretation layer  \n   Maps the user\u2019s utterance into an intent like:\n   - move/rotate current goal,\n   - switch tool,\n   - grasp/release,\n   - new manipulation setup,\n   - dynamic execution such as swing/twist.\n\n2. Policy router / skill selector  \n   Uses hard constraints and object-family rules to select the correct tool invocation.\n\n3. Motion parameterization layer  \n   Converts intent into structured parameters:\n   - object name,\n   - semantic pose target,\n   - relative deltas,\n   - grasp geometry,\n   - strike target coordinates.\n\n4. Low-level motion generation / execution  \n   A simulator or controller executes goal-based trajectories or predefined motions.\n\n5. State feedback layer  \n   `get_sim_state` provides current pose, goal pose, runtime mode, and semantic pose definitions for reasoning.\n\nIf you want, I can help in one of these more concrete ways:\n\n- reconstruct a likely training setup for such a policy,\n- distinguish which parts are learned vs hand-engineered,\n- describe how to train a similar policy from demonstrations,\n- infer the reward/objective design for the manipulation skills,\n- explain the runtime decision policy in detail from the rules I can see.\n\nIf you want the most useful answer, ask:\n- \u201cInfer the likely training pipeline for this manipulation policy,\u201d or\n- \u201cExplain which parts of this policy are learned versus rule-based.\u201d",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

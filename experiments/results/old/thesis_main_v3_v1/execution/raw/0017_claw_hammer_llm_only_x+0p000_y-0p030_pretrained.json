@@ -1,0 +1,45 @@
+{
+  "trial_id": "0017_claw_hammer_llm_only_x+0p000_y-0p030_pretrained",
+  "geometry_trial_id": "0017_claw_hammer_llm_only_x+0p000_y-0p030",
+  "object_name": "claw_hammer",
+  "task_name": "swing_down",
+  "mode": "llm_only",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_only + pretrained",
+  "seed": 0,
+  "execution_success": true,
+  "goal_completion_pct": 100.0,
+  "peak_success_count": 100,
+  "failure_stage": null,
+  "failure_category": null,
+  "resolved_baseline_object": "claw_hammer",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_v3_v1/execution/artifacts/0017_claw_hammer_llm_only_x+0p000_y-0p030_pretrained/trace.json",
+  "tracking_success_rate": 0.023172905525846704,
+  "translation_rmse_m": 0.05700148860253063,
+  "rotation_rmse_deg": 16.232393409032248,
+  "mean_translation_error_m": 0.05217792414482987,
+  "mean_rotation_error_deg": 12.161352059401747,
+  "final_translation_error_m": 0.07842546780846502,
+  "final_rotation_error_deg": 4.4321367066224315,
+  "geometry_goal_count": 37,
+  "execution_goal_count": 37,
+  "reference_goal_count": 37,
+  "execution_goal_transform": "identity",
+  "execution_goal_cycle_style": null,
+  "metrics": {
+    "avg_goal_pct": 100.0,
+    "avg_time_sec": 9.333333333333334,
+    "episode_goal_pcts": [
+      100.0
+    ],
+    "episode_lengths": [
+      560
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v1/execution/artifacts/0017_claw_hammer_llm_only_x+0p000_y-0p030_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_v3_v1/execution/artifacts/0017_claw_hammer_llm_only_x+0p000_y-0p030_pretrained",
+  "replay_artifact_path": "execution/replay/trials/0017_claw_hammer_llm_only_x+0p000_y-0p030_pretrained.json"
+}

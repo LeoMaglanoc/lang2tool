@@ -1,0 +1,131 @@
+{
+  "trial_id": "0042_semantic_pose_request_head_down",
+  "prompt_id": "semantic_pose_request_head_down",
+  "prompt_family": "semantic_pose_edits",
+  "prompt_variant": "head_down_pose_edit",
+  "prompt_text": "turn the tool head down",
+  "backend": "openai",
+  "active_object_context": "claw_hammer",
+  "expected_outcome_type": "command",
+  "expected_intent": "move_tool",
+  "expected_object_name": "claw_hammer",
+  "expected_target_label": "head_down",
+  "expected_clarification": false,
+  "predicted_outcome_type": "command",
+  "predicted_intent": "move_tool",
+  "predicted_object_name": "claw_hammer",
+  "predicted_target_label": "head_down",
+  "predicted_clarification": false,
+  "assistant_text": "I selected the claw hammer and turned the tool head down while keeping its position.",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "expected_tool_call": {
+    "intent": "move_tool",
+    "object_name": "claw_hammer",
+    "target_label": "head_down",
+    "target_constraint": {
+      "label": "head_down"
+    }
+  },
+  "predicted_tool_call": {
+    "intent": "move_tool",
+    "delta_translation_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "delta_euler_rad": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "delta_frame": "camera_spawn",
+    "semantic_target": "head_down",
+    "semantic_preserve_position": true
+  },
+  "target_evaluation": {
+    "match": true,
+    "reason": "non_lie_target_label_match"
+  },
+  "predicted_tool_trace": [
+    {
+      "tool_name": "get_sim_state",
+      "arguments": {},
+      "result": {
+        "ok": true,
+        "sim_state": {
+          "object_name": "claw_hammer",
+          "object_pose_xyzw": [
+            0.0,
+            0.0,
+            0.7,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "goal_pose_xyzw": [
+            0.0,
+            0.0,
+            0.7,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "runtime_mode": "policy",
+          "pose_semantics": {
+            "semantic_targets": [
+              "upright",
+              "flat",
+              "head_down",
+              "tip_forward",
+              "face_table"
+            ]
+          },
+          "active_strike_target": {
+            "available": true,
+            "world_xy": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "summary": "The current object is claw_hammer in policy mode. Its current pose is [0.0, 0.0, 0.7, 0.0, 0.0, 0.0, 1.0] (xyzw), and the goal pose is [0.0, 0.0, 0.7, 0.0, 0.0, 0.0, 1.0] (xyzw). Supported semantic pose targets are upright, flat, head down, tip forward, face table. The currently active Lie strike target is at [0.0, 0.0]."
+      }
+    },
+    {
+      "tool_name": "apply_goal_delta",
+      "arguments": {
+        "target": "all_active_goals",
+        "frame": "camera_spawn",
+        "semantic_target": "head_down",
+        "semantic_preserve_position": true
+      },
+      "result": {
+        "ok": true,
+        "command": "apply_goal_delta",
+        "delta_translation_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_euler_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame": "camera_spawn",
+        "semantic_target": "head_down",
+        "semantic_preserve_position": true
+      }
+    }
+  ],
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

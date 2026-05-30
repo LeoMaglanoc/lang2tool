@@ -1,0 +1,60 @@
+{
+  "trial_id": "0000_claw_hammer_predefined_pretrained",
+  "geometry_trial_id": "0000_claw_hammer_predefined",
+  "object_name": "claw_hammer",
+  "task_name": "swing_down",
+  "mode": "predefined",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "predefined + pretrained",
+  "seed": 0,
+  "execution_success": true,
+  "goal_completion_pct": 100.0,
+  "peak_success_count": 100,
+  "failure_stage": null,
+  "failure_category": null,
+  "resolved_baseline_object": "claw_hammer",
+  "eval_returncode": 0,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_v3_v2/execution/artifacts/0000_claw_hammer_predefined_pretrained/trace.json",
+  "tracking_success_rate": 0.0066090493136756485,
+  "translation_rmse_m": 0.11870137423049927,
+  "rotation_rmse_deg": 120.90788998831997,
+  "mean_translation_error_m": 0.09887557160157386,
+  "mean_rotation_error_deg": 96.2846348201787,
+  "final_translation_error_m": 0.14516611946605032,
+  "final_rotation_error_deg": 98.77870189511388,
+  "geometry_goal_count": 37,
+  "execution_goal_count": 37,
+  "reference_goal_count": 37,
+  "execution_goal_transform": "identity",
+  "execution_goal_cycle_style": null,
+  "metrics": {
+    "avg_goal_pct": 100.0,
+    "avg_time_sec": 32.766666666666666,
+    "episode_goal_pcts": [
+      100.0
+    ],
+    "episode_lengths": [
+      1966
+    ],
+    "episode_trial_stops": [
+      {
+        "should_stop": true,
+        "reason": "success_complete",
+        "is_failure": false,
+        "details": {
+          "dropped": false,
+          "object_z_low": false,
+          "success_count": 37,
+          "success_target": 37,
+          "sim_time_sec": 32.766666666666666,
+          "timeout_sec": 180.0
+        }
+      }
+    ],
+    "trace_path": "experiments/results/thesis_main_v3_v2/execution/artifacts/0000_claw_hammer_predefined_pretrained/trace.json"
+  },
+  "error": null,
+  "artifact_dir": "experiments/results/thesis_main_v3_v2/execution/artifacts/0000_claw_hammer_predefined_pretrained",
+  "replay_artifact_path": "execution/replay/trials/0000_claw_hammer_predefined_pretrained.json"
+}

@@ -1,0 +1,82 @@
+# PPO training config for SimToolReal Isaac Lab environment.
+# Copied from isaacgymenvs/cfg/train/SimToolRealPPO.yaml with updated experiment name.
+# rl_games config is sim-backend-agnostic; only the env name / env creator differ.
+
+params:
+  seed: ${...seed}
+
+  algo:
+    name: a2c_continuous
+
+  model:
+    name: continuous_a2c_logstd
+
+  network:
+    name: actor_critic
+    separate: False
+
+    space:
+      continuous:
+        mu_activation: None
+        sigma_activation: None
+        mu_init:
+          name: default
+        sigma_init:
+          name: const_initializer
+          val: 0
+        fixed_sigma: 'fixed'
+
+    mlp:
+      units: [1024, 1024, 512, 512]
+      activation: elu
+      d2rl: False
+      initializer:
+        name: default
+      regularizer:
+        name: None
+
+  load_checkpoint: ${if:${...checkpoint},True,False}
+  load_path: ${...checkpoint}
+
+  config:
+    name: ${resolve_default:SimToolRealLabPPO,${....experiment}}
+    device_name: ${resolve_default:cuda:0,${....rl_device}}
+    env_name: rlgpu_lab
+    ppo: True
+    expl_type: none
+    mixed_precision: True
+    normalize_input: True
+    normalize_value: True
+    normalize_advantage: True
+    reward_shaper:
+      scale_value: 0.01
+
+    num_actors: ${....task.env.numEnvs}
+    gamma: 0.99
+    tau: 0.95
+    learning_rate: 1e-4
+    lr_schedule: adaptive
+    schedule_type: standard
+    kl_threshold: 0.016
+    score_to_win: 1000000
+    max_epochs: 1000000
+    max_frames: 100_000_000_000_000
+    save_best_after: 100
+    save_frequency: 3000
+    print_stats: True
+    grad_norm: 1.0
+    entropy_coef: 0.0
+    truncate_grads: True
+    e_clip: 0.1
+    minibatch_size: 32768
+    mini_epochs: 4
+    critic_coef: 4.0
+    clip_value: True
+    horizon_length: 16
+    seq_length: 16
+    bounds_loss_coef: 0.0001
+
+    player:
+      deterministic: False
+      games_num: 100000
+      print_stats: False

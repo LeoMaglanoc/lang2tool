@@ -1,0 +1,30 @@
+{
+  "num_trials": 2,
+  "execution_success_rate": 1.0,
+  "mean_translation_rmse_m": 0.03932925437152401,
+  "mean_tracking_success_rate": 0.05590986394557823,
+  "by_object_mode": [
+    {
+      "object_name": "claw_hammer",
+      "mode": "llm_lie",
+      "policy_variant": "finetuned",
+      "benchmark_cell": "llm_lie + finetuned",
+      "num_trials": 1,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0,
+      "mean_translation_rmse_m": 0.038970086496276854,
+      "mean_tracking_success_rate": 0.050595238095238096
+    },
+    {
+      "object_name": "claw_hammer",
+      "mode": "llm_lie",
+      "policy_variant": "pretrained",
+      "benchmark_cell": "llm_lie + pretrained",
+      "num_trials": 1,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0,
+      "mean_translation_rmse_m": 0.03968842224677116,
+      "mean_tracking_success_rate": 0.061224489795918366
+    }
+  ]
+}

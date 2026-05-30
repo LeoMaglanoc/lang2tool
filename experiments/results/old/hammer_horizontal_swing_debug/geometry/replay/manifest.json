@@ -1,0 +1,412 @@
+{
+  "schema_version": "experiment_replay_manifest_v1",
+  "stage": "geometry",
+  "num_trials": 27,
+  "entries": [
+    {
+      "trial_id": "0000_claw_hammer_llm_lie_x-0p150_y-0p130",
+      "object_name": "claw_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.15,
+        -0.13
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0000_claw_hammer_llm_lie_x-0p150_y-0p130.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0001_claw_hammer_llm_lie_x+0p000_y-0p130",
+      "object_name": "claw_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.0,
+        -0.13
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0001_claw_hammer_llm_lie_x+0p000_y-0p130.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0002_claw_hammer_llm_lie_x+0p150_y-0p130",
+      "object_name": "claw_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.15,
+        -0.13
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0002_claw_hammer_llm_lie_x+0p150_y-0p130.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0003_claw_hammer_llm_lie_x-0p150_y-0p080",
+      "object_name": "claw_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.15,
+        -0.08
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0003_claw_hammer_llm_lie_x-0p150_y-0p080.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0004_claw_hammer_llm_lie_x+0p000_y-0p080",
+      "object_name": "claw_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.0,
+        -0.08
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0004_claw_hammer_llm_lie_x+0p000_y-0p080.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0005_claw_hammer_llm_lie_x+0p150_y-0p080",
+      "object_name": "claw_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.15,
+        -0.08
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0005_claw_hammer_llm_lie_x+0p150_y-0p080.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0006_claw_hammer_llm_lie_x-0p150_y-0p030",
+      "object_name": "claw_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.15,
+        -0.03
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0006_claw_hammer_llm_lie_x-0p150_y-0p030.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0007_claw_hammer_llm_lie_x+0p000_y-0p030",
+      "object_name": "claw_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.0,
+        -0.03
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0007_claw_hammer_llm_lie_x+0p000_y-0p030.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0008_claw_hammer_llm_lie_x+0p150_y-0p030",
+      "object_name": "claw_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.15,
+        -0.03
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0008_claw_hammer_llm_lie_x+0p150_y-0p030.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0009_mallet_hammer_llm_lie_x-0p150_y-0p130",
+      "object_name": "mallet_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.15,
+        -0.13
+      ],
+      "resolved_baseline_object": "mallet_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0009_mallet_hammer_llm_lie_x-0p150_y-0p130.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0010_mallet_hammer_llm_lie_x+0p000_y-0p130",
+      "object_name": "mallet_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.0,
+        -0.13
+      ],
+      "resolved_baseline_object": "mallet_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0010_mallet_hammer_llm_lie_x+0p000_y-0p130.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0011_mallet_hammer_llm_lie_x+0p150_y-0p130",
+      "object_name": "mallet_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.15,
+        -0.13
+      ],
+      "resolved_baseline_object": "mallet_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0011_mallet_hammer_llm_lie_x+0p150_y-0p130.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0012_mallet_hammer_llm_lie_x-0p150_y-0p080",
+      "object_name": "mallet_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.15,
+        -0.08
+      ],
+      "resolved_baseline_object": "mallet_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0012_mallet_hammer_llm_lie_x-0p150_y-0p080.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0013_mallet_hammer_llm_lie_x+0p000_y-0p080",
+      "object_name": "mallet_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.0,
+        -0.08
+      ],
+      "resolved_baseline_object": "mallet_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0013_mallet_hammer_llm_lie_x+0p000_y-0p080.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0014_mallet_hammer_llm_lie_x+0p150_y-0p080",
+      "object_name": "mallet_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.15,
+        -0.08
+      ],
+      "resolved_baseline_object": "mallet_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0014_mallet_hammer_llm_lie_x+0p150_y-0p080.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0015_mallet_hammer_llm_lie_x-0p150_y-0p030",
+      "object_name": "mallet_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.15,
+        -0.03
+      ],
+      "resolved_baseline_object": "mallet_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0015_mallet_hammer_llm_lie_x-0p150_y-0p030.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0016_mallet_hammer_llm_lie_x+0p000_y-0p030",
+      "object_name": "mallet_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.0,
+        -0.03
+      ],
+      "resolved_baseline_object": "mallet_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0016_mallet_hammer_llm_lie_x+0p000_y-0p030.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0017_mallet_hammer_llm_lie_x+0p150_y-0p030",
+      "object_name": "mallet_hammer",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.15,
+        -0.03
+      ],
+      "resolved_baseline_object": "mallet_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0017_mallet_hammer_llm_lie_x+0p150_y-0p030.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0018_cuboid_hammer_v014_llm_lie_x-0p150_y-0p130",
+      "object_name": "cuboid_hammer_v014",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.15,
+        -0.13
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0018_cuboid_hammer_v014_llm_lie_x-0p150_y-0p130.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0019_cuboid_hammer_v014_llm_lie_x+0p000_y-0p130",
+      "object_name": "cuboid_hammer_v014",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.0,
+        -0.13
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0019_cuboid_hammer_v014_llm_lie_x+0p000_y-0p130.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0020_cuboid_hammer_v014_llm_lie_x+0p150_y-0p130",
+      "object_name": "cuboid_hammer_v014",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.15,
+        -0.13
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0020_cuboid_hammer_v014_llm_lie_x+0p150_y-0p130.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0021_cuboid_hammer_v014_llm_lie_x-0p150_y-0p080",
+      "object_name": "cuboid_hammer_v014",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.15,
+        -0.08
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0021_cuboid_hammer_v014_llm_lie_x-0p150_y-0p080.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0022_cuboid_hammer_v014_llm_lie_x+0p000_y-0p080",
+      "object_name": "cuboid_hammer_v014",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.0,
+        -0.08
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0022_cuboid_hammer_v014_llm_lie_x+0p000_y-0p080.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0023_cuboid_hammer_v014_llm_lie_x+0p150_y-0p080",
+      "object_name": "cuboid_hammer_v014",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.15,
+        -0.08
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0023_cuboid_hammer_v014_llm_lie_x+0p150_y-0p080.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0024_cuboid_hammer_v014_llm_lie_x-0p150_y-0p030",
+      "object_name": "cuboid_hammer_v014",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        -0.15,
+        -0.03
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0024_cuboid_hammer_v014_llm_lie_x-0p150_y-0p030.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0025_cuboid_hammer_v014_llm_lie_x+0p000_y-0p030",
+      "object_name": "cuboid_hammer_v014",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.0,
+        -0.03
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0025_cuboid_hammer_v014_llm_lie_x+0p000_y-0p030.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    },
+    {
+      "trial_id": "0026_cuboid_hammer_v014_llm_lie_x+0p150_y-0p030",
+      "object_name": "cuboid_hammer_v014",
+      "task_name": "swing_down",
+      "mode": "llm_lie",
+      "target_xy": [
+        0.15,
+        -0.03
+      ],
+      "resolved_baseline_object": "claw_hammer",
+      "replay_artifact_path": "geometry/replay/trials/0026_cuboid_hammer_v014_llm_lie_x+0p150_y-0p030.json",
+      "replay_kind": "geometry_commanded",
+      "compile_success": true,
+      "validation_success": true
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "experiment_dir": "experiments/results/thesis_main_v3_v1",
+  "config_path": "pretrained_policy/config.yaml",
+  "checkpoint_path": "pretrained_policy/model.pth",
+  "finetuned_config_path": null,
+  "finetuned_checkpoint_path": null,
+  "finetuned_policy_path": null,
+  "num_episodes": 1,
+  "max_trials": null,
+  "overwrite": true,
+  "timeout_sec": 600.0,
+  "success_goal_pct_threshold": 50.0,
+  "tracking_translation_tolerance_m": 0.03,
+  "tracking_rotation_tolerance_deg": 15.0
+}

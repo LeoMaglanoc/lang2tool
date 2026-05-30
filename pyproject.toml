@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=40", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "llm_runtime/tests"]
+addopts = "--cov --cov-report=term-missing"
+markers = [
+    "slow: marks tests as slow/integration/e2e (deselect with '-m \"not slow\"')",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+# E501 is redundant when using black (which enforces line-length already).
+ignore = ["E501"]
+
+[tool.black]
+line-length = 100

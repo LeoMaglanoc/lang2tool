@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot name="cylinder_marker_v4015">
+
+  <link name="cylinder_marker_v4015">
+    <!-- Handle -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 1.5707963267948966 0"/>
+      <geometry>
+        <cylinder length="0.12122317274456496" radius="0.015635258273702504"/>
+      </geometry>
+      <material name="material">
+        <color rgba="0.639 0.847 0.882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963267948966 0"/>
+      <geometry>
+        <cylinder length="0.12122317274456496" radius="0.015635258273702504"/>
+      </geometry>
+    </collision>
+
+    <!-- Head -->
+    <visual>
+      <origin xyz="0.07445304348595065 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.02768291422733634 0.008547891425503103 0.0058656392321125165"/>
+      </geometry>
+      <material name="material">
+        <color rgba="0.639 0.847 0.882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.07445304348595065 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.02768291422733634 0.008547891425503103 0.0058656392321125165"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <density value="400.0"/>
+    </inertial>
+  </link>
+
+</robot>

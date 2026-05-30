@@ -1,0 +1,31 @@
+{
+  "objects": [
+    "claw_hammer",
+    "cylinder_screwdriver_v3009"
+  ],
+  "modes": [
+    "predefined",
+    "llm_lie"
+  ],
+  "target_grid_xy": [
+    [
+      -0.35,
+      -0.2
+    ],
+    [
+      0.35,
+      -0.2
+    ],
+    [
+      -0.35,
+      0.2
+    ],
+    [
+      0.35,
+      0.2
+    ]
+  ],
+  "num_trials": 10,
+  "compile_success_rate": 0.2,
+  "validation_success_rate": 0.2
+}

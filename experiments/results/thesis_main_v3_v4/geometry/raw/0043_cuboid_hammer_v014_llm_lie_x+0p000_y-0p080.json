@@ -1,0 +1,248 @@
+{
+  "trial_id": "0043_cuboid_hammer_v014_llm_lie_x+0p000_y-0p080",
+  "object_name": "cuboid_hammer_v014",
+  "task_name": "swing_down",
+  "mode": "llm_lie",
+  "seed": 0,
+  "target_xy": [
+    0.0,
+    -0.08
+  ],
+  "resolved_baseline_object": "claw_hammer",
+  "pivot_point": [
+    0.09076502773615436,
+    0.08070982635558854,
+    0.5743193171844398
+  ],
+  "compile_success": true,
+  "validation_success": true,
+  "num_waypoints": 12,
+  "goals": [
+    [
+      0.08490060027422755,
+      0.07032618914874629,
+      0.7373479222661761,
+      -0.17977243726909,
+      -0.6838727007260423,
+      -0.17977243726909006,
+      0.6838727007260423
+    ],
+    [
+      0.07953360573262822,
+      0.06082331362119053,
+      0.7365528958910497,
+      -0.13052819522314954,
+      -0.694954967470631,
+      -0.22810061122673134,
+      0.6693056809841622
+    ],
+    [
+      0.0742762737129745,
+      0.05151460808728945,
+      0.7342236152167108,
+      -0.08061895047618102,
+      -0.70249595438233,
+      -0.2752663877746481,
+      0.6513282080964063
+    ],
+    [
+      0.06923367189608702,
+      0.04258610685079881,
+      0.7304068256640179,
+      -0.03030057794344514,
+      -0.7064572603082243,
+      -0.32102803916998984,
+      0.6300325486836077
+    ],
+    [
+      0.06450988060958276,
+      0.034222095994095834,
+      0.7251674160351864,
+      0.02017113227252227,
+      -0.7068190497177779,
+      -0.3651530028285258,
+      0.6055272420826439
+    ],
+    [
+      0.0602055635445286,
+      0.026600812055142035,
+      0.7186019996646507,
+      0.07053984712503056,
+      -0.7035795220665398,
+      -0.40741737792714344,
+      0.5779369050849477
+    ],
+    [
+      0.05640058198731647,
+      0.019863658543512554,
+      0.7108650413365263,
+      0.12055460432490687,
+      -0.696754333045056,
+      -0.4476101897428494,
+      0.5473984881211995
+    ],
+    [
+      0.05317147480741505,
+      0.014146156250954669,
+      0.7021119480539691,
+      0.16995330816925708,
+      -0.6863787836161828,
+      -0.48552067997476256,
+      0.514071695156171
+    ],
+    [
+      0.050594347654229654,
+      0.00958305890371813,
+      0.6925051996808516,
+      -0.2184887931203343,
+      0.6725047912704467,
+      0.5209590195878411,
+      -0.47812305205792816
+    ],
+    [
+      0.0487170507528005,
+      0.006259090778863054,
+      0.682249934024557,
+      -0.26591149322542085,
+      0.6552030830888831,
+      0.5537429433003569,
+      -0.4397371378750116
+    ],
+    [
+      0.04757149201712897,
+      0.00423074847476474,
+      0.6715587925521749,
+      -0.3119767576590747,
+      0.6345632287639844,
+      0.5837032777751751,
+      -0.39911213323535405
+    ],
+    [
+      0.04718048275238763,
+      0.003538422007100625,
+      0.660644512266176,
+      -0.3564527146883361,
+      0.6106893336151497,
+      0.6106893336151498,
+      -0.35645271468833606
+    ]
+  ],
+  "generation_context": {
+    "spec": {
+      "schema_version": "swing_v1",
+      "verb": "swing_down",
+      "task_frame": "world",
+      "pivot_point": [
+        0.09076502773615436,
+        0.08070982635558854,
+        0.5743193171844398
+      ],
+      "strike_target_xy": [
+        0.0,
+        -0.08
+      ],
+      "execution_target_z": 0.63,
+      "swing_angle_rad": 1.6,
+      "duration_sec": 0.62,
+      "num_samples": 37,
+      "waypoint_table_clearance_m": 0.01,
+      "hammer_swing_solver": "horizontal_head",
+      "semantic_contact_clearance_m": 0.1,
+      "configured_horizontal_strike_clearance_m": 0.01,
+      "training_distribution_resampling": {
+        "enabled": true,
+        "applied": true,
+        "pos_scale_m": 0.03,
+        "rot_scale_deg": 15.0,
+        "target_cost": 1.0,
+        "min_waypoints": 4,
+        "original_waypoint_count": 37,
+        "resampled_waypoint_count": 12,
+        "step_delta_summary": {
+          "max_step_translation_m": 0.010943200439214706,
+          "mean_step_translation_m": 0.010942196219482205,
+          "max_step_rotation_deg": 8.182352069691675,
+          "mean_step_rotation_deg": 8.18180373490903
+        }
+      },
+      "training_distribution_clamp": {
+        "enabled": true,
+        "applied": false,
+        "clamp_z": false,
+        "target_volume_mins": [
+          -0.35,
+          -0.2,
+          0.6
+        ],
+        "target_volume_maxs": [
+          0.35,
+          0.2,
+          0.95
+        ],
+        "corrected_indices": [],
+        "original_positions": [],
+        "corrected_positions": [],
+        "step_delta_summary": {
+          "max_step_translation_m": 0.010943200439214706,
+          "mean_step_translation_m": 0.010942196219482205,
+          "max_step_rotation_deg": 8.182352069691675,
+          "mean_step_rotation_deg": 8.18180373490903
+        }
+      }
+    }
+  },
+  "clamp_summary": {
+    "enabled": true,
+    "applied": false,
+    "clamp_z": false,
+    "target_volume_mins": [
+      -0.35,
+      -0.2,
+      0.6
+    ],
+    "target_volume_maxs": [
+      0.35,
+      0.2,
+      0.95
+    ],
+    "corrected_indices": [],
+    "original_positions": [],
+    "corrected_positions": [],
+    "step_delta_summary": {
+      "max_step_translation_m": 0.010943200439214706,
+      "mean_step_translation_m": 0.010942196219482205,
+      "max_step_rotation_deg": 8.182352069691675,
+      "mean_step_rotation_deg": 8.18180373490903
+    }
+  },
+  "resampling_summary": {
+    "enabled": true,
+    "applied": true,
+    "pos_scale_m": 0.03,
+    "rot_scale_deg": 15.0,
+    "target_cost": 1.0,
+    "min_waypoints": 4,
+    "original_waypoint_count": 37,
+    "resampled_waypoint_count": 12,
+    "step_delta_summary": {
+      "max_step_translation_m": 0.010943200439214706,
+      "mean_step_translation_m": 0.010942196219482205,
+      "max_step_rotation_deg": 8.182352069691675,
+      "mean_step_rotation_deg": 8.18180373490903
+    }
+  },
+  "metrics": {
+    "requested_target_xy": [
+      0.0,
+      -0.08
+    ],
+    "hammer_swing_solver": "horizontal_head",
+    "step_delta_summary": {},
+    "tool_family": "hammer",
+    "semantic_contact_point_xy_error_m": 5.5511151231257815e-18,
+    "screwdriver_max_primary_axis_tilt_deg": null,
+    "screwdriver_twist_angle_span_deg": null
+  },
+  "error": null,
+  "replay_artifact_path": "geometry/replay/trials/0043_cuboid_hammer_v014_llm_lie_x+0p000_y-0p080.json"
+}

@@ -1,0 +1,15 @@
+{
+  "trial_id": "0005_cylinder_screwdriver_v3009_predefined",
+  "geometry_trial_id": "0005_cylinder_screwdriver_v3009_predefined",
+  "object_name": "cylinder_screwdriver_v3009",
+  "task_name": "spin_vertical",
+  "mode": "predefined",
+  "seed": 0,
+  "execution_success": false,
+  "goal_completion_pct": 0.0,
+  "peak_success_count": 0,
+  "failure_stage": "execution_failure",
+  "metrics": {},
+  "error": "Missing eval.json under experiments/results/thesis_dashboard_smoke/execution/artifacts/0005_cylinder_screwdriver_v3009_predefined",
+  "artifact_dir": "experiments/results/thesis_dashboard_smoke/execution/artifacts/0005_cylinder_screwdriver_v3009_predefined"
+}

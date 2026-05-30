@@ -1,0 +1,29 @@
+{
+  "trial_id": "0017_generic_hammer_default",
+  "prompt_id": "generic_hammer_default",
+  "prompt_family": "default_family_selection",
+  "prompt_variant": "generic_hammer_right_side",
+  "prompt_text": "swing on the right side of the table",
+  "backend": "openai",
+  "active_object_context": "mallet_hammer",
+  "expected_outcome_type": "command",
+  "expected_intent": "execute_lie_trajectory",
+  "expected_object_name": "claw_hammer",
+  "expected_target_label": "right_side_of_table",
+  "expected_clarification": false,
+  "predicted_outcome_type": "command",
+  "predicted_intent": "execute_lie_trajectory",
+  "predicted_object_name": "claw_hammer",
+  "predicted_target_label": "custom_xy",
+  "predicted_clarification": false,
+  "assistant_text": "Swinging with the claw_hammer on the right side of the table.",
+  "exact_match": false,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": false,
+  "clarification_match": true,
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

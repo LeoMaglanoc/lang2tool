@@ -1,0 +1,100 @@
+{
+  "objects": [
+    "claw_hammer",
+    "mallet_hammer",
+    "cuboid_hammer_v014",
+    "long_screwdriver",
+    "short_screwdriver",
+    "cylinder_screwdriver_v3009"
+  ],
+  "modes": [
+    "predefined",
+    "llm_lie",
+    "llm_only"
+  ],
+  "target_grid_xy": [
+    [
+      -0.15,
+      -0.13
+    ],
+    [
+      0.0,
+      -0.13
+    ],
+    [
+      0.15,
+      -0.13
+    ],
+    [
+      -0.15,
+      -0.08
+    ],
+    [
+      0.0,
+      -0.08
+    ],
+    [
+      0.15,
+      -0.08
+    ],
+    [
+      -0.15,
+      -0.03
+    ],
+    [
+      0.0,
+      -0.03
+    ],
+    [
+      0.15,
+      -0.03
+    ]
+  ],
+  "num_trials": 114,
+  "compile_success_rate": 1.0,
+  "validation_success_rate": 1.0,
+  "by_tool_family_mode": [
+    {
+      "tool_family": "hammer",
+      "mode": "llm_lie",
+      "num_trials": 27,
+      "accepted_share": 1.0,
+      "mean_semantic_contact_point_xy_error_m": 1.5488075838633526e-09
+    },
+    {
+      "tool_family": "hammer",
+      "mode": "llm_only",
+      "num_trials": 27,
+      "accepted_share": 1.0,
+      "mean_semantic_contact_point_xy_error_m": 0.11488711350113967
+    },
+    {
+      "tool_family": "hammer",
+      "mode": "predefined",
+      "num_trials": 3,
+      "accepted_share": 1.0,
+      "mean_semantic_contact_point_xy_error_m": 0.05398834800720059
+    },
+    {
+      "tool_family": "screwdriver",
+      "mode": "llm_lie",
+      "num_trials": 27,
+      "accepted_share": 1.0,
+      "mean_semantic_contact_point_xy_error_m": 6.1679056923619804e-18
+    },
+    {
+      "tool_family": "screwdriver",
+      "mode": "llm_only",
+      "num_trials": 27,
+      "accepted_share": 1.0,
+      "mean_semantic_contact_point_xy_error_m": 0.010675184877771622
+    },
+    {
+      "tool_family": "screwdriver",
+      "mode": "predefined",
+      "num_trials": 3,
+      "accepted_share": 1.0,
+      "mean_semantic_contact_point_xy_error_m": 0.012403943567175994
+    }
+  ]
+}

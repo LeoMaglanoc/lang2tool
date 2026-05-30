@@ -1,0 +1,29 @@
+{
+  "trial_id": "0023_generic_twist_left_default",
+  "prompt_id": "generic_twist_left_default",
+  "prompt_family": "default_family_selection",
+  "prompt_variant": "generic_twist_left_side",
+  "prompt_text": "drive the screw on the left side of the table",
+  "backend": "openai",
+  "active_object_context": "cylinder_screwdriver_v3009",
+  "expected_outcome_type": "command",
+  "expected_intent": "execute_lie_trajectory",
+  "expected_object_name": "long_screwdriver",
+  "expected_target_label": "left_side_of_table",
+  "expected_clarification": false,
+  "predicted_outcome_type": "command",
+  "predicted_intent": "execute_lie_trajectory",
+  "predicted_object_name": "long_screwdriver",
+  "predicted_target_label": "custom_xy",
+  "predicted_clarification": false,
+  "assistant_text": "Driving the screw on the left side of the table with the long_screwdriver.",
+  "exact_match": false,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": false,
+  "clarification_match": true,
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

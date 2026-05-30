@@ -1,0 +1,18 @@
+{
+  "trial_id": "0035_cylinder_screwdriver_v3009_llm_only",
+  "object_name": "cylinder_screwdriver_v3009",
+  "task_name": "spin_vertical",
+  "mode": "llm_only",
+  "seed": 0,
+  "target_xy": null,
+  "resolved_baseline_object": "long_screwdriver",
+  "pivot_point": null,
+  "compile_success": false,
+  "validation_success": false,
+  "num_waypoints": 0,
+  "goals": [],
+  "clamp_summary": {},
+  "resampling_summary": {},
+  "metrics": {},
+  "error": "[Errno 2] No such file or directory: '/workspace/dextoolbench/trajectories/screwdriver/cylinder_screwdriver_v3009/spin_vertical.json'"
+}

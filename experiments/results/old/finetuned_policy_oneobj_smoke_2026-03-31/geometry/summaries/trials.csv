@@ -1,0 +1,2 @@
+trial_id,object_name,task_name,mode,seed,resolved_baseline_object,pivot_x,pivot_y,pivot_z,target_x,target_y,compile_success,validation_success,num_waypoints,num_clamped_waypoints,mean_translation_error_m,max_translation_error_m,mean_rotation_error_deg,max_rotation_error_deg,reference_path_length_m,candidate_path_length_m,path_length_ratio,sample_count,error
+0000_claw_hammer_llm_lie_x+0p000_y+0p000,claw_hammer,swing_down,llm_lie,0,claw_hammer,0.09076502773615436,0.08070982635558854,0.5743193171844398,0.0,0.0,True,True,8,8,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot name="cuboid_screwdriver_v2014">
+
+  <link name="cuboid_screwdriver_v2014">
+    <!-- Handle -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.07873207354679264 0.02580072898940763 0.03386715724166457"/>
+      </geometry>
+      <material name="material">
+        <color rgba="0.639 0.847 0.882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.07873207354679264 0.02580072898940763 0.03386715724166457"/>
+      </geometry>
+    </collision>
+
+    <!-- Head -->
+    <visual>
+      <origin xyz="0.10159461784537657 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.1244571621439605 0.01196815228416014 0.011589955484760247"/>
+      </geometry>
+      <material name="material">
+        <color rgba="0.639 0.847 0.882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.10159461784537657 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.1244571621439605 0.01196815228416014 0.011589955484760247"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <density value="400.0"/>
+    </inertial>
+  </link>
+
+</robot>

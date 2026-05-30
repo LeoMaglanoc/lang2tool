@@ -1,0 +1,254 @@
+{
+  "trial_id": "0081_short_screwdriver_llm_lie_x+0p000_y-0p080",
+  "object_name": "short_screwdriver",
+  "task_name": "spin_vertical",
+  "mode": "llm_lie",
+  "seed": 0,
+  "target_xy": [
+    0.0,
+    -0.08
+  ],
+  "resolved_baseline_object": "short_screwdriver",
+  "pivot_point": [
+    -0.08124288503508437,
+    0.06992222301753948,
+    0.5834889486522075
+  ],
+  "compile_success": true,
+  "validation_success": true,
+  "num_waypoints": 9,
+  "goals": [
+    [
+      0.0002878400000000114,
+      -0.08201369,
+      0.76108414,
+      0.0,
+      0.7071067811865476,
+      0.0,
+      0.7071067811865476
+    ],
+    [
+      -0.0012203602383108053,
+      -0.08162742747010428,
+      0.76108414,
+      0.2705980500730985,
+      0.6532814824381883,
+      -0.2705980500730985,
+      0.6532814824381883
+    ],
+    [
+      -0.0020136900000000055,
+      -0.08028784,
+      0.76108414,
+      0.49999999999999994,
+      0.5000000000000001,
+      -0.49999999999999994,
+      0.5000000000000001
+    ],
+    [
+      -0.0016274274701042774,
+      -0.0787796397616892,
+      0.76108414,
+      0.6532814824381883,
+      0.27059805007309856,
+      -0.6532814824381883,
+      0.27059805007309856
+    ],
+    [
+      -0.0002878400000000115,
+      -0.07798631,
+      0.76108414,
+      0.7071067811865476,
+      4.3297802811774664e-17,
+      -0.7071067811865476,
+      4.3297802811774664e-17
+    ],
+    [
+      0.0012203602383108088,
+      -0.07837257252989573,
+      0.76108414,
+      0.6532814824381883,
+      -0.2705980500730985,
+      -0.6532814824381883,
+      -0.2705980500730985
+    ],
+    [
+      0.0020136900000000055,
+      -0.07971216,
+      0.76108414,
+      0.5000000000000001,
+      -0.49999999999999994,
+      -0.5000000000000001,
+      -0.49999999999999994
+    ],
+    [
+      0.0016274274701042826,
+      -0.08122036023831081,
+      0.76108414,
+      0.2705980500730986,
+      -0.6532814824381883,
+      -0.2705980500730986,
+      -0.6532814824381883
+    ],
+    [
+      0.0002878400000000114,
+      -0.08201369,
+      0.76108414,
+      8.659560562354933e-17,
+      -0.7071067811865476,
+      -8.659560562354933e-17,
+      -0.7071067811865476
+    ]
+  ],
+  "generation_context": {
+    "spec": {
+      "schema_version": "twist_v1",
+      "verb": "twist",
+      "task_frame": "world_table_xy",
+      "pivot_point": [
+        0.0002878400000000114,
+        -0.08201369,
+        0.7610841399999999
+      ],
+      "strike_target_xy": [
+        0.0,
+        -0.08
+      ],
+      "object_name": "short_screwdriver",
+      "task_name": "spin_vertical",
+      "aligned_target_xyz": [
+        0.0,
+        -0.08,
+        0.63
+      ],
+      "aligned_support_xyz": [
+        0.0,
+        -0.08,
+        0.6299999999999999
+      ],
+      "semantic_tip_point_local": [
+        0.13108414,
+        0.00201369,
+        -0.00028784
+      ],
+      "semantic_support_point_local": [
+        0.13108414,
+        0.00201369,
+        -0.00028784
+      ],
+      "twist_axis_local": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "upright_quaternion_xyzw": [
+        -0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865475
+      ],
+      "support_point_z_offset_m": -0.13108413999999996,
+      "execution_target_z": 0.63,
+      "semantic_contact_clearance_m": 0.1,
+      "waypoint_table_clearance_m": 0.01,
+      "screwdriver_twist_extra_hover_m": 0.21411251831297096,
+      "twist_angle_deg": 360.0,
+      "cycle_style": "forward_repeat",
+      "waypoint_count": 9,
+      "training_distribution_resampling": {
+        "enabled": true,
+        "applied": false,
+        "pos_scale_m": 0.03,
+        "rot_scale_deg": 15.0,
+        "target_cost": 1.0,
+        "min_waypoints": 4,
+        "original_waypoint_count": 9,
+        "resampled_waypoint_count": 9,
+        "step_delta_summary": {
+          "max_step_translation_m": 0.0015568812377750874,
+          "mean_step_translation_m": 0.0015568772359983996,
+          "max_step_rotation_deg": 44.99999062831112,
+          "mean_step_rotation_deg": 44.999990628311124
+        }
+      },
+      "training_distribution_clamp": {
+        "enabled": true,
+        "applied": false,
+        "clamp_z": false,
+        "target_volume_mins": [
+          -0.35,
+          -0.2,
+          0.6
+        ],
+        "target_volume_maxs": [
+          0.35,
+          0.2,
+          0.95
+        ],
+        "corrected_indices": [],
+        "original_positions": [],
+        "corrected_positions": [],
+        "step_delta_summary": {
+          "max_step_translation_m": 0.0015568812377750874,
+          "mean_step_translation_m": 0.0015568772359983996,
+          "max_step_rotation_deg": 44.99999062831112,
+          "mean_step_rotation_deg": 44.999990628311124
+        }
+      }
+    }
+  },
+  "clamp_summary": {
+    "enabled": true,
+    "applied": false,
+    "clamp_z": false,
+    "target_volume_mins": [
+      -0.35,
+      -0.2,
+      0.6
+    ],
+    "target_volume_maxs": [
+      0.35,
+      0.2,
+      0.95
+    ],
+    "corrected_indices": [],
+    "original_positions": [],
+    "corrected_positions": [],
+    "step_delta_summary": {
+      "max_step_translation_m": 0.0015568812377750874,
+      "mean_step_translation_m": 0.0015568772359983996,
+      "max_step_rotation_deg": 44.99999062831112,
+      "mean_step_rotation_deg": 44.999990628311124
+    }
+  },
+  "resampling_summary": {
+    "enabled": true,
+    "applied": false,
+    "pos_scale_m": 0.03,
+    "rot_scale_deg": 15.0,
+    "target_cost": 1.0,
+    "min_waypoints": 4,
+    "original_waypoint_count": 9,
+    "resampled_waypoint_count": 9,
+    "step_delta_summary": {
+      "max_step_translation_m": 0.0015568812377750874,
+      "mean_step_translation_m": 0.0015568772359983996,
+      "max_step_rotation_deg": 44.99999062831112,
+      "mean_step_rotation_deg": 44.999990628311124
+    }
+  },
+  "metrics": {
+    "requested_target_xy": [
+      0.0,
+      -0.08
+    ],
+    "hammer_swing_solver": null,
+    "step_delta_summary": {},
+    "tool_family": "screwdriver",
+    "semantic_contact_point_xy_error_m": 4.0419056990259594e-17,
+    "screwdriver_max_primary_axis_tilt_deg": 0.0,
+    "screwdriver_twist_angle_span_deg": 360.0
+  },
+  "error": null,
+  "replay_artifact_path": "geometry/replay/trials/0081_short_screwdriver_llm_lie_x+0p000_y-0p080.json"
+}

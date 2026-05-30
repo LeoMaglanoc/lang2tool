@@ -1,0 +1,29 @@
+{
+  "trial_id": "0032_target_grounding_cuboid_target_a",
+  "prompt_id": "target_grounding_cuboid_target_a",
+  "prompt_family": "target_grounding",
+  "prompt_variant": "cuboid_hammer_target_a",
+  "prompt_text": "strike the table center at point a with the cuboid hammer",
+  "backend": "openai",
+  "active_object_context": "claw_hammer",
+  "expected_outcome_type": "command",
+  "expected_intent": "execute_lie_trajectory",
+  "expected_object_name": "cuboid_hammer_v014",
+  "expected_target_label": "strike_point_a",
+  "expected_clarification": false,
+  "predicted_outcome_type": "command",
+  "predicted_intent": "execute_lie_trajectory",
+  "predicted_object_name": "cuboid_hammer_v014",
+  "predicted_target_label": "strike_point_a",
+  "predicted_clarification": false,
+  "assistant_text": "Using the cuboid hammer, I\u2019m striking the table center at point a.",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

@@ -1,0 +1,50 @@
+{
+  "trial_id": "0082_short_screwdriver_llm_lie_x+0p150_y-0p080_pretrained",
+  "geometry_trial_id": "0082_short_screwdriver_llm_lie_x+0p150_y-0p080",
+  "object_name": "short_screwdriver",
+  "task_name": "spin_vertical",
+  "mode": "llm_lie",
+  "policy_variant": "pretrained",
+  "benchmark_cell": "llm_lie + pretrained",
+  "seed": 0,
+  "execution_success": false,
+  "goal_completion_pct": 0.0,
+  "peak_success_count": 0,
+  "failure_stage": "execution_failure",
+  "failure_category": "eval_timeout",
+  "resolved_baseline_object": "short_screwdriver",
+  "eval_returncode": null,
+  "produced_eval_json": true,
+  "trace_path": "experiments/results/thesis_main_v3_v1/execution/artifacts/0082_short_screwdriver_llm_lie_x+0p150_y-0p080_pretrained/trace.json",
+  "tracking_success_rate": 0.0,
+  "translation_rmse_m": 0.11842873956063635,
+  "rotation_rmse_deg": 56.59212643565773,
+  "mean_translation_error_m": 0.08351279413250541,
+  "mean_rotation_error_deg": 49.29783517516138,
+  "final_translation_error_m": 0.3289848774299652,
+  "final_rotation_error_deg": 89.40875413685426,
+  "geometry_goal_count": 9,
+  "execution_goal_count": 76,
+  "reference_goal_count": 76,
+  "execution_goal_transform": "cycle_to_predefined_length",
+  "execution_goal_cycle_style": "forward_repeat",
+  "metrics": {
+    "diagnostics": {
+      "exception_type": "TimeoutExpired",
+      "timeout_sec": 600.0,
+      "artifact_presence": {
+        "has_goals_json": true,
+        "has_runtime_snapshot": true,
+        "has_env_cfg": true,
+        "has_policy_config": true,
+        "has_eval_json": true,
+        "has_trace_json": true,
+        "has_stdout_txt": true,
+        "has_stderr_txt": true
+      }
+    }
+  },
+  "error": "eval.py timed out after 600.0s. See experiments/results/thesis_main_v3_v1/execution/artifacts/0082_short_screwdriver_llm_lie_x+0p150_y-0p080_pretrained/stderr.txt",
+  "artifact_dir": "experiments/results/thesis_main_v3_v1/execution/artifacts/0082_short_screwdriver_llm_lie_x+0p150_y-0p080_pretrained",
+  "replay_artifact_path": "execution/replay/trials/0082_short_screwdriver_llm_lie_x+0p150_y-0p080_pretrained.json"
+}

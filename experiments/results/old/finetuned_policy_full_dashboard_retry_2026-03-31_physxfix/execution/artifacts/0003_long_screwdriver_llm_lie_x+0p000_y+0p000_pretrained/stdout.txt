@@ -1,0 +1,32 @@
+Loading user config located at: '/isaac-sim/kit/data/Kit/Isaac-Sim/4.5/user.config.json'
+[Info] [carb] Logging to file: /isaac-sim/kit/logs/Kit/Isaac-Sim/4.5/kit_20260331_095422.log
+2026-03-31 09:54:22 [0ms] [Warning] [omni.kit.app.plugin] No crash reporter present, dumps uploading isn't available.
+2026-03-31 09:54:22 [1ms] [Warning] [omni.ext.plugin] [ext: rendering_modes] Extensions config 'extension.toml' doesn't exist '/opt/isaaclab/apps/rendering_modes' or '/opt/isaaclab/apps/rendering_modes/config'
+2026-03-31 09:54:22 [255ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-03-31 09:54:22 [318ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-03-31 09:54:22 [421ms] [Warning] [omni.datastore] OmniHub is inaccessible
+2026-03-31 09:54:22 [491ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 570.124.04    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 5090          | Yes: 0 |     | 32607   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2b85      | f2b1a695.. |
+|     |                                  |        |     |            | 1         |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.13.5
+| Processor: AMD Ryzen 9 9950X 16-Core Processor
+| Cores: 16 | Logical Cores: 32
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 126424 | Free Memory: 104129
+| Total Page/Swap (MB): 7628 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-03-31 09:54:24 [2,607ms] [Warning] [gpu.foundation.plugin] IOMMU is enabled.
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /opt/isaaclab/apps/isaaclab.python.headless.kit
+2026-03-31 09:54:25 [3,730ms] [Warning] [omni.fabric.plugin] gFabricState->gUsdStageToSimStageWithHistoryMap had 1 outstanding SimStageWithHistory(s) at shutdown
+2026-03-31 09:54:25 [3,808ms] [Warning] [carb] Recursive unloadAllPlugins() detected!

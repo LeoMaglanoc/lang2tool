@@ -1,0 +1,50 @@
+{
+  "trial_id": "0038_release_tool",
+  "prompt_id": "release_tool",
+  "prompt_family": "lifecycle_and_predefined_commands",
+  "prompt_variant": "release_active_tool",
+  "prompt_text": "release the tool",
+  "backend": "openai",
+  "active_object_context": "claw_hammer",
+  "expected_outcome_type": "command",
+  "expected_intent": "release_tool",
+  "expected_object_name": "claw_hammer",
+  "expected_target_label": null,
+  "expected_clarification": false,
+  "predicted_outcome_type": "command",
+  "predicted_intent": "release_tool",
+  "predicted_object_name": "claw_hammer",
+  "predicted_target_label": null,
+  "predicted_clarification": false,
+  "assistant_text": "Released the current tool.",
+  "exact_match": true,
+  "object_match": true,
+  "intent_match": true,
+  "target_match": true,
+  "clarification_match": true,
+  "expected_tool_call": {
+    "intent": "release_tool",
+    "object_name": "claw_hammer"
+  },
+  "predicted_tool_call": {
+    "intent": "release_tool"
+  },
+  "target_evaluation": {
+    "match": true,
+    "reason": "no_target_expected"
+  },
+  "predicted_tool_trace": [
+    {
+      "tool_name": "release_tool",
+      "arguments": {},
+      "result": {
+        "ok": true,
+        "command": "release_tool"
+      }
+    }
+  ],
+  "metrics": {
+    "num_goals": 0
+  },
+  "error": null
+}

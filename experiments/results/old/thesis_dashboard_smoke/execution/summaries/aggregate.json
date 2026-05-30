@@ -1,0 +1,20 @@
+{
+  "num_trials": 2,
+  "execution_success_rate": 0.5,
+  "by_object_mode": [
+    {
+      "object_name": "claw_hammer",
+      "mode": "predefined",
+      "num_trials": 1,
+      "execution_success_rate": 1.0,
+      "mean_goal_completion_pct": 100.0
+    },
+    {
+      "object_name": "cylinder_screwdriver_v3009",
+      "mode": "predefined",
+      "num_trials": 1,
+      "execution_success_rate": 0.0,
+      "mean_goal_completion_pct": 0.0
+    }
+  ]
+}
