@@ -21,11 +21,10 @@ Thesis-focused extension of SimToolReal for language-conditioned dexterous tool 
 
 ## Repository Map (Thesis-Relevant)
 
-- `dextoolbench/`: interactive evaluation and benchmark entrypoints.
+- `dextoolbench/`: interactive evaluation and benchmark entrypoints (including `llm_lie_trajectory` workflows).
+- `llm_runtime/`: schema-constrained LLM tool-calling runtime, validation, and backend adapters.
 - `experiments/`: thesis benchmark runners and result processing.
 - `geometric_tool_planning/`: geometric motion planning and verification utilities.
-- `simtoolreal_lab/`: Isaac Lab task, configs, and training entrypoint.d
-- `isaacgymenvs/`: legacy Isaac Gym stack retained for compatibility during migration.
 
 ## Quickstart
 
