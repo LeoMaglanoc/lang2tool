@@ -127,4 +127,9 @@ Evidence: [hammer](evidence/hammer-corrected.jpg),
 [screwdriver](evidence/screwdriver-corrected.jpg),
 [portrait](evidence/pose-portrait.jpg), [landscape](evidence/pose-landscape.jpg).
 The earlier screenshots above show the initial deployment before this correction.
-Live deployment verification of the correction is pending.
+Correction deployed from `48ed4ea6eb60857367e0a02200f803c065c5d0e8`.
+[Pages workflow run](https://github.com/LeoMaglanoc/lang2tool/actions/runs/38153859336)
+passed in 2m 17s. Live Chrome confirmed the corrected production bundle
+`index-CKVt8Lnz.js`, inspected hammer and long-screwdriver endpoint grasps, and
+switched back to tool-only mode. No app errors or warnings were reported.
+[Live corrected screenshot](evidence/pose-live.jpg).

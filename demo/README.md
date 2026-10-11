@@ -69,7 +69,8 @@ positions, normals, origins, scales, and articulated link structure.
   speed. Goal poses are piecewise constant at their recorded frame indices.
 - Joint values use the runtime snapshot's 29 policy-observation names. The original
   recorder labels policy-order values with Lab articulation-order names; the
-  exporter corrects this mismatch and retains the original labels in provenance. The scene stays Z-up, with the source robot base at
+  exporter corrects this mismatch and retains the original labels in provenance.
+  The scene stays Z-up, with the source robot base at
   `(0, 0.8, 0)` and table top at `0.53 m`.
 - Instruction text is an authored description of the chosen recorded target. It
   does not claim to reproduce an original prompt verbatim or run a live LLM.
