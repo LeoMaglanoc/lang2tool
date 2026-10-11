@@ -84,3 +84,47 @@ CSS animation under the preference), but the OS preference was not toggled.
 - The Source link opened the correct public GitHub repository in a new Chrome tab.
 
 Saved live full-page evidence: [desktop](evidence/desktop.jpg), [portrait](evidence/portrait.jpg), [landscape](evidence/landscape.jpg). These are CSS viewport checks with pointer/keyboard input, subject to the verification limits above.
+
+
+## Pose bug audit and correction (2026-10-11)
+
+The initial joint-integrity and hand-distance checks did not establish the correct
+semantic joint order. The demo trusted the replay's `metadata.robot_joint_names`.
+The original `dextoolbench/eval.py::_capture_execution_trace_step` instead decodes
+joint values from policy observations, while `_robot_joint_names` returns Lab
+articulation names. `simtoolreal_lab/tasks/simtoolreal/env_lab.py::_get_observations`
+explicitly gathers joints through `policy_joint_indices`. Thus 19 finger labels
+were wrong in every selected replay, although arm labels were unchanged.
+
+The exporter now uses the runtime snapshot's `policy_joint_lab_names` (or
+`policy_joint_names`) for those values and retains the original labels in
+provenance. Original research data and both research implementations are unchanged.
+A newly loaded robot starts hidden until the current selection commits its pose,
+preventing a late load from appearing in tool-only mode.
+
+Docker verification:
+
+- All 9,335 exported execution frames match the original raw `trace.json` and
+  replay tool/goal poses, joint values, goal indices and simulation timestamps.
+  Reference trajectories also match. Maximum rounding error is below 0.0000005
+  per scalar; no trajectory or tool-pose correction was necessary.
+- An independent Python XML/matrix oracle reads the original URDF and computes
+  all link transforms at first/middle/last frames for all eight examples.
+  The browser's actual hierarchy and joint-rotation helpers agree on 24 poses:
+  maximum matrix-element difference is 0.000001572, including rounding.
+- Applying the former labels displaced a distal finger-link origin by up to
+  124.6 mm relative to the corrected original-URDF calculation at these samples.
+- Six Node test groups, TypeScript checks and production build pass.
+
+Chrome visual checks on the corrected local production build inspected all six
+execution endpoints, screwdriver start and midpoint, hammer/screwdriver grasp
+alignment, scrubbing, rapid execution-to-motion changes and tool selection.
+Portrait 390 × 844 and landscape 844 × 390 were reviewed again. Goal ghosts were
+hidden for grasp inspection. The late-load race safeguard was also reviewed in
+source; timing under an artificially throttled network was not tested.
+
+Evidence: [hammer](evidence/hammer-corrected.jpg),
+[screwdriver](evidence/screwdriver-corrected.jpg),
+[portrait](evidence/pose-portrait.jpg), [landscape](evidence/pose-landscape.jpg).
+The earlier screenshots above show the initial deployment before this correction.
+Live deployment verification of the correction is pending.

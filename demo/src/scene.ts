@@ -2,6 +2,7 @@ import * as T from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import type { Graph, Joint, Manifest, MeshInfo, Pose, Recording } from './types';
 import { frameAt, continuous } from './playback.mjs';
+import { origin, connectJoint, jointPose } from './kinematics.mjs';
 const BASE = import.meta.env.BASE_URL;
 // Resolve all published resources beneath the GitHub Pages project path.
 export async function json<T>(path: string): Promise<T> {
@@ -9,11 +10,6 @@ export async function json<T>(path: string): Promise<T> {
   if (!response.ok) throw new Error(`Could not load ${path} (${response.status})`);
   try {return await response.json();}
   catch {throw new Error('The demo data could not load. Please try again.');}
-}
-// Use URDF fixed-axis roll/pitch/yaw, equivalent to Rz * Ry * Rx.
-function origin(group: T.Object3D, xyz: number[], rpy: number[]) {
-  group.position.fromArray(xyz);
-  group.quaternion.setFromEuler(new T.Euler(rpy[0], rpy[1], rpy[2], 'ZYX'));
 }
 export class DemoScene {
   scene = new T.Scene();
@@ -32,7 +28,6 @@ export class DemoScene {
   private target = new T.Mesh(new T.TorusGeometry(.017, .002, 8, 48), new T.MeshBasicMaterial({color: 0xa9814e}));
   private q1 = new T.Quaternion();
   private q2 = new T.Quaternion();
-  private axis = new T.Vector3();
   private recording: Recording | null = null;
   private robotLoad: Promise<void> | null = null;
   mode: 'motion' | 'policy' = 'motion';
@@ -106,8 +101,7 @@ export class DemoScene {
     graph.joints.forEach(joint => {
       const parent = links.get(joint.parent), child = links.get(joint.child);
       if (!parent || !child) throw new Error('Robot link mapping is incomplete');
-      const fixed = new T.Group();origin(fixed, joint.xyz, joint.rpy);parent.add(fixed);
-      const moving = new T.Group();fixed.add(moving);moving.add(child);
+      const moving = connectJoint(parent, child, joint);
       if (style === 'robot' && joint.type !== 'fixed') this.jointNodes.set(joint.name, {node: moving, joint});
     });
     links.forEach((group, name) => {if (!children.has(name)) root.add(group);});
@@ -117,7 +111,7 @@ export class DemoScene {
   async loadRobot(position: number[]) {
     if (this.robot) return;
     if (!this.robotLoad) this.robotLoad = (async () => {
-      this.robot = await this.graph('assets/robot.json', 'robot');this.robot.position.fromArray(position);this.scene.add(this.robot);
+      this.robot = await this.graph('assets/robot.json', 'robot');this.robot.position.fromArray(position);this.robot.visible = false;this.scene.add(this.robot);
     })().catch(error => {this.robotLoad=null;throw error;});
     return this.robotLoad;
   }
@@ -175,7 +169,7 @@ export class DemoScene {
       r.jointNames.forEach((name,k) => {
         const entry = this.jointNodes.get(name);if (!entry) throw new Error(`Missing robot joint ${name}`);
         const value = r.joints[i][k] + (r.joints[n][k]-r.joints[i][k])*a;
-        this.axis.fromArray(entry.joint.axis).normalize();entry.node.quaternion.setFromAxisAngle(this.axis,value);
+        jointPose(entry.node,entry.joint,value);
       });
     } else {
       const previewDuration = Math.max(3,(r.reference.length-1)*r.referenceInterval);

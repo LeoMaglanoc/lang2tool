@@ -67,8 +67,9 @@ positions, normals, origins, scales, and articulated link structure.
   seconds so its movement is readable; that is presentation timing.
 - Robot execution uses original simulation timestamps. At 1×, it plays at recorded
   speed. Goal poses are piecewise constant at their recorded frame indices.
-- Joint values are mapped by the recording's 29 explicit names, not array order
-  guessed from the URDF. The scene stays Z-up, with the source robot base at
+- Joint values use the runtime snapshot's 29 policy-observation names. The original
+  recorder labels policy-order values with Lab articulation-order names; the
+  exporter corrects this mismatch and retains the original labels in provenance. The scene stays Z-up, with the source robot base at
   `(0, 0.8, 0)` and table top at `0.53 m`.
 - Instruction text is an authored description of the chosen recorded target. It
   does not claim to reproduce an original prompt verbatim or run a live LLM.
@@ -100,3 +101,5 @@ review, and device-emulation limitations. The focused Node tests exercise
 irregular timestamps, reset boundaries, exported recordings, quaternion norms,
 named joints, and packed mesh integrity. Chrome checks cover actual interaction
 and responsive appearance rather than treating a successful build as UI proof.
+
+Ground-truth regression checks compare every exported frame with the original raw trace and replay. Regenerate the independent original-URDF FK fixture with `docker compose -f demo/compose.yaml run --rm web python3 scripts/ground-truth.py`, then run `npm test` through Compose as above. The fixture uses Python XML and matrix arithmetic independently of Three.js.

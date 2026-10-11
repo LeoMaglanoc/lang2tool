@@ -105,7 +105,12 @@ def main():
             selections += [ranked(run, tool, mode)[0] for mode in ('llm_lie', 'predefined')]
         for _, root, entry, raw in selections:
             path = root / entry['replay_artifact_path'];payload = read(path);source = next(iter(payload['sources'].values()))
-            frames = source['policy_track']['frames'];names = source['metadata'].get('robot_joint_names') or payload['runtime_snapshot']['policy_interface']['policy_joint_names']
+            frames = source['policy_track']['frames']
+            # eval.py decodes policy observations, not articulation-order joint_pos.
+            # Its robot_joint_names metadata incorrectly uses Lab articulation order.
+            interface = payload['runtime_snapshot']['policy_interface']
+            names = interface.get('policy_joint_lab_names') or interface['policy_joint_names']
+            recorded_names = source['metadata'].get('robot_joint_names', [])
             if len(names) != 29 or not all(len(f.get('robot_joint_positions') or []) == 29 for f in frames):
                 raise ValueError('Invalid joint mapping')
             geo_id = entry['geometry_trial_id']; geo = read(root / 'geometry/raw' / (geo_id + '.json'))
@@ -123,7 +128,7 @@ def main():
                 raise ValueError('Nonmonotonic timestamps')
             record = {'schema': 1, 'jointNames': names, 'times': times, 'tool': [rounded(f['tool_pose']) for f in frames], 'goal': [rounded(f['goal_pose']) for f in frames], 'joints': [rounded(f['robot_joint_positions']) for f in frames], 'goalIndices': [f['goal_index'] for f in frames], 'events': [f.get('event') for f in frames], 'reference': [rounded(p) for p in source['reference_track']['tool_poses']], 'referenceInterval': source['reference_track']['sample_interval_sec'], 'referenceDuration': source['reference_track']['duration_sec']}
             ident = tool + '-' + entry['mode'];write(OUT / 'data' / (ident + '.json'), record)
-            examples.append({'id': ident, 'tool': tool, 'method': entry['mode'], 'task': entry['task_name'], 'target': entry.get('target_xy'), 'completion': entry['goal_completion_pct'], 'success': entry['execution_success'], 'translationRmse': raw.get('translation_rmse_m'), 'rotationRmse': raw.get('rotation_rmse_deg'), 'duration': times[-1], 'frames': len(frames), 'data': f'data/{ident}.json', 'provenance': {'run': str(root.relative_to(ROOT / 'experiments/results')), 'geometryTrial': geo_id, 'executionTrial': entry['trial_id'], 'source': str(path.relative_to(ROOT)), 'sha256': hashlib.sha256(path.read_bytes()).hexdigest(), 'generationContext': geo.get('generation_context', {}), 'goalTransform': source['metadata'].get('execution_goal_transform', 'identity'), 'trimmedTerminalResetFrames': trimmed, 'descriptionIsAuthored': True}})
+            examples.append({'id': ident, 'tool': tool, 'method': entry['mode'], 'task': entry['task_name'], 'target': entry.get('target_xy'), 'completion': entry['goal_completion_pct'], 'success': entry['execution_success'], 'translationRmse': raw.get('translation_rmse_m'), 'rotationRmse': raw.get('rotation_rmse_deg'), 'duration': times[-1], 'frames': len(frames), 'data': f'data/{ident}.json', 'provenance': {'run': str(root.relative_to(ROOT / 'experiments/results')), 'geometryTrial': geo_id, 'executionTrial': entry['trial_id'], 'source': str(path.relative_to(ROOT)), 'sha256': hashlib.sha256(path.read_bytes()).hexdigest(), 'generationContext': geo.get('generation_context', {}), 'goalTransform': source['metadata'].get('execution_goal_transform', 'identity'), 'trimmedTerminalResetFrames': trimmed, 'descriptionIsAuthored': True, 'jointOrder': 'policy_observation', 'recordedJointNames': recorded_names}})
     robot = urdf_graph(ROOT / 'assets/urdf/kuka_sharpa_description/iiwa14_left_sharpa_adjusted_restricted.urdf', meshes)
     write(OUT / 'assets/robot.json', robot)
     write(STAGING / 'meshes.json', meshes)
