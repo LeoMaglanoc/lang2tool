@@ -2,7 +2,7 @@
 
 Date: 2026-10-11
 Classification: **Feature** (browser demo and deployment), preceded by this planning document.
-Status: **Plan prepared; implementation and browser validation pending.**
+Status: **Complete. Demo deployed from `cff0854`; local and live Chrome validation passed.**
 
 ## Goal and boundaries
 
@@ -262,20 +262,20 @@ phone GPU performance. Provide a useful loading/error state and WebGL fallback.
 ## Implementation milestones
 
 - [x] **0. Plan:** inspect public data and private reference; write this document.
-- [ ] **1. Select, export, and prove fidelity:** use the audited catalog to rank
+- [x] **1. Select, export, and prove fidelity:** use the audited catalog to rank
   candidates, resolve the cylinder screwdriver's available outcomes, select six
   featured pairs plus useful supplementary examples, and export only selected
   meshes; validate joints/coordinates at first, middle, and last frames. Establish
   actual language-example availability and asset attribution.
-- [ ] **2. Build tool-motion mode:** responsive shell, real tool meshes, example
+- [x] **2. Build tool-motion mode:** responsive shell, real tool meshes, example
   selection, trajectory visualization, camera, and shared playback controls.
-- [ ] **3. Build execution mode:** articulated robot playback, recorded tool/goal
+- [x] **3. Build execution mode:** articulated robot playback, recorded tool/goal
   overlay, accurate goal synchronization, event handling, and honest mode labels.
-- [ ] **4. Validate production build:** focused numerical tests and Chrome
+- [x] **4. Validate production build:** focused numerical tests and Chrome
   computer-agent interaction at every viewport below; fix observed problems.
-- [ ] **5. Deploy:** commit logical changes, push to the public repository,
+- [x] **5. Deploy:** commit logical changes, push to the public repository,
   complete GitHub Pages deployment, and repeat Chrome checks on the live URL.
-- [ ] **6. Handoff:** provide live URL, revision, reproduction commands,
+- [x] **6. Handoff:** provide live URL, revision, reproduction commands,
   verification evidence, and any material limitations.
 
 ## Chrome computer-agent validation (required)
@@ -360,3 +360,9 @@ contains reproducible source and deployment instructions, and the private
 repository remains untouched. Additional arbitrary text planning, click-to-place
 targets, live LLM calls, browser policy inference, and a full benchmark dashboard
 are follow-up features rather than dependencies for the initial release.
+
+## Delivered implementation
+
+The live demo is [https://leonardo-maglanoc.com/lang2tool/](https://leonardo-maglanoc.com/lang2tool/). Eight curated samples cover all six tools; three claw-hammer examples show the generation methods. The cylinder example comes from the public legacy `thesis_main_v3` run with its own benchmark context; its single terminal reset frame is trimmed and documented in the exported provenance. It does not imply success in the newer primary benchmark.
+
+[Validation and screenshots](demo/validation.md) record the Docker checks, local six-viewport review, and live desktop/portrait/landscape checks. [Reproduction commands](demo/README.md) cover export, build, preview, and deployment. No files in the private repository were changed.

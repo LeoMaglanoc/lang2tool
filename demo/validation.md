@@ -2,8 +2,7 @@
 
 Date: 2026-10-11. Browser: the user's Chrome, controlled through the Chrome
 computer-agent surface. Local target: `http://localhost:4173/lang2tool/`, served
-from the production build by Docker. Deployment checks will be appended after
-GitHub Pages finishes.
+from the production build by Docker. Live deployment checks are recorded below.
 
 ## Responsive and visual checks
 
@@ -73,4 +72,15 @@ CSS animation under the preference), but the OS preference was not toggled.
 
 ## Live deployment
 
-Pending GitHub Pages deployment and live Chrome checks.
+- Live URL: [Lang2Tool](https://leonardo-maglanoc.com/lang2tool/).
+- Deployed source: `cff08540b0edd06fa965818614b2cbc5fe9043e9`.
+- [GitHub Pages workflow run](https://github.com/LeoMaglanoc/lang2tool/actions/runs/38152870692): successful build and deployment, 2m 10s total. CI installed dependencies, ran tests, and built inside Docker.
+- Pages uses GitHub Actions and the inherited account domain; HTTPS is enforced.
+- Live Chrome checked all six selected execution recordings through their endpoints, including the legacy cylinder sample. Meshes and robot loaded without application errors or warnings.
+- Live desktop 1440 × 900: hammer execution endpoint, robot/hand alignment, tool gallery and readable controls; pass.
+- Live portrait 390 × 844: long screwdriver execution endpoint, restart/play/pause and mode change, stacked scene and reachable controls; pass.
+- Live landscape 844 × 390: predefined hammer trajectory endpoint, method selection and side panel; pass.
+- All three live dimensions were read back from the page and had no horizontal overflow. Normal vertical scrolling is intentional on short/portrait viewports.
+- The Source link opened the correct public GitHub repository in a new Chrome tab.
+
+Saved live full-page evidence: [desktop](evidence/desktop.jpg), [portrait](evidence/portrait.jpg), [landscape](evidence/landscape.jpg). These are CSS viewport checks with pointer/keyboard input, subject to the verification limits above.
