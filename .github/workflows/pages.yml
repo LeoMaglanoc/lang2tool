@@ -1,0 +1,37 @@
+name: Deploy Lang2Tool demo
+on:
+  push:
+    branches: [main]
+    paths: ['demo/**', '!demo/README.md', '!demo/validation.md', '!demo/evidence/**', '.github/workflows/pages.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: lang2tool-pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build demo container
+        run: docker compose -f demo/compose.yaml build
+      - name: Validate and build
+        run: docker compose -f demo/compose.yaml run --rm web sh -c 'npm test && npm run build'
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: demo/dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

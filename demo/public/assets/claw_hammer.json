@@ -1,0 +1,1 @@
+{"links":[{"name":"claw_hammer","visuals":[{"xyz":[0.0,0.0,0.0],"rpy":[0.0,0.0,0.0],"color":[0.65,0.68,0.7,1],"mesh":"00ecabe6941b0fec","scale":[1.0,1.0,1.0]}]}],"joints":[],"source":"assets/urdf/dextoolbench/hammer/claw_hammer/claw_hammer.urdf"}

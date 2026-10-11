@@ -104,3 +104,19 @@ This repository started from SimToolReal and now focuses on thesis-specific exte
 - and Isaac Lab migration.
 
 Upstream project: https://github.com/tylerlum/simtoolreal
+
+## Interactive website demo
+
+The [Lang2Tool browser demo](https://leonardo-maglanoc.com/lang2tool/) presents
+selected tool trajectories and recorded dexterous execution across six tools.
+It runs entirely in the browser. See [demo/README.md](demo/README.md) for data
+provenance, Docker development, validation, and GitHub Pages deployment.
+
+```bash
+docker compose -f demo/compose.yaml build
+docker compose -f demo/compose.yaml run --rm web npm test
+docker compose -f demo/compose.yaml run --rm web npm run build
+docker compose -f demo/compose.yaml up -d
+```
+
+Open `http://localhost:4173/lang2tool/`.

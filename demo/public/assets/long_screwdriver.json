@@ -1,0 +1,1 @@
+{"links":[{"name":"long_screwdriver","visuals":[{"xyz":[0.0,0.0,0.0],"rpy":[0.0,0.0,0.0],"color":[0.65,0.68,0.7,1],"mesh":"cb64930cd8f9a4c5","scale":[1.0,1.0,1.0]}]}],"joints":[],"source":"assets/urdf/dextoolbench/screwdriver/long_screwdriver/long_screwdriver.urdf"}

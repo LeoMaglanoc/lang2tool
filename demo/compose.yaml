@@ -1,0 +1,12 @@
+services:
+  web:
+    build: .
+    ports:
+      - "127.0.0.1:4173:4173"
+    volumes:
+      - ..:/workspace
+      - demo_modules:/workspace/demo/node_modules
+    working_dir: /workspace/demo
+    command: npm run preview -- --port 4173
+volumes:
+  demo_modules:

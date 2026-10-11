@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8f9f5" />
+  <meta name="description" content="Explore language-guided tool motion and recorded dexterous robot execution. An interactive Lang2Tool thesis demo." />
+  <title>Lang2Tool — Language into motion</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%2326463c'/%3E%3Cpath d='M12 25L20 15L28 25M16 20h8' stroke='%23c7e3b7' fill='none' stroke-width='3'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <a class="brand" href="#" aria-label="Lang2Tool home"><span class="brand-mark" aria-hidden="true">↗</span><span>Lang<span class="brand-light">2</span>Tool</span></a>
+      <span class="header-note">Language-guided dexterous manipulation</span>
+      <a class="repo" href="https://github.com/LeoMaglanoc/lang2tool" target="_blank" rel="noopener noreferrer">Source <span aria-hidden="true">↗</span></a>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="title"><div><p class="eyebrow">INTERACTIVE THESIS DEMO</p><h1 id="title">Language into <em>motion.</em></h1><p class="subtitle">Explore how a tool moves. Then see a robot bring it to life.</p></div><button class="text-button" id="about-open">How it works <span aria-hidden="true">↗</span></button></section>
+      <section class="workspace" aria-label="Interactive demonstration">
+        <div class="workspace-bar"><div class="mode-switch" role="group" aria-label="Demo mode"><button id="motion-mode" aria-pressed="true"><span class="step-number">1</span> Tool motion</button><button id="policy-mode" aria-pressed="false"><span class="step-number">2</span> Robot execution</button></div><span class="recorded-badge"><span></span> Precomputed demo</span></div>
+        <div class="work-body">
+          <div class="stage-column">
+            <div id="viewport" class="viewport">
+              <div class="scene-title"><span class="eyebrow" id="scene-label">TOOL MOTION</span><strong id="scene-name">Claw hammer</strong></div>
+              <div class="camera-controls" role="group" aria-label="Camera controls"><button id="zoom-in" title="Zoom in" aria-label="Zoom in">+</button><button id="zoom-out" title="Zoom out" aria-label="Zoom out">−</button><button id="reset-camera" title="Reset camera" aria-label="Reset camera">⤢</button></div>
+              <div id="loading" class="loading" role="status"><span class="spinner"></span><span id="loading-text">Preparing the scene…</span><button id="retry" hidden>Try again</button></div>
+              <div class="scene-bottom"><span class="orbit-hint">Drag to orbit · Scroll to zoom</span><div class="legend"><span><i class="actual-dot"></i><span id="actual-label">Tool</span></span><span id="goal-legend" hidden><i class="goal-dot"></i>Goal</span><span><i class="path-dot"></i>Path</span></div></div>
+            </div>
+            <div class="playback"><button id="play" class="play-button" aria-label="Play" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7Z" fill="currentColor"/></svg></button><button id="restart" class="icon-button" aria-label="Restart playback" title="Restart playback" disabled>↺</button><div class="timeline"><label class="sr-only" for="scrub">Playback position</label><input id="scrub" type="range" min="0" max="1" step="0.001" value="0" disabled><div class="time-row"><output id="time">0:00</output><span id="duration">0:00</span></div></div><label class="sr-only" for="speed">Playback speed</label><select id="speed" aria-label="Playback speed"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="3">3×</option></select></div>
+          </div>
+          <aside class="panel" aria-label="Demo controls">
+            <div class="panel-section"><div class="section-heading"><h2>Choose a tool</h2><span>01—06</span></div><div id="tools" class="tool-grid"></div></div>
+            <div class="panel-section example-section"><label class="section-label" for="example">Motion example</label><select id="example" aria-label="Motion example" disabled></select><div class="command"><span class="command-label">DEMO INSTRUCTION</span><p id="instruction">“Swing the hammer at the left target.”</p></div><div class="method-line"><span id="method">Language → trajectory</span><span class="complete" id="outcome" hidden>100% goals reached</span></div></div>
+            <div class="view-options"><label><input type="checkbox" id="trace" checked><span>Show paths</span></label><label id="goal-option" hidden><input type="checkbox" id="ghost" checked><span>Show goal tool</span></label></div>
+            <p class="mode-explanation" id="mode-explanation">Saved tool trajectory. Preview slowed for clarity.</p>
+            <details id="details"><summary>Recording details <span aria-hidden="true">+</span></summary><div id="details-content"></div></details>
+          </aside>
+        </div>
+      </section>
+      <footer><span>Lang2Tool <span class="footer-separator">/</span> M.Sc. thesis showcase</span><span>Recorded experiments. Browser playback.</span></footer>
+    </main>
+  </div>
+  <dialog id="about"><button class="dialog-close" id="about-close" aria-label="Close explanation">×</button><p class="eyebrow">LANG2TOOL</p><h2>From words to tool use.</h2><ol><li><strong>Language</strong><span>A language model turns an instruction into a motion request.</span></li><li><strong>Tool motion</strong><span>A trajectory describes the tool’s position and orientation.</span></li><li><strong>Robot execution</strong><span>A learned policy controls the arm and dexterous hand.</span></li></ol><p>Choose a tool, press play, and compare the two views. These are selected saved experiments; no live model runs in your browser.</p></dialog>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
