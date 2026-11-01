@@ -17,7 +17,7 @@ const exampleNames: Record<string,string> = {llm_only:'Language-generated motion
 const play=el<HTMLButtonElement>('play'), scrub=el<HTMLInputElement>('scrub'), speed=el<HTMLSelectElement>('speed');
 let manifest: Manifest, scene: DemoScene, current: Example, recording: Recording;
 let time=0, playing=false, duration=1, last=0, serial=0, activeTool='claw_hammer', busy=true;
-let mode: 'motion'|'policy'='motion';
+let mode: 'motion'|'policy'='policy';
 const dataCache = new Map<string, Recording>();
 // Format precise short trajectories and longer policy recordings without hiding time.
 function format(t: number) {return t < 10 ? `${t.toFixed(1)}s` : `${Math.floor(t/60)}:${(t%60).toFixed(1).padStart(4,'0')}`;}
@@ -59,7 +59,7 @@ async function selectExample(id: string, changeTool = false) {
     const left=example.target[0]<-.05?'left':example.target[0]>.05?'right':'center';
     el('instruction').textContent=tool.family==='hammer'?`“Swing the ${tool.name.toLowerCase()} at the ${left} target.”`:`“Twist the ${tool.name.toLowerCase()} at the ${left} target.”`;
     el('method').textContent=methodNames[example.method];el('outcome').textContent=`${example.completion.toFixed(0)}% goals reached`;
-    details(example);loading(false);controls();
+    details(example);playing=true;last=performance.now();loading(false);controls();
   } catch(error) {if(token===serial) loading(true,error instanceof Error?error.message:'The recording could not be loaded.');}
 }
 // Populate only the selected representative examples for this tool.
@@ -68,7 +68,8 @@ async function selectTool(tool: Tool) {
   document.querySelectorAll<HTMLButtonElement>('.tool-card').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.tool===tool.id)));
   const select=el<HTMLSelectElement>('example');const examples=manifest.examples.filter(e=>e.tool===tool.id);
   select.replaceChildren(...examples.map(e=>new Option(exampleNames[e.method],e.id)));select.disabled=examples.length<2;
-  await selectExample(examples[0].id,true);scene.resetCamera();
+  const example=examples.find(e=>e.method==='predefined')??examples[0];
+  select.value=example.id;await selectExample(example.id,true);scene.resetCamera();
 }
 // Reset time and camera on mode changes, preserving the selected tool/example.
 async function setMode(next: 'motion'|'policy') {
@@ -93,19 +94,19 @@ async function init() {
     el<HTMLSelectElement>('example').onchange=event=>{void selectExample((event.target as HTMLSelectElement).value);};
     el('motion-mode').onclick=()=>{void setMode('motion');};el('policy-mode').onclick=()=>{void setMode('policy');};
     play.onclick=()=>{if(time>=duration) time=0;playing=!playing;last=performance.now();controls();};
-    el('restart').onclick=()=>{time=0;playing=false;scene.update(time);controls();};
+    el('restart').onclick=()=>{time=0;scene.update(time);controls();};
     scrub.oninput=()=>{time=Number(scrub.value);scene.update(time);controls();};
     el<HTMLInputElement>('trace').onchange=event=>{scene.traceVisible=(event.target as HTMLInputElement).checked;scene.update(time);};
     el<HTMLInputElement>('ghost').onchange=event=>{scene.goalVisible=(event.target as HTMLInputElement).checked;scene.update(time);};
     el('reset-camera').onclick=()=>scene.resetCamera();el('zoom-in').onclick=()=>scene.zoom(.85);el('zoom-out').onclick=()=>scene.zoom(1/.85);
     el('retry').onclick=()=>{void selectExample(el<HTMLSelectElement>('example').value,true);};
-    document.addEventListener('visibilitychange',()=>{if(document.hidden){playing=false;controls();}last=performance.now();});
+    document.addEventListener('visibilitychange',()=>{last=performance.now();});
     document.addEventListener('keydown',event=>{if(event.code==='Space' && event.target===document.body && !busy){event.preventDefault();play.click();}});
     el('viewport').addEventListener('webglcontextlost',event=>{event.preventDefault();playing=false;loading(true,'The 3D view lost its graphics connection. Reload to restore it.');el('retry').onclick=()=>location.reload();});
     await selectTool(manifest.tools[0]);
     // Render without tying recorded motion speed to monitor frame rate.
     function tick(now: number) {
-      if (playing && !busy && !document.hidden) {time=advance(time,(now-last)/1000,Number(speed.value),duration);if(time>=duration) playing=false;scene.update(time);controls();}
+      if (playing && !busy && !document.hidden) {time=advance(time,(now-last)/1000,Number(speed.value),duration);scene.update(time);controls();}
       last=now;scene.render();requestAnimationFrame(tick);
     }
     requestAnimationFrame(tick);

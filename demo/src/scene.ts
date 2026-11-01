@@ -30,8 +30,8 @@ export class DemoScene {
   private q2 = new T.Quaternion();
   private recording: Recording | null = null;
   private robotLoad: Promise<void> | null = null;
-  mode: 'motion' | 'policy' = 'motion';
-  traceVisible = true;
+  mode: 'motion' | 'policy' = 'policy';
+  traceVisible = false;
   goalVisible = true;
   // Set a Z-up research scene with a calm studio background and responsive canvas.
   constructor(private container: HTMLElement, manifest: Manifest) {

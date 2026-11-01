@@ -10,7 +10,13 @@ test('irregular timestamps, bounds, and exact endpoint',()=>{
   assert.deepEqual(frameAt([0,.1,.5,1.2],.3),{index:1,next:2,alpha:.49999999999999994});
   assert.equal(frameAt([0,.1,.5,1.2],1.2).index,3);
   assert.equal(frameAt([0,.1,.5,1.2],-1).alpha,0);
-  assert.equal(advance(1,.5,2,1.2),1.2);
+});
+test('playback wraps at the endpoint and preserves overshoot at any speed',()=>{
+  assert.equal(advance(.75,.25,1,1),0);
+  assert.equal(advance(.75,.25,2,1),.25);
+  assert.equal(advance(.5,3,1,1),.5);
+  assert.equal(advance(.5,-1,1,1),.5);
+  assert.equal(advance(0,1,1,0),0);
 });
 // A reset must never become a fictitious physical sweep in the displayed animation.
 test('reset boundaries prevent blending',()=>{

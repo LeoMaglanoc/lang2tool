@@ -15,7 +15,7 @@ export function continuous(a, b, eventA, eventB) {
   return Math.hypot(b[0]-a[0], b[1]-a[1], b[2]-a[2]) < .12 &&
     !(eventA !== eventB && /reset|drop|stop|failure/i.test(`${eventA} ${eventB}`));
 }
-// Keep time bounded and stop at the last recorded sample without silently looping.
+// Repeat the recording, preserving elapsed time beyond each loop boundary.
 export function advance(time, delta, speed, duration) {
-  return Math.max(0, Math.min(duration, time + Math.max(0, delta) * speed));
+  return duration > 0 ? Math.max(0, time + Math.max(0, delta) * speed) % duration : 0;
 }
